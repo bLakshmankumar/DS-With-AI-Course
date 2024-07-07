@@ -1,0 +1,186 @@
+# Class -1 : (Basic overview of the concepts)
+==============================================
+What is Datascience :
+====================
+  Data science is an interdisciplinary field focused on extracting insights from data using a combination of statistical, computational, and domain-specific knowledge. 
+It involves several steps and technologies:
+--------------------------------------------
+  Data Collection: Gathering data from various sources such as databases, web scraping, and APIs.
+  Data Cleaning: Preparing data by handling missing values, removing duplicates, and correcting errors.
+  Data Exploration: Analyzing data patterns and distributions using visualization tools.
+  Modeling: Building predictive models using machine learning algorithms.
+  Evaluation: Assessing model performance with metrics like accuracy, precision, and recall.
+  Deployment: Integrating models into applications for real-time predictions.
+Technologies Used in Data Science:
+==================================
+  Programming Languages: Python,
+  Libraries: Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch
+  Tools: Jupyter Notebooks, Apache Spark, Hadoop
+  Visualization: Matplotlib, Seaborn, Tableau
+Examples:
+========
+  Predictive Analytics: Forecasting sales using historical data.
+  Natural Language Processing (NLP): Sentiment analysis on social media posts.
+  Computer Vision: Image recognition in autonomous vehicles.
+
+Project Lifecycle for DataScience :
+===================================
+Step -1 : Understand the business problem
+Step -2 : Gather the Data  : (By using "sql" queries we should retrive the data from storage)
+Step -3 : Processing the Data (becuase gathered the data might be any format) : We can process the data by using "SQL (or) Python"
+Step -4 : Analyse the Data : We have to analyse each and every column by using "Statistics".
+Step -5 : Model Building   : Develop the Machine-Learning Algorithm (Once develop the Ml-algorithm we have to validate/evalute before giving it to Client)."ML/DL/NLP"
+          We can develop model development by using Machine Learning(Banking), Deep Learning(Image anaytics), NLP(Natural language Processing)-(Text-analysis).
+Step -6 : Evaluate the Model ( Here we will verify "Metrics" for calculate the model errors & etc)
+Step -7 : Handover to Client (or) Model Deployment. - "Azure ML"
+
+========================================================================================================================================================================================
+Tools required for Data analysis :
+===================================
+ 1) SQL  2) Python  3) Statistics  4) Visualization tools(Power-BI), Tableau). : If we learn these tools we will become a Data-Analyst/Business Anayst/Python Developer/ SQl Admin.
+
+Tools Required for Data-Scientist :
+====================================
+1) SQL  2) Python  3) Statistics  4) Visualization tools(Power-BI), Tableau 5) ML 6) Deep Learning 7) NLP 8) Gen AI and Chat GPT 9) Maths  : If we learn these tools we will become a Data-Scientist.
+
+Deployemnt : 
+=============
+Once we develop the ML-Models where we have to deploy : We have to deploy on Cloud, Here we will teach you How to deploy these models on MLops(Machinlearning Operations) inside azure ML.
+
+# Class - 2 :
+============
+Some use cases of each technology :
+===================================
+ ML - Usecaase :
+ ===============
+   ML can be used for Stock-prediction, Loan predection, Forecasting.
+
+ Deep Learning - usecases :
+ ==========================
+   DL can be used for Image analytics, Object detection, Video detection, Face detection.
+   Image means using Deep learning algorithms
+
+ NLP - Usecases :
+ ================
+    NLP can be used for text analysis(Chat-bot), Review analysis, Spell correction, Document summery & etc.
+
+# Class - 3 :
+=============
+   Output colums have two types :
+   1) Engilsh letters : Categorical data / Qualitative data
+   2) Numbers         : Numerical Data / Quantitative data
+ # What is ML ?
+ ===============
+   Understand the Past data,and make the predictions on your future data.
+
+ Underthis ML we have different types :
+ --------------------------------------
+   1) Supervised learning : If a data has both input columns and output columns we can call it as Supervised learning.
+        Based on output labels supervised learning devided into 2 algoritm types :
+        --------------------------------------------------------------------------
+         A) Classification Algorithms : Means Output label has Categorical/Qualitative data type
+             Types in Classification Algorithms :
+             ------------------------------------
+               > Logistic Regression *
+               > Decesion Tree
+               > K-Nearest Nighbours
+               > Native Bayes
+               > Support Vector machines
+               > Random Forest *
+               > Boosting Algorithms
+         B) Regression Algorithm      : Means Output label has Numerical/Quantitative data type
+             Types in regression Algorithms :
+             --------------------------------
+               > Linear Regression
+               > Lasso Regression
+               > Ridge Regression
+   
+   2) Unsupervised Learning : If data has no output label and there is no specific target we can call it as Supervised learning.
+       Unsupervised learning devided into 1 algoritm type :
+       ----------------------------------------------------
+           Cluster Algorithm : Cluster algorithms aim to discover hidden patterns in unlabeled data by grouping similar data points together. 
+                               Imagine sorting a basket of fruits without labels – a cluster algorithm would put apples with apples and oranges with oranges.
+           Example :  clothing store uses a cluster algorithm to analyze customer purchase history. It groups customers who buy similar clothes, helping personalize product recommendations.
+        Two main types of clustering algorithms :
+        -----------------------------------------
+           1) K-Means CLuster Algorithms (Centroid-Based Clustering) : 
+           2) Hierarchical Clustering Algorithms :
+
+    3) Reinforcement Learning : Reinforcement learning is a type of AI where an agent learns through trial and error in an environment.
+                                Imagine an agent playing a game, it receives rewards for good actions and penalties for bad ones.
+                                This is used for real-time tasks like training robots to navigate factories, optimizing traffic flow in cities, 
+                                and even personalizing recommendations for users on streaming services.
+      Technologies we use for Reinforcement Learning :
+      ------------------------------------------------
+         A) Deep Learning -------> Images
+         B) NLP  --------> Text (chatbot)  
+         C) AI Technologies 
+    
+Note : In ML how many algorithms we ahve to learn :
+----------------------------------------------------
+               1) Supervised Learning   : Classification (7) + Regression (3)
+               2) UnSupervised Learning : Cluster Algorithms (2).
+            Total : 12 Algorithms.
+
+# Class-4 :
+===========
+     We can skip this 4th class all are repeated content only, Nothing new in this class.
+
+# Class-5 : 
+==========
+  # Summary
+  ----------
+     Here they discusses the importance of enrolling in a data science course, emphasizing the need for laptops, certifications, Python programming, and instructor support.
+  # Key-Discussions : 
+  -------------------
+     Simplicity and ease of learning Python programming 🐍: Python’s user-friendly syntax on jupiter notebook, And powerful libraries make it an ideal language for beginners to grasp fundamental concepts and develop practical skills in data science.
+  # Summary :
+  ===========
+   Variables syntax in Python while we setup a varaibles in python:
+    > We Can include both uppercase and lowercase letters   : Example: number_123 and Number_123 are both valid.
+    > We Can include numbers, but not at the beginning      : Example: 123number is not valid.
+    > We Cannot include spaces                              : Example: number value is not valid.
+    > We Cannot include symbols other than the underscore _ : Example: number$value is not valid.
+    > We Can start or end with an underscore(_)             : Example: _example_variable is a valid (OR) example_variable_ is a valid
+    > Keywords will not use as a variable 
+
+  # Data_Types in python :
+  ========================
+     > int (Integer) :
+     -----------------
+         Meaning : Whole numbers, positive or negative, without decimals..
+         Purpose : To perform Arithmetic operations.
+         Use Case: Counting items, indexing, loops (Counting items)
+         Example : num_apples=10  # Number of apples.
+      > float (Floating Point) :
+      --------------------------
+         Meaning : Numbers with decimals.
+         Purpose : To represent real numbers and perform arithmetic operations with precision.
+         Use Case: Scientific calculations, measurements, financial calculations
+         Example : price = 19.99  # Price of an item in dollars (OR) temperature=32.07 # Temperature of an object.
+      > str (String) :
+      -----------------
+         Meaning : Sequence of characters.
+         Purpose : To store and manipulate text.
+         Use Case: Storing names, messages, and text data.
+         Example : name = "Alice" # Username in a system
+      > bool (Boolean) :
+      ------------------
+         Meaning : Represents True or False.
+         Purpose : To evaluate conditions and control the flow of the program.
+         Use Case: Conditional statements, flags.
+         Example : is_student = True # User login status
+      > complex (Complex Number) :
+      ----------------------------
+         Meaning : Numbers with a real and imaginary part.
+         Purpose : To perform complex number arithmetic.
+         Use Case: Engineering, scientific calculations involving complex numbers.
+         Example : z = 3 + 4j  # Electrical impedance in a circuit
+
+Sorces : 
+========
+https://www.youtube.com/watch?v=LNT3dqsELPI (Class-1)
+https://www.youtube.com/watch?v=6bTjPxLW8ng (Class-2)
+https://www.youtube.com/watch?v=GyWXEU (Class-3)
+https://www.youtube.com/watch?v=P-W (Class-4) - Nothing in Class 4- All are repeated things
+https://www.youtube.com/watch?v=SEow0_gEVz0 (Class-5) - Nothing new introduction of Python syntax.
