@@ -79,7 +79,7 @@
           Purpose: Use the functions or methods from the package to perform experiments or tasks.
           Example: After learning about random.randint, you can experiment by generating random numbers within different ranges to see how the function behaves.
 
-  Practical Example :
+  Practical Example-1 :
   ===================
      To illustrate these steps, let's use the random module as an example:
     1. Import the Package:
@@ -91,6 +91,31 @@
     4. Experiment:
            random_number = random.randint(1, 100)
            print(random_number)   : Generate a random number between 1 and 100 and print it to see the output.
+
+  # Practical example-2 :
+  =======================
+       import random
+       random.randint(1,200)
+
+       from random import randint
+       randint(1,20)
+
+       import math
+       math.sin(90)
+
+       from math import sin, pi
+       sin(90)
+       pi
+     Explanation :
+     -------------
+        The first line of code imports the random module. The random module provides functions for generating random numbers. The random.randint(a, b) function generates a random integer between a (inclusive) and b (exclusive).
+        The second line of code uses the randint function to generate a random integer between 1 and 200. The output of this line of code is printed to the console, which is 180 in the screenshot.
+        The third line of code imports the math module. The math module provides functions for performing mathematical operations. The math.sin(x) function calculates the sine of x.
+        The fourth line of code uses the sin function to calculate the sine of 90 degrees. The sine of 90 degrees is 1. However, the output in the screenshot is 0.8939966636005579.
+        This is because the sine function in Python uses radians by default, not degrees. To calculate the sine of 90 degrees in degrees, you can multiply the angle by pi (3.14159) and then pass it to the sine function.
+        The fifth line of code imports the sin and pi functions from the math module. The sin function calculates the sine of a number, and the pi constant represents the mathematical constant pi.
+        The sixth line of code calculates the sine of 90 degrees using the imported sin function and the value of pi from the imported constants. The output of this line of code is 3.141592653589793, which is the correct sine of 90 degrees in radians.
+
 
    # Simply : 
    ==========
