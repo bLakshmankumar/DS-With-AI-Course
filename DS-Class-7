@@ -1,5 +1,5 @@
-Agenda : Anaconda installation process:
-=======================================
+Agenda : Anaconda installation process and some of the important packages in python for DS:
+============================================================================================
    Meaning of Anaconda :
    --------------------
       Anaconda is an open-source software that contains Jupyter, spyder, etc that are used for large data processing, data analytics, heavy scientific computing. 
@@ -19,4 +19,39 @@ Agenda : Anaconda installation process:
          > Once Download is complete
          > Go to download path open the anaconda installer, Click on next, next until finish.
 
-   
+# Important packages in python for DS :
+=======================================
+     # Packages for EDA : Explodatory data analysis :
+     -------------------------------------------------
+        > NUMPY  : (Numarical Python)
+        > Pandas : (Used for database operations) Like reading the data, writting the data, analyse the data all the thing is called pandas data framework.
+        > Matplotlib : (This is for Plotting)
+        > Seaborn and bokhe : ( This is also a plotting package only) and There are so many plotting packages are there.
+    
+     # Packages for ML : Machine Learning :
+     --------------------------------------
+        > sickit-learn : (sklearn) : In python This is a very very famous package as of today, No other alterative package is availble for this. No one is still not beat this package. 
+        > MLlib : (ML-Library) : This is related to pyspark. 
+     {NOTE: Python and pyspark both are programming langauges and both are look like same, And Python used by DataScientists, And pyspark is used by Data Engineers}.
+
+     # Packages for Deep-Learning applications:
+     ------------------------------------------
+        > tensorflow : (Introduced by google)
+        > keras      : {Tensorflow and keras both packages are work together, Keras is a backend of tensorflow}.
+        > pytorch    : PyTorch is an open-source deep learning framework developed by Facebook's AI Research lab (FAIR). It provides a flexible and efficient platform for building and training neural networks and other machine learning models.
+        > Opencv     : OpenCV (Open Source Computer Vision Library) is a popular open-source library for computer vision and image processing tasks in Python and other programming languages. 
+                       It provides a wide range of functionalities, including image and video manipulation, object detection and tracking, face detection, image filtering, geometric transformations, and machine learning support for computer vision tasks.
+
+     # Packages for NLP :
+     --------------------
+        > nltk : (Natural Language tool kit) : 
+        > Scipy : SciPy is a Python library used for scientific and technical computing. SciPy is invaluable for anyone working with scientific computing in Python, providing robust tools and algorithms to solve complex mathematical problems efficiently.
+
+     # BERT MODELS :
+     ---------------
+       > transformers : BERT (Bidirectional Encoder Representations from Transformers) models are a type of transformer-based neural network architecture designed for natural language processing (NLP). 
+                        They are pre-trained on large amounts of textual data using unsupervised learning techniques to learn deep bidirectional representations of language. 
+                        These representations can then be fine-tuned with labeled data to achieve state-of-the-art performance on a wide range of NLP tasks such as text classification, question answering, and named entity recognition.
+     # Other packages :
+     ==================
+       # Azure ML packages, # Chatgpt Packages, # Flask, # Streamlit and etc.
