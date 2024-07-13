@@ -47,11 +47,7 @@
             Scenario: You are developing a machine learning application.
             Library: You use the scikit-learn library, which includes a wide range of tools for machine learning, including classification, regression, clustering algorithms, and more. 
                      It combines several packages like sklearn.preprocessing, sklearn.model_selection, and sklearn.ensemble to provide comprehensive machine learning capabilities.
-      # Simply : 
-      ==========
-         Models are specific instances of algorithms trained to perform a task, like predicting house prices.
-         Packages are organized collections of modules that provide specific functionalities, like the pandas package for data manipulation.
-         Libraries are broader collections of packages and modules that provide extensive functionality, like the NumPy library for numerical computations or scikit-learn for machine learning.
+      
      # Code Explanation :
      ====================
          import random
@@ -95,6 +91,12 @@
     4. Experiment:
            random_number = random.randint(1, 100)
            print(random_number)   : Generate a random number between 1 and 100 and print it to see the output.
+
+   # Simply : 
+   ==========
+       Models are specific instances of algorithms trained to perform a task, like predicting house prices.
+       Packages are organized collections of modules that provide specific functionalities, like the pandas package for data manipulation.
+       Libraries are broader collections of packages and modules that provide extensive functionality, like the NumPy library for numerical computations or scikit-learn for machine learning.
 
 
    
