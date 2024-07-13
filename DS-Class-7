@@ -1,3 +1,22 @@
-Anaconda installation process:
-==============================
+Agenda : Anaconda installation process:
+=======================================
+   Meaning of Anaconda :
+   --------------------
+      Anaconda is an open-source software that contains Jupyter, spyder, etc that are used for large data processing, data analytics, heavy scientific computing. 
+      Anaconda works for R and python programming language. Spyder(sub-application of Anaconda) is used for python. Opencv for python will work in spyder. 
+      Package versions are managed by the package management system called conda.
+
+    Learn more about Anaconda :
+    ---------------------------
+       https://freelearning.anaconda.cloud/get-started-with-anaconda
+   
+   Anaconda installation process : 
+   ------------------------------- 
+      To begin working with Anaconda, one must get it installed first. Follow the below instructions to Download and install Anaconda on your system:
+      > Folllow this Doc : https://freelearning.anaconda.cloud/get-started-with-anaconda/18199 
+         > Switched to this site : https://www.anaconda.com/download/success 
+         > Choose Your OS : I am choose downlod option for windows.
+         > Once Download is complete
+         > Go to download path open the anaconda installer, Click on next, next until finish.
+
    
