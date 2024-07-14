@@ -1,0 +1,21 @@
+ANACONDA PROMPT:
+================
+  Every windows laptop has CMD Prompt and Powershell
+  In the same way when we install anaconda in our laptop. Anaconda is also having it's own anaconda command prompt, Anaconda powershell and Anaconda App/Navigator.
+
+Simply :
+========
+  When we install Anaconda we will get 3 things.
+   1 > Anaconda Navigator/App which is in Green colour.
+   2 > Anaconda Prompt it's similar to laptop command prompt.
+   3 > Anaconda Powershell.
+
+Process to open an anaconda cmd prompt :
+========================================
+   On your laptop search bar type/search with anaconda (there we can see the anaconnda cmd prompt, Anaconda App/Navigator and Anaconda powershell options.
+   > Now choose/click on the anaconda navigator option ( which means open the app).
+   > Once we launch the app, it'll take 1-2 min of time to load and open.
+   > Once it opens there we can see many tools ot softwares like jupitor, vsc, pycharm & many. 
+   > If we observe here Few tools have "Launch" option and Few tools have "install" option.
+   > So if any tool you want to use, then first choose the install option then choose the launch option.
+  
