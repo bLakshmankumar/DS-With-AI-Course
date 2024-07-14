@@ -19,4 +19,9 @@ Process to use the anaconda :
    > If we observe here Few tools have "Launch" option and Few tools have "install" option.
    > So if any tool you want to use, then first choose the install option then choose the launch option.
    > Exmple i want to open the jupytor notebook from anaconda app. Here i have launch option, So once i click on the Launch option then it'll open the jupytor notebook on browser.
+   > Create a new Folder for isolate the practice : Ex : I created a dswithanaconda folder on Downloads path.
+   > Then Go to that path on jupytor, Then on top right choose the new option > Choose Notebook Option > It'll redirect to noteboook page on new tab > Choose python3(ipykernal) and click on select.
+   > Now here we can practice the python code. And if we see the previous tab of jupytor page we cann see the new file was created with .ipynb extention(This is the extension for jupytor notebook).
+
+
   
