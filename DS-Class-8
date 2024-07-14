@@ -32,5 +32,21 @@ Process to open the jupytor note book directly on laptop :
    > Go to your windows search bar > Search with  jupytor notebook < click on open > it'll open a Jupytor cmd promt and it'll redirect the link to browser.
    > Now go to your browser and now you can see the Jupytor notebook page on a seperate window.
 
+Understanding the Jupytor-Notebook :
+====================================
+  - python notebook will works by using python kernal (we can see on top right side on the notebook page)
+  - python kernal dot, if dot is white color : idle state, ready to execute to code
+  - python kernal black ======= > it is busy
+  - python kernal will run the codes step by step
+  - if you see kernal balck color, do not run any codes
+  - python kernal is red ======= kernal is dead
+  - plus sign ===== it will create new cells, new cell is used to provide some input
+  - input means write some code when you run it will provide output
+  - whenever if you are seeing "In" which means the cell is in code mode
+  - code mode ======= In at cell both are same
+
+56:00 min
+
+
 
   
