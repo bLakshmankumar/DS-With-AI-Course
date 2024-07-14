@@ -10,12 +10,13 @@ Simply :
    2 > Anaconda Prompt it's similar to laptop command prompt.
    3 > Anaconda Powershell.
 
-Process to open an anaconda cmd prompt :
-========================================
+Process to use the anaconda :
+=============================
    On your laptop search bar type/search with anaconda (there we can see the anaconnda cmd prompt, Anaconda App/Navigator and Anaconda powershell options.
    > Now choose/click on the anaconda navigator option ( which means open the app).
    > Once we launch the app, it'll take 1-2 min of time to load and open.
    > Once it opens there we can see many tools ot softwares like jupitor, vsc, pycharm & many. 
    > If we observe here Few tools have "Launch" option and Few tools have "install" option.
    > So if any tool you want to use, then first choose the install option then choose the launch option.
+   > Exmple i want to open the jupytor notebook from anaconda app. Here i have launch option, So once i click on the Launch option then it'll open the jupytor notebook on browser.
   
