@@ -77,6 +77,7 @@ NOTE : If you want to know which package is supproting which method/module)
 * NOTE-2: 
 =========
    Some time some packages are not availbale, At this time we have to install required packages manually, For this we first goi to google, Then find the package,
-   > Open the anaconda prompt > go to the location where you installed the anaconda > Excecute the command(pip install opencv-python).
+   > Open the anaconda prompt > go to the location where you installed the anaconda > Excecute the command(pip install opencv-python). 
+     - pip freeze : command to get the installed packages on anaconda prompt.
 
   
