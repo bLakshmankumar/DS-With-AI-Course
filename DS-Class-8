@@ -44,9 +44,39 @@ Understanding the Jupytor-Notebook :
   - input means write some code when you run it will provide output
   - whenever if you are seeing "In" which means the cell is in code mode
   - code mode ======= In at cell both are same
+Interval notation for specifying ranges of numbers :
+----------------------------------------------------
+   - [1,100] includes both 1 and 100.
+   - [1,100) includes 1 but not 100.
+   - (1,100] excludes 1 but includes 100.
+   - (1,100) excludes both 1 and 100.
+ EX : 
+    import random
+    random.randint(1,100)
+  On jupytor note book i excecute this random package(I import the random package and then call the randint method).
+  This random.randint(1,100) : It'll generates a random integer between 1 and 100.
 
-56:00 min
+NOTE : If you want to know which package is supproting which method/module)
+ In code mode for example import keyword(Shift+enter) > Then in new input box > Type dir(packagename(keyword) Shift+enter(It'll list all supported methods/modules which you can use.
+   Like this : 
+       ['__all__',
+       '__builtins__',
+       '__cached__',
+       '__doc__',
+       '__file__',
+       '__loader__',
+       '__name__',
+       '__package__',
+       '__spec__',
+       'iskeyword',
+       'issoftkeyword',
+       'kwlist',
+       'softkwlist']
+ Now you can use one of the method as per your requiremnet.
 
-
+* NOTE-2: 
+=========
+   Some time some packages are not availbale, At this time we have to install required packages manually, For this we first goi to google, Then find the package,
+   > Open the anaconda prompt > go to the location where you installed the anaconda > Excecute the command(pip install opencv-python).
 
   
