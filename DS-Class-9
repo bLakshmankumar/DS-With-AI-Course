@@ -32,16 +32,45 @@ Examples :
        age = 30                  # int
        temperature = 19.99       # float
        complex_num = 3 + 4j      # complex
+
  2) String (str): Holds sequence of characters :
-       name = "Alice"            # str
+       name = "Alice"            # str (Here we using "" and '')
+       docstring                 #  But in this doc string we will use """ """(Triple quotes).
+    Explanation :
+    =============
+        In Python, double quotes (" ") and triple quotes (""" """) are both used to define string literals, but they serve different purposes and have different use cases.
+           Double Quotes (" "):
+           --------------------
+              Used for single-line strings.
+              Cannot span multiple lines.
+           Example :
+           ---------
+              single_line_string = "This is a single-line string."
+              print(single_line_string)
+
+           Triple Quotes/doc-string (""" """ or ''' ''') :
+           -----------------------------------------------
+              Used for multi-line strings.
+              Ideal for docstrings and strings that span multiple lines.
+              Can contain both single and double quotes without escaping 
+            Example :
+            ----------
+               multi_line_string = """This is a multi-line string.
+               It can span multiple lines.
+               It's great for long texts."""
+               print(multi_line_string)
+
  3) Sequence (list, tuple, range): Holds collection of items :
        fruits = ["apple", "banana", "cherry"]  # list
        point = (10, 20)                        # tuple
        numbers = range(1, 10)                  # range
+
  4) Mapping (dict): Holds data in key-value pair form :
        student = {"name": "Alice", "age": 21}  # dict
+
  5) Boolean (bool): Holds either True or False :
        is_active = True         # bool
+
  6) Set (set, frozenset): Holds collection of unique items :
        unique_numbers = {1, 2, 3, 4, 5}  # set
        frozen_numbers = frozenset([1, 2, 3, 4, 5])  # frozenset
