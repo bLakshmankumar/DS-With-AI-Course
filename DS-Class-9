@@ -90,14 +90,19 @@ Devided python into 3 parts :
   1) Decimal (Base 10): 
   ---------------------
        The standard numeric system used in daily life, which uses the digits 0-9.
-       Ex : decimal_number = 42  # A regular integer in base 10
+       Ex : decimal_number = 42  # A regular integer in base 10[0,1,2,3,4,5,6,7,8,9=total 10 digits].
   2) Binary (Base 2):
   -------------------
        A numeric system that uses only the digits 0 and 1. It is commonly used in computing and digital electronics
+       Representation is "0b" or "0B"
        Ex : binary_number = 0b101010  # The prefix '0b' indicates a binary number, 101010 in binary equals 42 in decimal
   3) Octal (Base 8): 
   ------------------
+       Octa means 8
+       So the base is also 8 
+       Here will use only two digits: 0,1,2,3,4,5,6,7 (0 to 7 means 8 digits)
        A numeric system that uses the digits 0-7. It is less common but sometimes used in computing 
+       Representation is "0o" or "0O"
        Ex : octal_number = 0o52  # The prefix '0o' indicates an octal number, 52 in octal equals 42 in decimal
   4) Hexadecimal (Base 16):
   -------------------------
@@ -120,8 +125,8 @@ Some-practical examples for binary :
    1 * 2^3 (or 1 * 8) + 1 * 2^2 (or 1 * 4) + 1 * 2^1 (or 1 * 2) + 1 * 2^0 (or 1 * 1) = 8 + 4 + 2 + 1 = 15
 NOTE :
 ======
-  # 3 digits = 4+2+1      (ob111)
-  # 4 digits = 8+4+2+1    (ob1111)
+  # 3 digits = 4+2+1      (0b111)
+  # 4 digits = 8+4+2+1    (0b1111)
   # 5 digits = 16+8+4+2+1 (0b11111)
 
 Another-Example :
@@ -140,7 +145,16 @@ Another-Example :
   4= 4 times 0 will come and 4 times 1 will come
   2= 2 times 0 will come and 2 times 1 will come
   1= 1 time 0 will come and 1 time 1 will come.
+Same process we will follow for other binaries as well.
+We can try this value : 8 4 2 1 findthe decimal output.
 
-Samething will follow for other binaries as well.
-we can try this value : 8 4 2 1 findthe decimal output.
+Some-practical examples for Octa :
+==================================
+  For example, in the first line of the code, the binary number is 1111. Let's convert it to decimal:
+   If you run this on jupitor-notebok : 0o123(shift+enter)=83(you will get this answer).
+   Let's see how it works in the background.
+     8^2  8^1 8^0  (8^2=64,+ 8^1=8,+ 8^0=1) > [64*1=64, + 8*2=16, + 1*3=3] = 83.
+      1    2   3
+   
+
 
