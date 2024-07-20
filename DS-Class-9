@@ -96,17 +96,21 @@ Devided python into 3 parts :
        A numeric system that uses only the digits 0 and 1. It is commonly used in computing and digital electronics
        Representation is "0b" or "0B"
        Ex : binary_number = 0b101010  # The prefix '0b' indicates a binary number, 101010 in binary equals 42 in decimal
-  3) Octal (Base 8): 
-  ------------------
+  3) Octa/Octal (Base 8): 
+  -----------------------
        Octa means 8
        So the base is also 8 
-       Here will use only two digits: 0,1,2,3,4,5,6,7 (0 to 7 means 8 digits)
+       Here will use only 8 digits: 0,1,2,3,4,5,6,7 (0 to 7 means 8 digits)
        A numeric system that uses the digits 0-7. It is less common but sometimes used in computing 
        Representation is "0o" or "0O"
        Ex : octal_number = 0o52  # The prefix '0o' indicates an octal number, 52 in octal equals 42 in decimal
-  4) Hexadecimal (Base 16):
-  -------------------------
-       A numeric system that uses the digits 0-9 and the letters A-F. It is often used in programming and computer science to represent binary data in a more compact form.
+  4) Hexa/Hexadecimal (Base 16):
+  ------------------------------
+       Hexa means 16
+       So base is also 16
+       Here will use 16 digits: 0,1,2,3,4,5,6,7,8 (0 to 9 and A-F), A numeric system that uses the digits 0-9 and the letters A-F. 
+       It is often used in programming and computer science to represent binary data in a more compact form.
+       Representation is "0x" or "0X"
        Ex : hexadecimal_number = 0x2A  # The prefix '0x' indicates a hexadecimal number, 2A in hexadecimal equals 42 in decimal
 
 Some-practical examples for binary :
@@ -150,11 +154,30 @@ We can try this value : 8 4 2 1 findthe decimal output.
 
 Some-practical examples for Octa :
 ==================================
-  For example, in the first line of the code, the binary number is 1111. Let's convert it to decimal:
+  For example, in the first line of the code, the binary number is 123. Let's convert it to decimal:
    If you run this on jupitor-notebok : 0o123(shift+enter)=83(you will get this answer).
    Let's see how it works in the background.
-     8^2  8^1 8^0  (8^2=64,+ 8^1=8,+ 8^0=1) > [64*1=64, + 8*2=16, + 1*3=3] = 83.
+     8^2  8^1 8^0  (8^2=64, 8^1=8, 8^0=1) > [64*1=64, + 8*2=16, + 1*3=3] = 83.
       1    2   3
+
+Some-practical examples for Hexa :
+==================================
+   Example with digits : 
+   =====================
+     For example, in the first line of the code, the binary number is 456. Let's convert it to decimal:
+     If you run this on jupitor-notebok : 0x456(shift+enter)=1110(you will get this answer).
+     16^2  16^1  16^0 (16^2=256, 16^1=16, 16^0=1) > [256*4=1024, + 16*5=80, + 1*6=6] = 1110.
+       4     5     6
+
+  Example with abc : [ Here abcdef values are 10-15(a=10,b=11,c=12,d=13,e=14]
+  =================
+     Example, In the first line of the code, the binary number is "CDE". Let's convert it to decimal: 
+     If you run this on jupitor-notebok : 0xcde(shift+enter)=3294(you will get this answer).
+     In hexadecimal, each digit holds a value from 0 to 9 and then A to F, corresponding to decimal values 10 to 15, respectively.
+     Will assume C value is 12, D value is 13, E value is 14.
+      16^2   16^1  16^0 (16^2=256, 16^1=16, 16^0=1) > {256*c(12)=3072, + 16*d(13)=208, + 1*e(14)=14} = "3294".
+        c      d     e
    
+     
 
 
