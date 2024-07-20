@@ -177,6 +177,28 @@ Some-practical examples for Hexa :
      Will assume C value is 12, D value is 13, E value is 14.
       16^2   16^1  16^0 (16^2=256, 16^1=16, 16^0=1) > {256*c(12)=3072, + 16*d(13)=208, + 1*e(14)=14} = "3294".
         c      d     e
+
+==========================================================================================================================================================================================================================
+ Additional Representations :
+ =============================
+   # purpose of "e" Representation : [In machine learnig anawers will be in the "e" representation]
+   ==================================
+       10e3/10e+3 : [10e3 and 10e+3 both are same]
+       ============
+          10: This is the significand (or mantissa) and represents the actual number.
+           e: This stands for "exponent" and indicates the power to which 10 needs to be raised.
+           3: This is the exponent value and signifies that 10 needs to be raised to the power of 3.
+       Therefore, 10e3 is equivalent to 10 * 10^3 (10 x 10 x 10 = 1000 x 10 = which equals 10,000).
+        
+       1e5/1e+5 : 1*100000(1 after five 0's) : 10,000
+       ==========
+       10e-3 : (10/1000(we added three 0's ater 10, as it mentions "e3")= 0 & 0 cancelled so we get 1/100 > Now 1/100=0.01 this is the answer.
+       =======
+          means 10×10−3(power of -3) 
+          This is equivalent to 10×0.001, which equals 0.01
+              scientific_notation = 10e-3  # 10 multiplied by 10 raised to the power of -3
+              print(scientific_notation)   # Output: 0.01
+
    
      
 
