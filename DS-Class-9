@@ -18,7 +18,7 @@ Rules to define variables :
 Data-types :
 ============
   In computer programming, data types specify the type of data that can be stored inside a variable.
-   Data Types	              Classes	                Description
+   Data Types	          Classes/Represent	          Description
     Numeric	           int, float, complex	   holds numeric values
     String	                str	               holds sequence of characters
    Sequence	           list, tuple, range   	 holds collection of items
