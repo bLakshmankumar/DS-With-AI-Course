@@ -1,0 +1,12 @@
+What is mean by Variables :
+===========================
+  Variables in Python store key-value pairs where the variable name is the key and the assigned value is the value. 
+  Variable names must start with a letter or an underscore, followed by letters, numbers, or underscores. 
+  They are case-sensitive and can't use reserved keywords.
+Rules to define variables :
+===========================
+  valid_name = "Alice"  # Valid
+  _name2 = 42           # Valid
+  Valid_Number=200        # Valid
+  2cool4school = "No"   # Invalid (starts with a number)
+  class = "Physics"     # Invalid (reserved keyword)
