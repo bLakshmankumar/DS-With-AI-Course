@@ -24,7 +24,7 @@ Data-types :
    Sequence	           list, tuple, range   	 holds collection of items
    Mapping	               dict	               holds data in key-value pair form
    Boolean	               bool	               holds either True or False
-     Set	             set, frozenset        	 hold collection of unique items
+     Set	            set, frozenset        	 hold collection of unique items
 
 Examples :
 ==========
@@ -45,9 +45,6 @@ Examples :
  6) Set (set, frozenset): Holds collection of unique items :
        unique_numbers = {1, 2, 3, 4, 5}  # set
        frozen_numbers = frozenset([1, 2, 3, 4, 5])  # frozenset
-
-
-
 
 How to check the Python data type :
 ==================================
