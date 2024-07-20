@@ -7,6 +7,85 @@ Rules to define variables :
 ===========================
   valid_name = "Alice"  # Valid
   _name2 = 42           # Valid
-  Valid_Number=200        # Valid
+  Valid_Number=200      # Valid
+  sum=700               # Valid [Note: sum is works for math operations, But never use "sum" as a variable even it's working]
+  Valid_name%=200       # Invalid
+  Valid name=300        # Invalid [we shouldn't use space in between]
+  if=500                # Invalid (It won't allow the keywords to set as variables){like: is,if,and...etc}.
   2cool4school = "No"   # Invalid (starts with a number)
   class = "Physics"     # Invalid (reserved keyword)
+
+Data-types :
+============
+  In computer programming, data types specify the type of data that can be stored inside a variable.
+   Data Types	              Classes	                Description
+    Numeric	           int, float, complex	   holds numeric values
+    String	                str	               holds sequence of characters
+   Sequence	           list, tuple, range   	 holds collection of items
+   Mapping	               dict	               holds data in key-value pair form
+   Boolean	               bool	               holds either True or False
+     Set	             set, frozenset        	 hold collection of unique items
+
+Examples :
+==========
+ 1) Numeric (int, float, complex): Holds numeric values :
+       age = 30                  # int
+       temperature = 19.99       # float
+       complex_num = 3 + 4j      # complex
+ 2) String (str): Holds sequence of characters :
+       name = "Alice"            # str
+ 3) Sequence (list, tuple, range): Holds collection of items :
+       fruits = ["apple", "banana", "cherry"]  # list
+       point = (10, 20)                        # tuple
+       numbers = range(1, 10)                  # range
+ 4) Mapping (dict): Holds data in key-value pair form :
+       student = {"name": "Alice", "age": 21}  # dict
+ 5) Boolean (bool): Holds either True or False :
+       is_active = True         # bool
+ 6) Set (set, frozenset): Holds collection of unique items :
+       unique_numbers = {1, 2, 3, 4, 5}  # set
+       frozen_numbers = frozenset([1, 2, 3, 4, 5])  # frozenset
+
+
+
+
+How to check the Python data type :
+==================================
+   There’s a built-in function called type which you can use to check data types in Python. Let’s look at some examples of type at work:
+     >>> type(3)
+       <class 'int'>
+     >>> type('hello')
+       <class 'str'>
+     >>> type([1,2,3])
+       <class 'list'>
+
+Devided python into 3 parts :
+=============================
+ Level-1 :
+ =========
+   1) Basic syntax
+   2) Variables
+   3) Python packages information
+   4) Basic python code
+   5) Conditional statements
+   6) Functions
+   7) Looping
+
+ Level-2 :
+ =========
+   1) Strings
+   2) List
+   3) Dictionary
+   4) tuples
+   5) Sets
+   6) File handling sessions.
+
+================="2-weeks-gap-for-statistics"======================
+
+ Level-3 :
+ ========= 
+   1) oops concept
+   2) Process/How to create your own Package
+   3) FLASK APPS
+
+
