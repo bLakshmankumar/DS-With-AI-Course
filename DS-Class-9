@@ -104,6 +104,16 @@ Devided python into 3 parts :
        A numeric system that uses the digits 0-9 and the letters A-F. It is often used in programming and computer science to represent binary data in a more compact form.
        Ex : hexadecimal_number = 0x2A  # The prefix '0x' indicates a hexadecimal number, 2A in hexadecimal equals 42 in decimal
 
+Some-practical examples :
+=========================
+   Binary is a number system that uses only two digits, 0 and 1. It is the base for digital computers and other electronic devices.
+   Binary numbers are converted to decimal numbers (base-10) using a place value system. In a place value system, each digit in a number has a weight or value according to its position. 
+   In the binary system, the rightmost digit has a weight of 1, the second digit to the left has a weight of 2, the third digit to the left has a weight of 4, and so on. 
+   To convert a binary number to a decimal number, you multiply each digit by its place value and add the products together.
 
-
-
+   For example, in the first line of the code, the binary number is 1111. Let's convert it to decimal:
+   If you run this on jupitor-notebok : 0b1111(shift+enter)=15(you will get this answer).
+   Let's see how it works in the background.
+   2^3  2^2  2^1  2^0 (2^3=8,+ 2^2=4,+ 2^1=2,+ 2^0=1)=15,      NOTE: {2^3=2*2*2=8}
+    1    1    1    1 
+   1 * 2^3 (or 1 * 8) + 1 * 2^2 (or 1 * 4) + 1 * 2^1 (or 1 * 2) + 1 * 2^0 (or 1 * 1) = 8 + 4 + 2 + 1 = 15
