@@ -85,4 +85,25 @@ Devided python into 3 parts :
    2) Process/How to create your own Package
    3) FLASK APPS
 
+# Representing numbers in decimal, binary, octal, and hexadecimal formats in Python :
+=====================================================================================
+  1) Decimal (Base 10): 
+  ---------------------
+       The standard numeric system used in daily life, which uses the digits 0-9.
+       Ex : decimal_number = 42  # A regular integer in base 10
+  2) Binary (Base 2):
+  -------------------
+       A numeric system that uses only the digits 0 and 1. It is commonly used in computing and digital electronics
+       Ex : binary_number = 0b101010  # The prefix '0b' indicates a binary number, 101010 in binary equals 42 in decimal
+  3) Octal (Base 8): 
+  ------------------
+       A numeric system that uses the digits 0-7. It is less common but sometimes used in computing 
+       Ex : octal_number = 0o52  # The prefix '0o' indicates an octal number, 52 in octal equals 42 in decimal
+  4) Hexadecimal (Base 16):
+  -------------------------
+       A numeric system that uses the digits 0-9 and the letters A-F. It is often used in programming and computer science to represent binary data in a more compact form.
+       Ex : hexadecimal_number = 0x2A  # The prefix '0x' indicates a hexadecimal number, 2A in hexadecimal equals 42 in decimal
+
+
+
 
