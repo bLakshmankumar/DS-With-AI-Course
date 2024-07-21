@@ -158,7 +158,7 @@ Devided python into 3 parts :
                   number.imag [method-name] > Shift+Enter > we will get the imagenary value of this 3+5j = 5.0.
           # If i want to retrive only conjugate value seperately
               # conugate, It means + become - and - become +.
-                  number.conjugate [if you only run this querry will get an suggestion > <function complex.conjugate()> >> for conjugate method we should provide the (). Then only we will get an output.
+                  number.conjugate [if you only run this querry will get an suggestion > <function complex.conjugate()> >> if you see output is function we should provide the (). Then only we will get an output.
                   number.conjugate() [method-name] > Shift+Enter > we will get the conjugate value of this 3+5j = (3-5j)
       Example-code-3:
       ---------------
