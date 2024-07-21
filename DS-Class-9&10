@@ -114,8 +114,36 @@ Devided python into 3 parts :
    2) Process/How to create your own Package
    3) FLASK APPS
 
-#1)  Numeric :
-============
+#1)  Numeric(int, float, complex) :
+===================================
+   a) Integer (int) :
+   ------------------
+      Purpose: Represents whole numbers
+      Example-code :
+      --------------
+         age = 30
+         print(age)  # Output: 30
+      Use Case: Use integers for counting, indexing, and any calculations that require whole numbers.
+    
+   b) Float (float) :
+   ------------------
+      Purpose: Represents decimal (floating-point) numbers.
+      Example-code:
+      -------------
+         temperature = 36.6
+         print(temperature)  # Output: 36.6
+      Use Case: Use floats for measurements, calculations involving fractions, and any situation where precision is needed.
+
+   c) Complex (complex) :
+   ----------------------
+      Purpose: Represents complex numbers with real and imaginary parts.
+      Example-code:
+      -------------
+         z = 3 + 4j
+         print(z.real)  # Output: 3.0
+         print(z.imag)  # Output: 4.0
+      Use Case: Use complex numbers in scientific and engineering calculations, particularly in fields like electrical engineering and physics.
+
  # Representing numbers in decimal, binary, octal, and hexadecimal formats in Python :
  =====================================================================================
   1) Decimal (Base 10): 
