@@ -239,34 +239,100 @@ Some-practical examples for Hexa :
     a) List :
     ----------
        A list is a collection of items that are ordered and changeable. You can add, remove, or modify items in a list.
-       Example:
-       --------
-             fruits = ["apple", "banana", "cherry"]  # list
-          Meaning: A list named fruits containing three items: "apple", "banana", and "cherry".
+       Holds a collection of items that can be of different types and is mutable (can be changed).
+       Example-code:
+       ------------- 
+             fruits = ["apple", "banana", "cherry"]
+             fruits.append("orange")  # Adds an item to the list
+             print(fruits)  # Output: ['apple', 'banana', 'cherry', 'orange']
+
+          Meaning: A list named fruits containing 4 items: "apple", "banana", "cherry" and "orange".
           Purpose: Lists are used to store multiple items in a single variable.
           Real-time Use: You might use a list to keep track of items in a shopping cart on an e-commerce site.
     b) Tuple :
     -----------
         A tuple is similar to a list but is immutable, meaning you cannot change its contents after creation.
-        Example:
-        ---------
-             point = (10, 20)  # tuple
+        Example-code:
+        -------------
+            coordinates = (10, 20)
+            # coordinates[0] = 15  # This will raise an error because tuples are immutable
+            print(coordinates)  # Output: (10, 20)
+
            Meaning: A tuple named point with two items: 10 and 20.
            Purpose: Tuples are used to store a collection of items that should not change.
+           Use Case: Tuples are useful for fixed collections of items, like coordinates, where the values should not change.
            Real-time Use: You might use a tuple to store coordinates of a point on a map because the location should not change.
     c) Range :
     ----------
-        A range is used to generate a sequence of numbers.
+        A range is used to generate a sequence of numbers or Represents a sequence of numbers, often used in loops.
         Example:
         --------
-             numbers = range(1, 10)  # range
+            for i in range(5):
+            print(i)  # Output: 0 1 2 3 4
+
           Meaning: A range object that generates numbers from 1 to 9 (10 is not included).
           Purpose: Ranges are commonly used in loops to repeat an action a specific number of times.
+          Use Case: Ranges are useful for generating a sequence of numbers, especially in loops.
           Real-time Use: You might use a range to iterate through the first 10 products in a list to display them on a webpage.
-         
 
+4) Mapping (dict) :
+===================
+    Purpose: Holds data in key-value pairs, where each key is unique.
+    Example-code:
+    -------------
+        student = {"name": "John", "age": 25, "course": "Computer Science"}
+        print(student["name"])  # Output: John
+        student["age"] = 26  # Modifies the value for the key "age"
+        print(student)  # Output: {'name': 'John', 'age': 26, 'course': 'Computer Science'}
 
+    Use Case: Dictionaries are useful for looking up items by a unique key, like a student record.
+
+5) Boolean (bool) :
+===================
+    Purpose: Represents one of two values: True or False.
+    Example-code:
+    -------------
+       is_student = True
+       if is_student:
+       print("This person is a student.")  # Output: This person is a student.
+
+    Use Case: Booleans are used in conditional statements to control the flow of the program.
+
+6) Set (set, frozenset)
+========================
+   a) set :
+   --------
+      Purpose: Holds a collection of unique items and is mutable.
+      Example-code:
+      -------------
+         fruits = {"apple", "banana", "cherry", "apple"}
+         print(fruits)  # Output: {'banana', 'apple', 'cherry'} (duplicates are removed)
+         fruits.add("orange")  # Adds an item to the set
+         print(fruits)  # Output: {'banana', 'apple', 'cherry', 'orange'}
+     Use Case: Sets are useful for storing unique items and performing set operations like union and intersection.
    
-     
+   b) Frozenset :
+   --------------
+      Purpose: Holds a collection of unique items and is immutable.
+      Example-code:
+      -------------
+         frozen_fruits = frozenset(["apple", "banana", "cherry"])
+         # frozen_fruits.add("orange")  # This will raise an error because frozensets are immutable
+         print(frozen_fruits)  # Output: frozenset({'banana', 'apple', 'cherry'})
+      Use Case: Frozensets are useful when you need an immutable set of unique items.
+
+Summary :
+=========
+    Lists are for ordered collections that can change.
+    Tuples are for ordered collections that cannot change.
+    Ranges  generate sequences of numbers.
+    Dictionaries store key-value pairs for quick lookups.
+    Booleans control the flow with True/False conditions.
+    Sets are for unique collections that can change.
+    Frozensets are for unique collections that cannot change.
+
+
+
+
 
 
