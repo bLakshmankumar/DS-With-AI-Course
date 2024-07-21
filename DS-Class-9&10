@@ -114,8 +114,10 @@ Devided python into 3 parts :
    2) Process/How to create your own Package
    3) FLASK APPS
 
-# Representing numbers in decimal, binary, octal, and hexadecimal formats in Python :
-=====================================================================================
+#1)  Numeric :
+============
+ # Representing numbers in decimal, binary, octal, and hexadecimal formats in Python :
+ =====================================================================================
   1) Decimal (Base 10): 
   ---------------------
        The standard numeric system used in daily life, which uses the digits 0-9.
@@ -227,6 +229,42 @@ Some-practical examples for Hexa :
           This is equivalent to 10×0.001, which equals 0.01
               scientific_notation = 10e-3  # 10 multiplied by 10 raised to the power of -3
               print(scientific_notation)   # Output: 0.01
+
+2) String :
+=============
+   We had discussed on above, look into string line.
+
+3) Sequence (list, tuple, range): Holds collection of items) :
+==============================================================
+    a) List :
+    ----------
+       A list is a collection of items that are ordered and changeable. You can add, remove, or modify items in a list.
+       Example:
+       --------
+             fruits = ["apple", "banana", "cherry"]  # list
+          Meaning: A list named fruits containing three items: "apple", "banana", and "cherry".
+          Purpose: Lists are used to store multiple items in a single variable.
+          Real-time Use: You might use a list to keep track of items in a shopping cart on an e-commerce site.
+    b) Tuple :
+    -----------
+        A tuple is similar to a list but is immutable, meaning you cannot change its contents after creation.
+        Example:
+        ---------
+             point = (10, 20)  # tuple
+           Meaning: A tuple named point with two items: 10 and 20.
+           Purpose: Tuples are used to store a collection of items that should not change.
+           Real-time Use: You might use a tuple to store coordinates of a point on a map because the location should not change.
+    c) Range :
+    ----------
+        A range is used to generate a sequence of numbers.
+        Example:
+        --------
+             numbers = range(1, 10)  # range
+          Meaning: A range object that generates numbers from 1 to 9 (10 is not included).
+          Purpose: Ranges are commonly used in loops to repeat an action a specific number of times.
+          Real-time Use: You might use a range to iterate through the first 10 products in a list to display them on a webpage.
+         
+
 
    
      
