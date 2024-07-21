@@ -405,9 +405,5 @@ Summary :
    Integers are for whole numbers.
    Floats are for real numbers with decimal points.
    Complex numbers are for numbers with real and imaginary parts.
-   Strings are for sequences of characters
-
-
-
-
+   Strings are for sequences of characters.
 
