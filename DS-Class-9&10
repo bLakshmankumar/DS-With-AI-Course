@@ -150,12 +150,16 @@ Devided python into 3 parts :
       Example-code-2:
       ---------------
           # If i want to retrive only real value seperately
-             number=3+5j (# Here3 is the real value and # 5 is the imaginery value)
-             dir(number) [It'll list the available methods(like conjugate, real, image methods)]
-             number.real(method-name) > Shift+Enter > we will get the  real value of this 3+5j = 3.0.
+                  number=3+5j (# Here3 is the real value and # 5 is the imaginery value)
+                  dir(number) [It'll list the available methods(like conjugate, real, image methods)]
+                  number.real[method-name] > Shift+Enter > we will get the  real value of this 3+5j = 3.0.
             
           # If i want to retrive only imagenary value seperately
-             number.imag (method-name) > Shift+Enter > we will get the  real value of this 3+5j = 5.0.
+                  number.imag [method-name] > Shift+Enter > we will get the imagenary value of this 3+5j = 5.0.
+          # If i want to retrive only conjugate value seperately
+              # conugate, It means + become - and - become +.
+                  number.conjugate [if you only run this querry will get an suggestion > <function complex.conjugate()> >> for conjugate method we should provide the (). Then only we will get an output.
+                  number.conjugate() [method-name] > Shift+Enter > we will get the conjugate value of this 3+5j = (3-5j)
       Example-code-3:
       ---------------
          z = 3 + 4j
