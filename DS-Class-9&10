@@ -128,22 +128,32 @@ Devided python into 3 parts :
    b) Float (float) :
    ------------------
       Purpose: Represents decimal (floating-point) numbers.
-      Example-code:
-      -------------
+      Example-code-1:
+      ---------------
          temperature = 36.6
          print(temperature)  # Output: 36.6
+      Example-code-2:
+      ---------------
+         pi = 3.14159
+         radius = 5.0
+         area = pi * (radius ** 2)
+         print(area)  # Output: 78.53975   
       Use Case: Use floats for measurements, calculations involving fractions, and any situation where precision is needed.
 
    c) Complex (complex) :
    ----------------------
       Purpose: Represents complex numbers with real and imaginary parts.
-      Example-code:
-      -------------
+      Example-code-1:
+      ---------------
          z = 3 + 4j
          print(z.real)  # Output: 3.0
          print(z.imag)  # Output: 4.0
-      Use Case: Use complex numbers in scientific and engineering calculations, particularly in fields like electrical engineering and physics.
-
+      Example-code-2:
+      ---------------
+         z = 2 + 3j
+         conjugate = z.conjugate()
+         print(conjugate)  # Output: (2-3j)
+      Use Case: Use complex numbers in scientific and engineering calculations, particularly in fields like electrical engineering such as like signal processing and etc.
  # Representing numbers in decimal, binary, octal, and hexadecimal formats in Python :
  =====================================================================================
   1) Decimal (Base 10): 
