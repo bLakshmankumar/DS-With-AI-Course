@@ -16,11 +16,181 @@ Type-Casting : [ Change one data type to another data type ]
       float ----> complex
 
 # Integer to Other data type :
-==============================
-   > Converting Integer to Float :
+=============================
+   1) Converting Integer to Float :
    -------------------------------
      x = 5      # int
      y = 2.0    # float
      x + y      # x is implicitly converted to float {shift+enter}
                 # Output: 7.0
+
+   2) Converting Integer to String :
+   ---------------------------------
+     x = 5       # int
+     y = str(x)  # explicit conversion to string
+     print(y)    # Output: '5'
+
+   3) Converting Integer to Boolean :
+   ----------------------------------
+     x = 0        # int
+     y = bool(x)  # explicit conversion to boolean
+     print(y)     # Output: False
+
+     x = 1        # int
+     y = bool(x)  # explicit conversion to boolean
+     print(y)     # Output: True
+
+  4) Converting Integer to Complex :
+  ----------------------------------
+     x = 5           # int
+     y = complex(x)  # explicit conversion to complex
+     print(y)        # Output: (5+0j)
+
+# Float to Other data type :
+=============================
+  1) Converting Float to Integer :
+  --------------------------------
+     x = 5.7        # float
+     y = int(x)     # explicit conversion to int (note: truncates the decimal part)
+     print(y)       # Output: 5
+
+  2) Converting Float to String :
+  -------------------------------
+     x = 5.7        # float
+     y = str(x)     # explicit conversion to string
+     print(y)       # Output: '5.7'
+
+  3) Converting Float to Boolean :
+  --------------------------------
+     x = 0.0        # float
+     y = bool(x)    # explicit conversion to boolean
+     print(y)       # Output: False
+
+     x = 1.23       # float
+     y = bool(x)    # explicit conversion to boolean
+     print(y)       # Output: True
+
+  4) Converting Float to Complex :
+  --------------------------------
+     x = 5.7          # float
+     y = complex(x)   # explicit conversion to complex
+     print(y)         # Output: (5.7+0j)
+
+# String to Other data type :
+=============================
+  1) String to Int :
+  ------------------
+     x = "123"
+     y = int(x)
+     print(y)  # Output: 123
+
+  2) string to float :
+  --------------------
+     x = "123.45"
+     y = float(x)
+     print(y)  # Output: 123.45
+
+  3) String to Boolean :
+  ----------------------
+     x = ""
+     y = bool(x)
+     print(y)  # Output: False
+
+     x = "Hello"
+     y = bool(x)
+     print(y)  # Output: True
+
+  4) string to complex :
+  ----------------------
+    x = "3+4j"
+    y = complex(x)
+    print(y)  # Output: (3+4j)
+
+
+# Boolean Conversions to other datatype :
+=========================================
+  1) Boolean to Int :
+  -------------------
+     x = True
+     y = int(x)
+     print(y)  # Output: 1
+
+     x = False
+     y = int(x)
+     print(y)  # Output: 0
+
+  2) Boolean to Float :
+  ----------------------
+     x = True
+     y = float(x)
+     print(y)  # Output: 1.0
+
+     x = False
+     y = float(x)
+     print(y)  # Output: 0.0
+
+  3) Boolean to String :
+  ----------------------
+     x = True
+     y = str(x)
+     print(y)  # Output: 'True'
+
+     x = False
+     y = str(x)
+     print(y)  # Output: 'False'
+
+  4) Boolean to Complex :
+  -----------------------
+     x = True
+     y = complex(x)
+     print(y)  # Output: (1+0j)
+
+     x = False
+     y = complex(x)
+     print(y)  # Output: (0+0j)
+
+# Complex Conversions to other data types.
+==========================================
+  1) Complex to Int :
+  -------------------
+     x = 3 + 4j
+     y = int(x.real)
+     print(y)  # Output: 3
+
+  2) Complex to Float :
+  ---------------------
+     x = 3 + 4j
+     y = float(x.real)
+     print(y)  # Output: 3.0
+
+  3) Complex to String :
+  ----------------------
+     x = 3 + 4j
+     y = str(x)
+     print(y)  # Output: '(3+4j)'
+
+  4) Complex to Boolean : 
+  -----------------------
+    x = 3 + 4j
+    y = bool(x)
+    print(y)  # Output: True
+
+    x = 0 + 0j
+    y = bool(x)
+    print(y)  # Output: False
+
+These examples cover a wide range of type conversions in Python, demonstrating how we can switch between different data types as needed.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
