@@ -153,6 +153,8 @@ Devided python into 3 parts :
              number=3+5j (# Here3 is the real value and # 5 is the imaginery value)
              dir(number) [It'll list the available methods(like conjugate, real, image methods)]
              number.real(method-name) > Shift+Enter > we will get the  real value of this 3+5j = 3.0.
+            
+          # If i want to retrive only imagenary value seperately
              number.imag (method-name) > Shift+Enter > we will get the  real value of this 3+5j = 5.0.
       Example-code-3:
       ---------------
