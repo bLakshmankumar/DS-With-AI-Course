@@ -162,9 +162,24 @@ Devided python into 3 parts :
                   number.conjugate() [method-name] > Shift+Enter > we will get the conjugate value of this 3+5j = (3-5j)
       Example-code-3:
       ---------------
-         z = 3 + 4j
-         print(z.real)  # Output: 3.0
-         print(z.imag)  # Output: 4.0
+            complex(4,10) : What is the real and imaginary num here
+                            # real=4
+                            # image=10
+                            # Output is : (4+10j)
+
+            complex(4,-10) :  What is the real and imaginary num here
+                            # real=4
+                            # image= -10
+                            # Output is : (4-10j)
+                    Note :  # Inside bracket what you are seeing those we can call parameters/arguments
+
+             complex()  # If i did not provide anything inside, Then
+                        # It'll use real value is "0" and Imaginary value is "0".
+                        # Whenever if you see any brackets (), that is called function
+                        # Another name of function is called method
+                        # Inside brackets what we are seeing is called is parameters/arguments.
+                     Note : If you want to know more help, Move your cursor to inside those brackets > use (Shift+tab). It'll provide the syntax and meaning.
+
       Example-code-4:
       ---------------
          z = 2 + 3j
