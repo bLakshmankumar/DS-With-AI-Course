@@ -17,6 +17,16 @@ Type-Casting : [ Change one data type to another data type ]
 
 # Integer to Other data type :
 =============================
+ Class-explanation :
+ -------------------
+   number1 = 230 { set a variable for number1 with value of 100}, Now lets convert.
+   float_number = float(number1)    # 230.0
+   string_number = str(number1)     # '230'
+   boolean_number = bool(number1)   # True
+   complex_number = complex(number1)  # 230+0j
+
+Google-Data:
+------------
    1) Converting Integer to Float :
    -------------------------------
      x = 5      # int
@@ -48,6 +58,17 @@ Type-Casting : [ Change one data type to another data type ]
 
 # Float to Other data type :
 =============================
+ Class-explanation :
+ -------------------
+ # Let's convert to other data-types.
+     number2 = 100.5 { set a variable for number1 with value of 100}, Now lets convert.
+     int_number = int(number2)          # 100
+     string_number = str(number2)       # '100.5'
+     boolean_number = bool(number2)     # True
+     complex_number = complex(number2)  # (100.5+0j)
+
+Google-Data:
+------------
   1) Converting Float to Integer :
   --------------------------------
      x = 5.7        # float
@@ -78,7 +99,9 @@ Type-Casting : [ Change one data type to another data type ]
 
 # String to Other data type :
 =============================
-  1) String to Int :
+ Google-Data:
+ ------------
+ 1) String to Int :
   ------------------
      x = "123"
      y = int(x)
@@ -109,6 +132,8 @@ Type-Casting : [ Change one data type to another data type ]
 
 # Boolean Conversions to other datatype :
 =========================================
+ Google-Data:
+ ------------
   1) Boolean to Int :
   -------------------
      x = True
@@ -151,6 +176,21 @@ Type-Casting : [ Change one data type to another data type ]
 
 # Complex Conversions to other data types.
 ==========================================
+ Class-Explanation :
+ -------------------
+ # Let's see another example for convert comlex data type to other data types.
+    # 100 ======= ? complex(100)
+    complex_number = complex(number1) [ set a variable with value as 100 ]
+    complex_number {shift+enter} > output : (100+0j)
+  # Let's convert to other data-types.
+    number1 = 100 { set a variable for number1 with value of 100}, Now lets convert.
+    float_number = float(number1)    # 100.0
+    string_number = str(number1)     # '100'
+    boolean_number = bool(number1)   # True
+    complex_number = complex(number1)  # 100+0j
+ 
+  Google-Data:
+  ------------
   1) Complex to Int :
   -------------------
      x = 3 + 4j
