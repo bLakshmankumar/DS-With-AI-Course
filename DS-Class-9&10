@@ -70,6 +70,8 @@ Examples :
 
  5) Boolean (bool): Holds either True or False :
        is_active = True         # bool
+    NOTE : When it'll provide a false, bool(0) only it'll give output as zero.
+           Other than bool(0), Everything is True.[like bool(1) - it's true, bool(-1) - it's also true].
 
  6) Set (set, frozenset): Holds collection of unique items :
        unique_numbers = {1, 2, 3, 4, 5}  # set
