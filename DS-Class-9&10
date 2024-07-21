@@ -361,14 +361,17 @@ Some-practical examples for Hexa :
 
 Summary :
 =========
-    Lists are for ordered collections that can change.
-    Tuples are for ordered collections that cannot change.
-    Ranges  generate sequences of numbers.
-    Dictionaries store key-value pairs for quick lookups.
-    Booleans control the flow with True/False conditions.
-    Sets are for unique collections that can change.
-    Frozensets are for unique collections that cannot change.
-
+   Lists are for ordered collections that can change.
+   Tuples are for ordered collections that cannot change.
+   Ranges generate sequences of numbers.
+   Dictionaries store key-value pairs for quick lookups.
+   Booleans control the flow with True/False conditions.
+   Sets are for unique collections that can change.
+   Frozensets are for unique collections that cannot change.
+   Integers are for whole numbers.
+   Floats are for real numbers with decimal points.
+   Complex numbers are for numbers with real and imaginary parts.
+   Strings are for sequences of characters
 
 
 
