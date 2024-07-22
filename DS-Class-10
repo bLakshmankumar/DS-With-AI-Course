@@ -99,6 +99,42 @@ Google-Data:
 
 # String to Other data type :
 =============================
+  1) Class-explanation :
+  ----------------------
+   Example-code-1 :
+   ----------------
+      string_value1 = 'apple'
+      int(string_value1)   # error
+      float(string_value1) # error
+      bool(string_value1)  # True
+      complex(string_value1) # Error
+   Explanation :
+   -------------
+    This code demonstrates type casting from string values to other types and the potential errors that can occur:
+      string_value1 is a string with the value 'apple'.
+      Converting 'apple' to an integer (int(string_value1)) results in an error because 'apple' is not a valid integer.
+      Converting 'apple' to a float (float(string_value1)) also results in an error because 'apple' is not a valid float.
+      Converting 'apple' to a boolean (bool(string_value1)) results in True. In Python, non-empty strings are considered True.
+      Converting 'apple' to a complex number (complex(string_value1)) results in an error because 'apple' is not a valid complex number.
+      
+   Example-code-2 :
+   ----------------
+      string_value2 = '10.5' # base type float == represents in quotes
+      int(string_value2)   # Error
+      float(string_value2) # No error
+      bool(string_value2)  # True
+      complex(string_value2) # Output (10.5+0j)
+   Explanation :
+   --------------
+     string_value2 is a string with the value '10.5'.
+     Converting '10.5' to an integer (int(string_value2)) results in an error. The string '10.5' represents a float, and Python cannot directly convert a float string to an integer.
+     Converting '10.5' to a float (float(string_value2)) works correctly and results in 10.5.
+     Converting '10.5' to a boolean (bool(string_value2)) results in True because non-empty strings are considered True in Python.
+     Converting '10.5' to a complex number (complex(string_value2)) works correctly and results in (10.5+0j).
+
+
+
+
  Google-Data:
  ------------
  1) String to Int :
