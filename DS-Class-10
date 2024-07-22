@@ -132,9 +132,6 @@ Google-Data:
      Converting '10.5' to a boolean (bool(string_value2)) results in True because non-empty strings are considered True in Python.
      Converting '10.5' to a complex number (complex(string_value2)) works correctly and results in (10.5+0j).
 
-
-
-
  Google-Data:
  ------------
  1) String to Int :
