@@ -53,5 +53,18 @@ Sample python code practice :
       Uses input() to get the user's input as a string.
       Converts the string input to a floating-point number using float().
 
+3) Requirement-3 :
+==================
+   #  Writa a program ask the user to get a random value between 1 and 100
+   #  Perform the square of the number
+   #  Package Name : random
+   #  Method Name  : randint
+
+  # Solution : 
+  ============
+    import random
+    random.randint(1,100) : : (Shift+Enter) > it'll give the random Output.
+
+
   
    
