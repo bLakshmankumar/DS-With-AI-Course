@@ -12,6 +12,19 @@ Sample python code practice :
     basic_salary=eval(input("enter a basic_salry: "))
     DA=eval(input("enter DA amount: "))
     HRA=eval(input("enter HRA amount: "))
-    tatal_pay=basic_salary+DA+HRA
+    total_pay=basic_salary+DA+HRA
     print("the total salary is: ",total_pay)
-  
+
+ # Explanation :
+ ===============
+        The user inputs their basic salary, DA, and HRA.
+        The code converts these inputs to numbers.
+        It then calculates the total salary by adding these numbers together.
+        Finally, it prints the total salary.
+    Uses eval() to evaluate the string input, converting it to a number (integer or float).
+    Uses input() to get the user's input as a string.
+
+ # Suggestion :
+ ==============
+   Note: Using eval() can be risky because it will evaluate any string as code. It's safer to use float(input()) or int(input()) instead, depending on whether you expect decimals or whole numbers.
+
