@@ -1,22 +1,22 @@
 Sample python code practice :
 =============================
- 1) Requirement :
+ 1) Requirement-1 :
  ================
     # Writa a program ask the user to enter the basic salary, Then
     #                 ask the user to enter the DA amount, Then
     #                 ask the user to enter the HRA amount, Then
     # Calculate_total_pay= Basic_salary+DA+HRA.
 
-  # Solution :
-  ============
-    basic_salary=eval(input("enter a basic_salry: "))
-    DA=eval(input("enter DA amount: "))
-    HRA=eval(input("enter HRA amount: "))
-    total_pay=basic_salary+DA+HRA
-    print("the total salary is: ",total_pay)
+   # Solution :
+   ============
+     basic_salary=eval(input("enter a basic_salry: "))
+     DA=eval(input("enter DA amount: "))
+     HRA=eval(input("enter HRA amount: "))
+     total_pay=basic_salary+DA+HRA
+     print("the total salary is: ",total_pay)   : (Shift+Enter) > provide the inputs and it'll give the answer
 
- # Explanation :
- ===============
+   # Explanation :
+   ===============
         The user inputs their basic salary, DA, and HRA.
         The code converts these inputs to numbers.
         It then calculates the total salary by adding these numbers together.
@@ -24,7 +24,34 @@ Sample python code practice :
     Uses eval() to evaluate the string input, converting it to a number (integer or float).
     Uses input() to get the user's input as a string.
 
- # Suggestion :
- ==============
-   Note: Using eval() can be risky because it will evaluate any string as code. It's safer to use float(input()) or int(input()) instead, depending on whether you expect decimals or whole numbers.
+   # Suggestion :
+   ==============
+     Note: Using eval() can be risky because it will evaluate any string as code. It's safer to use float(input()) or int(input()) instead, depending on whether you expect decimals or whole numbers.
 
+2) Requirement-2 :
+ ================
+    # Writa a program ask the user to enter the basic salary, Then
+    #                 ask the user to enter the tax percentage, Then
+    #                 calculate how much tax the user needs to pay
+
+   # Solution :
+   ============
+     # Ask the user to enter the basic salary
+     basic_salary = float(input("Enter the basic salary: "))     # Prompts the user to enter the basic salary.
+
+     # Ask the user to enter the tax percentage
+     tax_percentage = float(input("Enter the tax percentage: "))  # Prompts the user to enter the tax percentage.
+
+     # Calculate the tax amount
+     tax_amount = (basic_salary * tax_percentage) / 100           # Calculates the tax amount by multiplying the basic salary by the tax percentage and then dividing by 100.
+
+     # Print the tax amount
+     print("The tax amount to be paid is: ", tax_amount)   : (Shift+Enter) > provide the inputs and it'll Prints the calculated tax amount.
+
+   # Note :
+   ========
+      Uses input() to get the user's input as a string.
+      Converts the string input to a floating-point number using float().
+
+  
+   
