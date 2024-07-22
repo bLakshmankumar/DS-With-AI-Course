@@ -63,4 +63,6 @@ Sample python code practice :
   # Solution : 
   ============
     import random
-    random.randint(1,100) : : (Shift+Enter) > it'll give the random Output.
+    number=random.randint(1,100) 
+    square=number*number
+    print("the square of {} is {}".format(number,square))       : (Shift+Enter) > it'll give the random Output.
