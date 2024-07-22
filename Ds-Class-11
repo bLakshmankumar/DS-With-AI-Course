@@ -64,7 +64,3 @@ Sample python code practice :
   ============
     import random
     random.randint(1,100) : : (Shift+Enter) > it'll give the random Output.
-
-
-  
-   
