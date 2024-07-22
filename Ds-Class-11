@@ -1,0 +1,17 @@
+Sample python code practice :
+=============================
+ 1) Requirement :
+ ================
+    # Writa a program ask the user to enter the basic salary, Then
+    #                 ask the user to enter the DA amount, Then
+    #                 ask the user to enter the HRA amount, Then
+    # Calculate_total_pay= Basic_salary+DA+HRA.
+
+  # Solution :
+  ============
+    basic_salary=eval(input("enter a basic_salry: "))
+    DA=eval(input("enter DA amount: "))
+    HRA=eval(input("enter HRA amount: "))
+    tatal_pay=basic_salary+DA+HRA
+    print("the total salary is: ",total_pay)
+  
