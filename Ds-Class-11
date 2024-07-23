@@ -162,6 +162,17 @@ Sample python code practice :
       #final_response = input("Manager: Total amount in Rs is {c} rs ")             
       print("Total amount in Rs is {} rs".format(c))     
 
+                 (OR)
+      Bill = eval(input("Manager: Enter the total bill in dollars: "))            
+      input("Manager:The dollars are not accepted! ")          
+      #time.sleep(2)
+      input("User_response: What will be accepted? ")                     
+      input("Manager_response: ")
+      #time.sleep(2)
+      CR=eval(input("Doller conversion: ")
+      Total=Bill * CR
+      print("The total amount is:", Total)
+     
     Note : 
     ======
       "Input" in Python is used to get input from the user, while "print" is used to display output to the user. input pauses the program and waits for the user to type something, whereas print simply shows a message or data on the screen.
