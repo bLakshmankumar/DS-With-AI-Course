@@ -123,4 +123,26 @@ Sample python code practice :
       print("Total amount in Rs is {} rs".format(c))  : Output is Total amount you need to pay in Rs is 10 rs
       Other-print-statement :  
       print("Total amount is {} dollers, you need to pay in Rs is {} rs".format(a,c)) : Output : Total amount is 5 dollers, you need to pay in Rs is 10 rs
- 
+
+    # Solution-3 (With time sleep) :
+    ================================
+      import time                                           # import time: This imports the time module, which provides various time-related functions.
+      a = eval(input("Enter total bill in dollars: "))  
+      time.sleep(2)                                         # time.sleep(2): This makes the program pause or sleep for 2 seconds before executing the next line of code.
+      print("Manager: The dollars are not accepted!")
+      time.sleep(2)
+      print("User: What will be accepted?")
+      time.sleep(2)
+      print("Manager: Only Indian rupees")
+      time.sleep(2)
+      b = eval(input("Enter one dollar is equal to how many rupees: "))
+      time.sleep(2)
+      c = a * b
+      time.sleep(1)
+      print("Total amount in Rs is {} rs".format(c))
+
+    NOTE : 
+    ======
+      import time: This imports the time module, which provides various time-related functions.
+      time.sleep(2): This makes the program pause or sleep for 2 seconds before executing the next line of code.
+
