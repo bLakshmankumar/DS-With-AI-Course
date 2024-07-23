@@ -148,8 +148,29 @@ Sample python code practice :
 
     # Solution-4 : [Instead of using print statement, if you want to take request from user, Then give the response to user manually, we can use input statements]
     ==============
-       Bill = eval(input("Manager: Enter the total bill in dollars: "))   # Prompts the user to enter the total bill amount in dollars and Stores the input value in the variable Bill.
-       Manager_Response_1 = input('Manager Response: ')                   # Prompts the user to input the manager's response to the bill amount and Stores the input value in the variable Manager_Response_1.
-       User_Response_2 = input("User Response: ")                         # Prompts the user to input the user's response to the manager's statement and Stores the input value in the variable User_Response_2.
+      Bill = eval(input("Manager: Enter the total bill in dollars: "))            # Prompts the user to enter the total bill amount in dollars and Stores the input value in the variable Bill.
+      manager_response = input("Manager:The dollars are not accepted! ")          # Prompts the user to input the manager's response to the bill amount and Stores the input value in the variable Manager_Response_1.
+      #time.sleep(2)
+      user_response = input("User: What will be accepted? ")                      # Prompts the user to input the user's response to the manager's statement and Stores the input value in the variable User_Response_2
+      #time.sleep(2)
+      manager_response_2 = input("Manager: ")
+      #time.sleep(2)
+      b = eval(input("Manager: Enter one dollar is equal to how many rupees: "))
+      #time.sleep(2)
+      c = a * b
+      #time.sleep(1)
+      #final_response = input("Manager: Total amount in Rs is {c} rs ")             
+      print("Total amount in Rs is {} rs".format(c))     
+
+    Note : 
+    ======
+      "Input" in Python is used to get input from the user, while "print" is used to display output to the user. input pauses the program and waits for the user to type something, whereas print simply shows a message or data on the screen.
+      Also We can use input and print statements in Python together in scenarios where you want to take user input and immediately provide some output or feedback based on that input.
+      Example :
+      =========
+           # Taking user input for their name
+             name = input("Enter your name: ")
+           # Printing a greeting message
+             print(f"Hello, {name}!")
 
 
