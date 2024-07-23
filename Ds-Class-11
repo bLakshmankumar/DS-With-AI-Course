@@ -90,8 +90,8 @@ Sample python code practice :
      charge = distance * rate
      print("for {} km the charge is {} rs".format(distance, charge)).
 
- 5) Requirement-4 :
- ==================
+ 5) Requirement-4 : (Example of interaction)
+ ===========================================
     # ask the user to enter total bill in dollars: 100
     # manager: the dollars are not accepted
     # user: what will be accepted
@@ -101,8 +101,8 @@ Sample python code practice :
     # print the total bill in Indian rupees 
     # manager: Thank you!
 
-    # Solution :
-    ============
+    # Solution-1 :
+    ==============
       total_bill_dollars = eval(input("Enter total bill in dollars: "))
       print("Manager: The dollars are not accepted")
       print("User: What will be accepted?") 
@@ -111,5 +111,15 @@ Sample python code practice :
       total_bill_rupees = total_bill_dollars * conversion_rate
       print("Total bill in Indian Rupees: ", total_bill_rupees)
       print("Manager: Thank you!")
- 
+
+    # Solution-2 :
+    ==============
+      a = eval(input("Enter total bill in dollars: "))
+      print("Manager: The dollars are not accepted!")
+      print("User: What will be accepted?")
+      print("Manager: Only Indian rupees")
+      b = eval(input("Enter one dollar is equal to how many rupees: "))
+      c = a * b
+      print("Total amount in Rs is {} rs".format(c))
+
  
