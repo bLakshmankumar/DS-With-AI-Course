@@ -88,4 +88,4 @@ Sample python code practice :
      distance = eval(input("enter distance in km:"))
      rate = eval(input("enter rate per km:"))
      charge = distance * rate
-     print("for {} km the charge is {}".format(distance, charge)).
+     print("for {} km the charge is {} rs".format(distance, charge)).
