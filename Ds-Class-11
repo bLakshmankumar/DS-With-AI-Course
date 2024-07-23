@@ -76,11 +76,16 @@ Sample python code practice :
    # Ask user enter a rate per distance 
    # Calculate the charge
 
-   # Solution :
+   # Solution-1 :
    ============
      distance = float(input("Enter the distance: "))                     # Ask the user to enter the distance
      rate_per_distance = float(input("Enter the rate per distance: "))   # Ask the user to enter the rate per distance
      charge = distance * rate_per_distance                               # Calculates the total charge by multiplying the distance by the rate per distance.
      print("The total charge is: ", charge) : (Shift+Enter) > it'll give the random Output. 
 
-    
+   # Solution-2 :
+   ==============
+     distance = eval(input("enter distance in km:"))
+     rate = eval(input("enter rate per km:"))
+     charge = distance * rate
+     print("for {} km the charge is {}".format(distance, charge)).
