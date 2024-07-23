@@ -63,6 +63,24 @@ Sample python code practice :
   # Solution : 
   ============
     import random
-    number=random.randint(1,100) 
+    number=random.randint(1,100) #computer will generate a number between 1,100 and it'll save it in number.
     square=number*number
     print("the square of {} is {}".format(number,square))       : (Shift+Enter) > it'll give the random Output.
+  # Note :
+  ========
+    What is the use of random.randint function in practical ?  : statistics.
+
+ 4) Requirement-4 :
+ ==================
+   # Write a program ask user the enter a distance 
+   # Ask user enter a rate per distance 
+   # Calculate the charge
+
+   # Solution :
+   ============
+     distance = float(input("Enter the distance: "))                     # Ask the user to enter the distance
+     rate_per_distance = float(input("Enter the rate per distance: "))   # Ask the user to enter the rate per distance
+     charge = distance * rate_per_distance                               # Calculates the total charge by multiplying the distance by the rate per distance.
+     print("The total charge is: ", charge) : (Shift+Enter) > it'll give the random Output. 
+
+    
