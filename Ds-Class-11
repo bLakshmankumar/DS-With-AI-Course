@@ -89,3 +89,27 @@ Sample python code practice :
      rate = eval(input("enter rate per km:"))
      charge = distance * rate
      print("for {} km the charge is {} rs".format(distance, charge)).
+
+ 5) Requirement-4 :
+ ==================
+    # ask the user to enter total bill in dollars: 100
+    # manager: the dollars are not accepted
+    # user: what will be accepted
+    # manager: only Indian rupees
+    # ask the user to enter one dollar is equal to how many rupees: 80
+    # calculate total bill in Indian rupees
+    # print the total bill in Indian rupees 
+    # manager: Thank you!
+
+    # Solution :
+    ============
+      total_bill_dollars = eval(input("Enter total bill in dollars: "))
+      print("Manager: The dollars are not accepted")
+      print("User: What will be accepted?") 
+      print("Manager: Only Indian rupees")
+      conversion_rate = eval(input("Enter one dollar is equal to how many rupees: ")) 
+      total_bill_rupees = total_bill_dollars * conversion_rate
+      print("Total bill in Indian Rupees: ", total_bill_rupees)
+      print("Manager: Thank you!")
+ 
+ 
