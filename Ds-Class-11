@@ -120,6 +120,7 @@ Sample python code practice :
       print("Manager: Only Indian rupees")
       b = eval(input("Enter one dollar is equal to how many rupees: "))
       c = a * b
-      print("Total amount in Rs is {} rs".format(c))
-
+      print("Total amount in Rs is {} rs".format(c))  : Output is Total amount you need to pay in Rs is 10 rs
+      Other-print-statement :  
+      print("Total amount is {} dollers, you need to pay in Rs is {} rs".format(a,c)) : Output : Total amount is 5 dollers, you need to pay in Rs is 10 rs
  
