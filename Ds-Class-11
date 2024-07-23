@@ -169,7 +169,7 @@ Sample python code practice :
       input("User_response: What will be accepted? ")                     
       input("Manager_response: ")
       #time.sleep(2)
-      CR=eval(input("Doller conversion: ")
+      CR=eval(input("Doller conversion: "))
       Total=Bill * CR
       print("The total amount is:", Total)
      
