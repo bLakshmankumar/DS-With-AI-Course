@@ -136,10 +136,23 @@ Devided python into 3 parts :
          print(temperature)  # Output: 36.6
       Example-code-2:
       ---------------
-         pi = 3.14159
+         pi(π) = 3.14159
          radius = 5.0
          area = pi * (radius ** 2)
-         print(area)  # Output: 78.53975   
+         print(area)  # Output: 78.53975  
+      Step-by-step breakdown of the calculation :
+      ===========================================
+       Given Values: 
+       -------------
+          π=3.14159
+          radius=5.0
+       Calculate the radius squared:
+       -----------------------------
+          radius2(square)= 5.0(square)=25.0(5*5)
+       Multiply 𝜋 by the radius squared:
+       ---------------------------------
+          Area=3.14159×25.0=78.53975.
+     
       Use Case: Use floats for measurements, calculations involving fractions, and any situation where precision is needed.
 
    c) Complex (complex) :
