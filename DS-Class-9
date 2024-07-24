@@ -224,7 +224,7 @@ Devided python into 3 parts :
   ------------------------------
        Hexa means 16
        So base is also 16
-       Here will use 16 digits: 0,1,2,3,4,5,6,7,8 (0 to 9 and A-F), A numeric system that uses the digits 0-9 and the letters A-F. 
+       Here will use 16 digits: 0,1,2,3,4,5,6,7,8 (0 to 9 and A-F), A numeric system that uses the digits 0-9 and the letters A-F(10,11,12,13,14,15). 
        It is often used in programming and computer science to represent binary data in a more compact form.
        Representation is "0x" or "0X"
        Ex : hexadecimal_number = 0x2A  # The prefix '0x' indicates a hexadecimal number, 2A in hexadecimal equals 42 in decimal
