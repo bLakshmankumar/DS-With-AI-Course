@@ -184,4 +184,70 @@ Sample python code practice :
            # Printing a greeting message
              print(f"Hello, {name}!")
 
+  6) Requirement-6 :
+  ==================
+     # Father and Son story
+     # Father : Which course you want to do
+     # Son : I want to pursue DS course
+     # Father : That's very nice !
+     # Father : May i know your EMCET/JEE Rank
+     # Son    : It's 200000
+     # Father : How an you pursue
+     # Son  : Through payment seat
+     # Father : Which college is offering 
+     # Son : Naresh It
+     # Father : How much is the fee
+     # Son : 20000 rs for semisters
+     # Father : How many sem
+     # Son : Total sem
+     # Father : how much is the Total
+     # Son : 80,000
+
+  # Code-for-this-requirement : 
+  =============================
+     import time
+     Father = input("Father: ")
+     Son    = input("Son: ")
+     time.sleep(2)
+     print("Father: that's very nice: ")
+     print(" Father: May i know your EMCET/JEE Rank ")
+     Son = input("Son: ")
+     time.sleep(2)
+     print("Father: How you pursue")
+     time.sleep(1)
+     print("Son: Through payment seat")
+     time.sleep(1)
+     print("Father: Which college is offering: ")
+     time.sleep(1)
+     Son = input("Son: ")
+     time.sleep(1)
+     print("Father : How much is the fee: ")
+     sem_fee = float(input("Provide the fee for each semister: "))    # Convert to float
+     time.sleep(1)
+     print("Father : How many sem")
+     toatl_semisters = int(input("Son: Total sem are: "))             # Convert to int
+     time.sleep(2)
+     print("Father : how much is the Total")
+     total = sem_fee * toatl_semisters                                # Perform the multiplication with numerical types
+     print("total semisters fees {} rs".format(total))
+
+  NOTE : 
+  ======
+     By default, input() returns a string. If we don't convert these strings, Python will attempt to perform operations on strings instead of numbers.
+     For example :
+     ============
+        sem_fee = input("Provide the fee for each semester: ")  # sem_fee is a string
+        total_semesters = input("Son: Total semesters are: ")  # total_semesters is a string
+        total = sem_fee * total_semesters  # This will cause an error
+
+     Errors Without Conversion :
+     ===========================
+       If we don't convert the inputs, We may get a TypeError : 
+           TypeError: can't multiply sequence by non-int of type 'str'
+      [This error indicates that Python cannot perform multiplication between two strings or a string and a non-integer type.]
+
+
+
+ 
+
 
