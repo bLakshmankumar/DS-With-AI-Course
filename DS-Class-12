@@ -17,5 +17,13 @@ As developer writting a code without an errors are very important, So today we w
       -------------------------------
         Because we didn't define the num3 variable. If you want fix this, please verify is that variable(num3) is defined on your code or not ?
 
+    Error-2 :
+    =========
+     I intentionnaly remove the end bracket and will see what error we will get.
+       num1=eval(input("enter a number one: ") & Run the code
+       Error-Code : SyntaxError: '(' was never closed.
+       Fix : Verify the syntax of your code, And add the correct synstax and run : num1=eval(input("enter a number one: "))
+      
+
 
       
