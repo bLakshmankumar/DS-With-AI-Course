@@ -246,8 +246,57 @@ Sample python code practice :
            TypeError: can't multiply sequence by non-int of type 'str'
       [This error indicates that Python cannot perform multiplication between two strings or a string and a non-integer type.]
 
+Assignment :
+============
+   1.	Ask the user to enter a number. Print out the square of the number, 
+      Sample output is shown below.
+      Enter a number: 5 The square of 5 is 25.
+     Solution : [Square of a Number]
+     ==========
+            number = float(input("Enter a number: "))
+            square = number * number
+            print(f"The square of {number} is {square}.")
 
+   2.	Ask the user to enter a number x. print out x, 2x, 3x, 4x, and 5x, each separated by three dashes, like below.
+       Enter a number: 7 7---14---21---28---35
+      Solution : [Multiples of a Number]
+      ==========
+        x = float(input("Enter a number: "))
+        multiples = f"{x}---{2*x}---{3*x}---{4*x}---{5*x}"
+        print(multiples)
 
- 
+   3.	Write a program that asks the user for a weight in kilograms and converts it to pounds. There are 2.2 pounds in a kilogram.
+      Solution : [Convert Kilograms to Pounds]
+      ==========
+         kilograms = float(input("Enter weight in kilograms: "))
+         pounds = kilograms * 2.2
+         print(f"{kilograms} kilograms is equal to {pounds} pounds.")
+
+   4.	Write a program that asks the user to enter three numbers (use three separate input statements). Create variables called total and average that hold the sum and average of the three numbers and print out the values of total and average.
+      Solution : [Sum and Average of Three Numbers]
+      ==========
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
+        num3 = float(input("Enter the third number: "))
+
+        total = num1 + num2 + num3
+        average = total / 3
+
+        print(f"The total of the three numbers is {total}.")
+        print(f"The average of the three numbers is {average}.")
+
+   5.	A lot of cell phones have tip calculators. Write one. Ask the user for the price of the meal and the percent tip they want to leave. Then print both the tip amount and the total bill with the tip included.
+      Solution : [Tip Calculator]
+      ==========
+        meal_price = float(input("Enter the price of the meal: "))
+        tip_percent = float(input("Enter the percent tip you want to leave: "))
+
+        tip_amount = meal_price * (tip_percent / 100)
+        total_bill = meal_price + tip_amount
+
+        print(f"The tip amount is {tip_amount}.")
+        print(f"The total bill with tip is {total_bill}.")
+
+   [ These scripts will prompt the user for input, perform the required calculations, and print the results accordingly ].
 
 
