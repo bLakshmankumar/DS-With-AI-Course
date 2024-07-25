@@ -66,17 +66,39 @@ As developer writting a code without an errors are very important, So today we w
      ---------------------
         enter a number one:  5
         enter a number two:  2
-     Error-Massege :
-     ---------------
-       TypeError: unsupported operand type(s) for /: 'str' and 'int'
-     Why it happens : 
-     ----------------
-       Because it doesn't support dividing a string (number1) by an integer (number2).
-     Fix :
-     ------
-         To fix this, you should convert number1 to an integer or float before performing the division:
+      Error-Massege :
+      ---------------
+        TypeError: unsupported operand type(s) for /: 'str' and 'int'
+      Why it happens : 
+      ----------------
+        Because it doesn't support dividing a string (number1) by an integer (number2).
+      Fix :
+      ------
+        To fix this, you should convert number1 to an integer or float before performing the division:
            number1 = float(input("enter a number one: "))  # convert to float
- 
+
+    Error-5 : [SyntaxError: incomplete input]
+    ==========================================
+      Code :  "Removed the closing bracket for print statement", Run this code and see what error we will get.
+      ------
+          number1=(input("enter a number one: "))      
+          number2=float(input("enter a number two: "))
+          add=number1/number2                       
+          print(add
+      Error : 
+      -------
+          print(add
+             ^
+          SyntaxError: incomplete input [The error occurs because the "print statement is missing a closing parenthesis"]
+      Fix : 
+      ------
+          print(add)  # Added the closing parenthesis
+
+
+
+
+
+
       
 
 
