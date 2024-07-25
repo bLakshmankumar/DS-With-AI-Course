@@ -110,10 +110,14 @@ As developer writting a code without an errors are very important, So today we w
            The correct syntax for Python 3 is print(add) with parentheses
 
 
-
 # Exception Handling :
 ======================
- 
+     Take a scenario :
+     ------------------
+       Suppose we have written 500 lines of code, But we are getting error at 200 line, But This error is might not that much impact our code, but we still want to continue executing the remaining code.
+     How :
+     -----
+       We can use exception handling to manage this situation. The goal is to isolate the problematic code so that it doesn’t affect the execution of the rest of the program.
 
 
 
