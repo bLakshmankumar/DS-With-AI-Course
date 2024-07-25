@@ -94,6 +94,21 @@ As developer writting a code without an errors are very important, So today we w
       ------
           print(add)  # Added the closing parenthesis
 
+    Error-5 : [SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?]
+    =========================================================================================
+      Code :  "Removed the brackets for add in print statement", Run this code and see what error we will get.
+      ------
+          number1=(input("enter a number one: "))      
+          number2=float(input("enter a number two: "))
+          add=number1/number2                       
+          print add
+       Error :
+       -------
+          SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+        Fix :
+        -----
+           The correct syntax for Python 3 is print(add) with parentheses
+
 
 
 
