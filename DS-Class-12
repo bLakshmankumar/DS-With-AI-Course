@@ -1,1 +1,14 @@
+# Error Handling :
+==================
+As developer writting a code without an errors are very important, So today we will make some mistakes and will find, what errors we will getting.
+ 1) This below code is the correct code without any issues, It'll do addtion of num1 and num2.
+     num1=eval(input("enter a number one: "))
+     num2=eval(input("enter a number two: "))
+     add=num1+num2  
+     print(add) : output = num1(2)+num2(2) =4.
 
+    Let's start the modifications here :
+    ------------------------------------
+      Instead of doing addition with num1+num2 will do with num3(which we not defined on the above code)        
+       add=num1+num3 [Error: NameError: name 'number3' is not defined]
+      
