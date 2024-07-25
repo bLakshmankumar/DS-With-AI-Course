@@ -24,8 +24,8 @@ As developer writting a code without an errors are very important, So today we w
        Error-Code : SyntaxError: '(' was never closed.
        Fix : Verify the syntax of your code, And add the correct synstax and run : num1=eval(input("enter a number one: "))
 
-   Error-3 : [ZeroDivision-Error]
-   ==============================
+    Error-3 : [ZeroDivision-Error]
+    ==============================
          number1=eval(input("enter a number one: "))
          number2=eval(input("enter a number two: "))
          add=number1/number2
@@ -53,7 +53,29 @@ As developer writting a code without an errors are very important, So today we w
          --------------------
              Now, imagine you want to divide 10 apples among 0 friends. Since there are no friends to share the apples with, it doesn’t make sense.You can’t divide something if there’s no one to receive it.
              In mathematical terms, dividing by zero doesn’t produce a meaningful or defined result. It’s like trying to answer “How many times does 0 fit into 10?” There’s no answer because dividing by zero breaks the rules of arithmetic.
-        
+
+    Error-4 : [ZeroDivision-Error]
+    ==============================
+      Code :  "Trying to do division with string with intiger", Run this code and see what error we will get.
+      ------
+          number1=(input("enter a number one: "))      #string
+          number2=float(input("enter a number two: ")) #int
+          add=number1/number2                          # Now you wanna do division with string with int
+          print(add) & RUN.
+      Provide the inputs :
+     ---------------------
+        enter a number one:  5
+        enter a number two:  2
+     Error-Massege :
+     ---------------
+       TypeError: unsupported operand type(s) for /: 'str' and 'int'
+     Why it happens : 
+     ----------------
+       Because it doesn't support dividing a string (number1) by an integer (number2).
+     Fix :
+     ------
+         To fix this, you should convert number1 to an integer or float before performing the division:
+           number1 = float(input("enter a number one: "))  # convert to float
  
       
 
