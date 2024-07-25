@@ -9,6 +9,6 @@ As developer writting a code without an errors are very important, So today we w
 
     Let's start the modifications here :
     ------------------------------------
-      Instead of doing addition with num1+num2 will do with num3(which we not defined on the above code)        
-       add=num1+num3 [Error: NameError: name 'number3' is not defined]
+      Instead of doing addition with num1+num2 I mistakenly do addtion with num3(which we not defined on the above code)        
+        add=num1+num3 [Error: NameError: name 'number3' is not defined]
       
