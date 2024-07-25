@@ -9,20 +9,52 @@ As developer writting a code without an errors are very important, So today we w
 
     Let's start the modifications here :
     ------------------------------------
-    Error-1 :
-    =========
+    Error-1 : [Name-Error]
+    ======================
       Instead of doing addition with num1+num2 I mistakenly do addtion with num3(which we not defined on the above code)        
         add=num1+num3 [Error: NameError: name 'number3' is not defined]
       Why we are getting this error :
       -------------------------------
         Because we didn't define the num3 variable. If you want fix this, please verify is that variable(num3) is defined on your code or not ?
 
-    Error-2 :
-    =========
+    Error-2 : [Syntax-Error]
+    ========================
      I intentionnaly remove the end bracket and will see what error we will get.
        num1=eval(input("enter a number one: ") & Run the code
        Error-Code : SyntaxError: '(' was never closed.
        Fix : Verify the syntax of your code, And add the correct synstax and run : num1=eval(input("enter a number one: "))
+
+   Error-3 : [ZeroDivision-Error]
+   ==============================
+         number1=eval(input("enter a number one: "))
+         number2=eval(input("enter a number two: "))
+         add=number1/number2
+         print(add) & run the code
+       Inputs:
+         enter a number one:  100
+         enter a number two:  0
+       
+       Error :
+       -------
+          "ZeroDivisionError: division by zero"
+       
+       Why This error we will get :
+       ----------------------------
+          This ZeroDivisionError, which occurs when you try to divide a number by zero. 
+          The traceback indicates that the error happened on the line where we perform the division
+          Python tries to compute 100/0, but since division by zero is not defined, Python raises a ZeroDivisionError.
+   
+       Example-scenario-for-this-error: 
+       --------------------------------
+         a) Basic Concept of Division:
+         -----------------------------
+             Division is like splitting something into equal parts. For example, if you have 10 apples and want to share them equally among 2 friends, each friend gets 5 apples.
+         b) Division by Zero:
+         --------------------
+             Now, imagine you want to divide 10 apples among 0 friends. Since there are no friends to share the apples with, it doesn’t make sense.You can’t divide something if there’s no one to receive it.
+             In mathematical terms, dividing by zero doesn’t produce a meaningful or defined result. It’s like trying to answer “How many times does 0 fit into 10?” There’s no answer because dividing by zero breaks the rules of arithmetic.
+        
+ 
       
 
 
