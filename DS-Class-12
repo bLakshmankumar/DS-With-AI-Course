@@ -9,6 +9,8 @@ As developer writting a code without an errors are very important, So today we w
 
     Let's start the modifications here :
     ------------------------------------
+    Error-1 :
+    =========
       Instead of doing addition with num1+num2 I mistakenly do addtion with num3(which we not defined on the above code)        
         add=num1+num3 [Error: NameError: name 'number3' is not defined]
       Why we are getting this error , Because we didn't define the num3 variable. If you want fix please review the code and add the required code changes.
