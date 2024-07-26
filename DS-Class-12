@@ -190,12 +190,20 @@ As developer writting a code without an errors are very important, So today we w
            float division by zero [Will get an error]
      Note : So If there is an error in the code, it will be caught and printed. Ex: The error NameError: name 'num3333' is not defined will be printed due to the typo mentioned above.
 
-
-   
-
-
-
-      
-
+     Assignement : 
+     =============
+        # write a program to ask user to enter a number and find the square of the number
+            try:
+               num = float(input("Enter a number: "))
+               square = num * num
+               print("The square of {} is {}".format(num, square))
+            except Exception as e: # instead of e we can provide any name like yorname or any other letter but we should provide the same name on below print statement.
+               print(e)
+           
+        Note :  except Exception as e: # instead of e we can provide any name like yorname or any other letter but we should provide the same name on below print statement.
+           Example :
+           ----------
+            except Exception as Lakshman:  
+            print(Lakshman)
 
       
