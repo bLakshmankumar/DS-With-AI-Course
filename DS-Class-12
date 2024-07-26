@@ -161,7 +161,7 @@ As developer writting a code without an errors are very important, So today we w
 
    *Example-code-3* :
    ==================
-       If you want to know what kind of error we are getting on the code automatically, instead of manually adding Print statement in except block we can use the "Exception e".
+       If you want to know what kind of error we are getting on the code automatically, instead of manually adding your own Print statement in except block we can use the "Exception as e" statement to get the error.
        It'll automatically display the What is the error and From where the error is comming.
        Code :
        ------
