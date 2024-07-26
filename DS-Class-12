@@ -159,6 +159,40 @@ As developer writting a code without an errors are very important, So today we w
         If you provide the input as ex: like 2 and 5.2  > Will get Invalid input! Please enter integers only, Which we mentioned on print statement
         If you provide the input as ex: like 100 and 0  > Will get Error! You cannot divide by zero which we mentioned on print statement
 
+   *Example-code-3* :
+   ==================
+       If you want to know what kind of error we are getting on the code automatically, instead of manually adding Print statement in except block we can use the "Exception e".
+       It'll automatically display the What is the error and From where the error is comming.
+       Code :
+       ------
+        try:
+           num1 = float(input("enter number-1:"))
+           num2 = float(input("enter number-2:"))
+           num3 = float(input("enter number-3:"))
+           average = (num1 + num2 + num3) / 3
+           print("The average of {}, {} and {} is {}".format(num1, num2, num3, average))
+        except Exception as e:  
+           print(e)
+
+       User-Input and Output :
+       -----------------------
+        a) When an user provide the expected input. 
+           enter number-1: 2
+           enter number-2: 2
+           enter number-3: 3
+           The average of 2.0, 2.0 and 3.0 is 2.3333333333333335  [ Code exceuted successfully ]
+       
+        b) When an user provide the incorrcet input on the code
+           Ex : On code he make the changes like instad of /3 he added the 0 on this code line [average = (num1 + num2 + num3) / 0] OR [average = (num1 + num2 + num333) / 3]
+           enter number-1: 5
+           enter number-2: 4
+           enter number-3: 7
+           float division by zero [Will get an error]
+     Note : So If there is an error in the code, it will be caught and printed. Ex: The error NameError: name 'num3333' is not defined will be printed due to the typo mentioned above.
+
+
+   
+
 
 
       
