@@ -109,14 +109,55 @@ As developer writting a code without an errors are very important, So today we w
         -----
            The correct syntax for Python 3 is print(add) with parentheses
 
-# Exception Handling :
+# Exception Handling : 
 ======================
-     Take a scenario :
-     ------------------
+   Note : Here indentation should be higher priority. [ Indentation : Space ] [ You can see the below code examples, There we gave the spaces at try and except blocks].
+    There are Two blocks : We can use two blocks to handles the Error and Exceptions in python code.
+    ----------------------
+       1) try    : Our code will be there in a "try" block. [The code inside this block is the code that you want to attempt to run.]
+       2) except : The code inside this block runs if an error occurs in the try block. It’s where you handle the error, allowing your program to continue running or to handle the problem gracefully.
+    How it works :
+    --------------
+      When Python encounters an error in the try block, it immediately stops executing that block and moves to the except block. If no error occurs, the except block is skipped.
+    Take a scenario :
+    ------------------
        Suppose we have written 500 lines of code, But we are getting error at 200 line, But This error is might not that much impact our code, but we still want to continue executing the remaining code.
      How :
      -----
        We can use a "try" block around the code that might fail and an "except" block to handle the error.
+
+   Examples-code-1 : 
+   =================
+      try:
+         number = int(input("Enter a number: "))
+         print(f"You entered: {number}")
+      except ValueError:
+        print("That's not a valid number!")
+
+     Explanation: 
+     ------------
+       The try block attempts to convert user input to an integer and print it. [ If i provide the input as 2 it'll give the correct answer, But
+       If you provide input like 2.5(float values) a ValueError occurs, and the except block prints an error message ]
+
+   Example-code-2 : [# Handling Multiple Exceptions:]
+   ================
+      try:
+         numerator = int(input("Enter the numerator: "))
+         denominator = int(input("Enter the denominator: "))
+         result = numerator / denominator
+         print(f"Result: {result}")
+      except ValueError:
+         print("Invalid input! Please enter integers only.")
+      except ZeroDivisionError:
+         print("Error! You cannot divide by zero.")
+
+     Explanation :
+     -------------
+       This example handles two types of errors: ValueError if the input is not an integer, and ZeroDivisionError if the denominator is zero.
+       The appropriate error message is printed based on the type of exception raised.
+        If you provide the input as ex: like 2 and 2    > It'll give right output
+        If you provide the input as ex: like 2 and 5.2  > Will get Invalid input! Please enter integers only, Which we mentioned on print statement
+        If you provide the input as ex: like 100 and 0  > Will get Error! You cannot divide by zero which we mentioned on print statement
 
 
 
