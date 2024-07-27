@@ -298,9 +298,3 @@ Assignment :
         print(f"The total bill with tip is {total_bill}.")
 
    [ These scripts will prompt the user for input, perform the required calculations, and print the results accordingly ].
-
-FAQ : 
-=====
-   1) If we get more than 1 error in "try" block which error will capture ?
-   Ans : Python is a step by step process, So it'll capture first error, once we fix that error and then run then it'll give next error.
-
