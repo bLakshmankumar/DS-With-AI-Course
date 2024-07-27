@@ -207,7 +207,9 @@ As developer writting a code without an errors are very important, So today we w
             print(Lakshman)
           
         # Handling Exceptions and Ensuring Continuation of Code Execution in Python" :
-        ----------------------------------------------------------------------------
+        ------------------------------------------------------------------------------
+          print('==========')
+          print(3+5)
           try:
              num = int(input("Enter a number: "))
              square = num * num
@@ -218,9 +220,13 @@ As developer writting a code without an errors are very important, So today we w
              print('hello')
           print('Start-executing-new-lines')  # This means that even if an error happens in the try block, the program will not stop. It will handle the error, print some messages, and then continue with the rest of the code.
           print('execution-done')
-
+       
+       Explanation :
+       =============
+          First it'll exceute the print statements > Then it'll run the "try" block > Then it'll run the "excecute" block > then it'll execute the rest of the code.
       Note : 
      -------
+      > Python is a step by step process, It'll exeute one by one.
       > If your code is without errors, Then "try" blcok will exceute.
       > If your code is having errors in try block, Then it'll redirect to except block, Then, 
       > Whatever you written in except block only that will run.
