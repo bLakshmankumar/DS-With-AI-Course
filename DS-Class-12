@@ -214,7 +214,7 @@ As developer writting a code without an errors are very important, So today we w
              num = int(input("Enter a number: "))
              square = num * num
              print("The square of {} is {}".format(num, square))
-          # print("out")           # SyntaxError: expected 'except' or 'finally' block [ If you add any new block inside a try blcok we will get this kind of issues, Always follow the indentations properly.
+          # print("out")       # SyntaxError: expected 'except' or 'finally' block [ Here i intentionally add the print block under the try block, If you add any new block inside a try block we will get this kind of issues, After try block it should be a except or final block only].
           except Exception as e:
              print('Hi')
              print(e)
