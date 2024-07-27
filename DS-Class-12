@@ -205,6 +205,20 @@ As developer writting a code without an errors are very important, So today we w
            ----------
             except Exception as Lakshman:  
             print(Lakshman)
+          
+        # Handling Exceptions and Ensuring Continuation of Code Execution in Python" :
+        ----------------------------------------------------------------------------
+          try:
+             num = int(input("Enter a number: "))
+             square = num * num
+             print("The square of {} is {}".format(num, square))
+          except Exception as e:
+             print('Hi')
+             print(e)
+             print('hello')
+          print('Start-executing-new-lines')  # This means that even if an error happens in the try block, the program will not stop. It will handle the error, print some messages, and then continue with the rest of the code.
+          print('execution-done')
+    
      FAQ : 
      =====
        1) If we get more than 1 error in "try" block which error will capture ?
