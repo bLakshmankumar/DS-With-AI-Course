@@ -224,7 +224,7 @@ As developer writting a code without an errors are very important, So today we w
       > If your code is without errors, Then "try" blcok will exceute.
       > If your code is having errors in try block, Then it'll redirect to except block, Then, 
       > Whatever you written in except block only that will run.
-      > ALways try to run the "try" and exception block together only.
+      > Always try to run the "try" and exception block together only. [If try is there exception should be there]
       > Once "try" and "exception" codes are complete, It trys to look any other lines of code is there,
       > If any code is there then the program will continue to execute the remaining lines of code outside these blocks. This ensures that the rest of the program runs even if an error occurred earlier.
     
