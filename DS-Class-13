@@ -46,8 +46,17 @@ Note : Whenever we see/provide condition means, Python will check whether the co
       else:
             print("India will go to the final")
 
-
     Example-code-3 :
+    ================
+      name='python'         # This = means we are assigning some value to the variable(name). ["=" measn assign value to the key/varible] : Here we assigning/saved the value "python" as a string to the variable called "name".
+      if name == 'python':  # Here it'll verify the condition, If condition is true then it'll excute the "code which is provided on the if block", If condition is not true then it'll exceute the "code which is available on the else statement"
+         a=10
+         b=20
+         print(a+b)         # if name == python then it'll exceute this piece of code, otherwise(else) it'll move to the else statement.
+      else:
+        print('no-false')
+
+    Example-code-4 :
     ================
     # Write a program by using "if" "else" and "elseif" statements for below requirements :
     # If SA won the match, they will go to the final.
