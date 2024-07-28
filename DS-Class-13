@@ -46,8 +46,10 @@ Note : Whenever we see/provide condition means, Python will check whether the co
       else:
             print("India will go to the final")
 
-    Example-code-3 :
+    Example-code-3 : 
     ================
+      True Case :
+      ===========
       name='python'         # This = means we are assigning some value to the variable(name). ["=" measn assign value to the key/varible] : Here we assigning/saved the value "python" as a string to the variable called "name".
       if name == 'python':  # Here it'll verify the condition, If condition is true then it'll excute the "code which is provided on the if block", If condition is not true then it'll exceute the "code which is available on the else statement"
          a=10
@@ -55,6 +57,16 @@ Note : Whenever we see/provide condition means, Python will check whether the co
          print(a+b)         # if name == python then it'll exceute this piece of code, otherwise(else) it'll move to the else statement.
       else:
         print('no-false')
+      
+      False-Case :
+      ============
+      name='python'        
+      if name == 'Py':      # Instead of providing the actual value "I provided the Fasle value as Py" , It'll not execute the code available in if statement, It will directly exceute the else statement only. 
+         a=10
+         b=20
+         print(a+b)         # if name == python then it'll exceute this piece of code, otherwise(else) it'll move to the else statement.
+      else:
+        print('False')  :   # so it give Output as a False.
 
     Example-code-4 :
     ================
