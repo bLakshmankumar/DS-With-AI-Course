@@ -31,7 +31,7 @@ Note : Whenever we see/provide condition means, Python will check whether the co
 =======================================================
     Example-code-1 :
     ================
-      name='python'         # This = means we are assigning some value to the variable(name). ["=" measn assign value to the key/varible] : Here we assigning/saved the value "python" as a string to the variable called "name".
+      name='python'          # This = means we are assigning some value to the variable(name). ["=" measn assign value to the key/varible] : Here we assigning/saved the value "python" as a string to the variable called "name".
       if name == 'python':   # Here == means we are comparing/validate the value is matching to the varible value which we defined on above. ["==" means condition]
          print('Yes-True')
       else:
@@ -57,7 +57,6 @@ Note : Whenever we see/provide condition means, Python will check whether the co
          print(a+b)         # if name == python then it'll exceute this piece of code, otherwise(else) it'll move to the else statement.
       else:
         print('no-false')
-
          Output : 30        # We provide the correct condition in if statement, So the output is 30.
 
       False-Case :
@@ -72,13 +71,32 @@ Note : Whenever we see/provide condition means, Python will check whether the co
 
     Example-code-4 :
     ================
-    # Write a program by using "if" "else" and "elseif" statements for below requirements :
-    # If SA won the match, they will go to the final.
-    # If the match was a draw, it will be replayed.
-    # Else, India will go to the final.
+      print('hello')                                          # This prints "hello" 
+      print(10)                                               # This prints "10" 
+      num1 = int(input("Enter a number1: "))                  # The program prompts the user to enter two numbers and The input() function reads the input from the user as a string and int() converts the string input to an integer.
+      num2 = int(input("Enter a number2: "))                  # The entered values are stored in num1 and num2.
+      if num1 == num2:                                        # The program checks if num1 is equal to num2 and If the condition is true, It'll perform the below actions.
+          print("This is the True case")
+          print("We are doing an addition operation")
+          print("The addition of {} and {} is: {}".format(num1, num2, num1 + num2))
+          print("Happy ending!")
+      else:                                                  # If the condition is false (the numbers are not equal), the following happens:
+          print("This is the False case")                    # Prints "This is the False case".
+          print("We are doing multiplication")               # Prints "We are doing multiplication".
+          print("The multiplication of {} and {} is: {}".format(num1, num2, num1 * num2)) # Calculates the product of num1 and num2 and prints it using formatted strings.
+          subtraction = num1 - num2                          # Calculates the difference (subtraction) of num1 and num2 and prints it.
+          print("Subtraction:", subtraction)                 # Prints the substraction value
+          print("Great!")                                    # Prints "Great!".
+    
+    Example-code-5 :
+    ================
+      # Write a program by using "if" "else" and "elseif" statements for below requirements :
+      # If SA won the match, they will go to the final.
+      # If the match was a draw, it will be replayed.
+      # Else, India will go to the final.
     Code :
     ======
-     sa_won = False  # Change this value to test different conditions
+     sa_won = False     # Change this value to test different conditions
      match_draw = True  # Change this value to test different conditions
      if sa_won:
         print("SA will go to the final")
