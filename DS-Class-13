@@ -124,21 +124,32 @@
     ===============
       # Write a program to get a random number from 1 to 50 
       # Find the number is even or odd number by using try excception with conditions
-    Code : 
-    ======
-       import random    # Importing the Random Module that allows the program to use the random number generator.
-       try:   
-          number = random.randint(1, 50)  # Generating a random number between 1 and 50
-          print(f"Generated number: {number}")
-    
-       if number % 2 == 0:                # Check if the number is even or odd
-          print(f"The number {number} is an even number.")
-       else:
-          print(f"The number {number} is an odd number.")
-       except Exception as e:
-          print(f"An error occurred: {e}")
-      "The subsequent if-else block checks whether the number is even or odd and prints the appropriate message."
+      Code-1 : 
+      ========
+        import random    # Importing the Random Module that allows the program to use the random number generator.
+        try:   
+           number = random.randint(1, 50)  # Generating a random number between 1 and 50
+           print(f"Generated number: {number}")
+           if number % 2 == 0:                # Check if the number is even or odd
+               print(f"The number {number} is an even number.")
+           else:
+               print(f"The number {number} is an odd number.")
+        except Exception as e:
+           print(f"An error occurred: {e}")
 
+       Code-2 :
+       ========
+         import random
+         try:
+            num1 = random.randint(1, 50)    # Generate a random number between 1 and 50
+            if num1 % 2 != 0:               # The "if statement" checks if the number is odd by evaluating num1 % 2 != 0. If true, it prints that the number is odd.
+                print("The {} is an odd number: ".format(num1))
+            else:
+                print("The {} is an even number: ".format(num1))
+         except Exception as e:
+            print("An error occurred: {e}")
+      "The subsequent if-else block checks whether the number is even or odd and prints the appropriate message."
+      
     Example-code-8 :
     ===============
       # Write a program by using "if" "else" and "elseif" statements for below requirements :
