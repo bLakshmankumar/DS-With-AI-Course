@@ -1,3 +1,58 @@
 # Conditional Statements : 
 ==========================
+  # Meaning of conditional statements :
+  =====================================
+      Conditional statements in Python allow you to execute certain blocks of code based on whether a condition is true or false. They are essential for decision-making in programming.
+  # Basic Syntax :
+  ================
+   1 ) if Statement:
+   ------------------
+       Used to test a specific condition. [It'll give either true/false] 
+       If the condition is true, the block of code inside the if statement is executed.
+       If the condition is false, the block of code is skipped.
+   2) else Statement:
+   ------------------
+      Used to execute a block of code if the condition in the if statement is false.
+      It provides an alternative set of instructions.
+  3) elif Statement (short for "else if"):
+  ----------------------------------------
+      Used to check multiple conditions.
+      If the previous conditions are false, it checks the next condition.
 
+  How if - else - elseif statements will works :
+  =============================================
+     if condition is statisfy "if block code" will execute, 
+     if conddition is not satisfy in the "if block" then "else block code" will exceute. 
+     But If the previous conditions are false, it checks the next condition.
+
+Note : Whenever we see/provide condition means, Python will check whether the condition is True or False. If the condition is true, the block of code inside the if statement is executed. If the condition is false, the block of code is skipped.
+
+# Some Example codes for these conditional statements : 
+=======================================================
+    Example-code-1 :
+    ================
+      name='python'         # This = means we are assigning some value to the variable(name). ["=" measn assign value to the key/varible] : Here we assigning value "python" as a string to the variable called "name".
+      if name == 'python'   # Here == means we are comparing/validate the value is matching to the varible value which we defined on above. ["==" means condition]
+         print('won')
+
+
+
+
+
+   # Write a program by using "if" "else" and "elseif" statements for below requirements :
+   # If SA won the match, they will go to the final.
+   # If the match was a draw, it will be replayed.
+   # Else, India will go to the final.
+
+ Code :
+ ======
+   sa_won = False     # Change this value to test different conditions
+   match_draw = True  # Change this value to test different conditions
+   if sa_won:
+            print("SA will go to the final")
+   elif match_draw:
+            print("The match will be replayed")
+   else:
+            print("India will go to the final")
+
+  
