@@ -36,9 +36,6 @@ Note : Whenever we see/provide condition means, Python will check whether the co
          print('won')
 
 
-
-
-
    # Write a program by using "if" "else" and "elseif" statements for below requirements :
    # If SA won the match, they will go to the final.
    # If the match was a draw, it will be replayed.
