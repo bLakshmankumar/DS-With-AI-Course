@@ -116,6 +116,8 @@
        else:
           print(f"The number {number} is an odd number.")
      except Exception as e:                                 # If you provide input as a float (3.5) it'll redirect to exception block.
+         print(e)
+            or
          print("Invalid input! Please enter a valid integer.") 
 
     Example-code-7 :
