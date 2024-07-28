@@ -32,24 +32,36 @@ Note : Whenever we see/provide condition means, Python will check whether the co
     Example-code-1 :
     ================
       name='python'         # This = means we are assigning some value to the variable(name). ["=" measn assign value to the key/varible] : Here we assigning/saved the value "python" as a string to the variable called "name".
-      if name == 'python'   # Here == means we are comparing/validate the value is matching to the varible value which we defined on above. ["==" means condition]
-         print('won')
+      if name == 'python':   # Here == means we are comparing/validate the value is matching to the varible value which we defined on above. ["==" means condition]
+         print('Yes-True')
+      else:
+        print('no-false')
+    Execute this code : If name == python it'll print Yes-True statemet, else it'll print the no-false statement.
 
-
-   # Write a program by using "if" "else" and "elseif" statements for below requirements :
-   # If SA won the match, they will go to the final.
-   # If the match was a draw, it will be replayed.
-   # Else, India will go to the final.
-
- Code :
- ======
-   sa_won = False     # Change this value to test different conditions
-   match_draw = True  # Change this value to test different conditions
-   if sa_won:
+    Example-code-2 :
+    ================
+      sa_won = 'won'     # Change this value to test different conditions
+      if sa_won:
             print("SA will go to the final")
-   elif match_draw:
-            print("The match will be replayed")
-   else:
+      else:
             print("India will go to the final")
+
+
+    Example-code-3 :
+    ================
+    # Write a program by using "if" "else" and "elseif" statements for below requirements :
+    # If SA won the match, they will go to the final.
+    # If the match was a draw, it will be replayed.
+    # Else, India will go to the final.
+    Code :
+    ======
+     sa_won = False  # Change this value to test different conditions
+     match_draw = True  # Change this value to test different conditions
+     if sa_won:
+        print("SA will go to the final")
+     elif match_draw:
+        print("The match will be replayed")
+     else:
+        print("India will go to the final")
 
   
