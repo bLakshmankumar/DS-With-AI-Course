@@ -105,6 +105,17 @@
        else:
        print(f"The number {number} is an odd number.")
     
+# Write the code with condition with try and exception blocks :
+===============================================================
+     try:
+       number = int(input("Enter a number: "))             # Ask the user to enter a number
+       if number % 2 == 0:                                 # Check if the number is even or odd
+           print(f"The number {number} is an even number.")
+       else:
+          print(f"The number {number} is an odd number.")
+     except ValueError:                                     # If you provide input as a float (3.5) it'll redirect to exception block.
+         print("Invalid input! Please enter a valid integer.") 
+
     Example-code-6 :
     ===============
       # Write a program by using "if" "else" and "elseif" statements for below requirements :
