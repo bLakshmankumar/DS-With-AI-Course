@@ -31,7 +31,7 @@ Note : Whenever we see/provide condition means, Python will check whether the co
 =======================================================
     Example-code-1 :
     ================
-      name='python'         # This = means we are assigning some value to the variable(name). ["=" measn assign value to the key/varible] : Here we assigning value "python" as a string to the variable called "name".
+      name='python'         # This = means we are assigning some value to the variable(name). ["=" measn assign value to the key/varible] : Here we assigning/saved the value "python" as a string to the variable called "name".
       if name == 'python'   # Here == means we are comparing/validate the value is matching to the varible value which we defined on above. ["==" means condition]
          print('won')
 
