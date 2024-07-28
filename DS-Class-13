@@ -25,7 +25,7 @@
      if conddition is not satisfy in the "if block" then "else block code" will exceute. 
      But If the previous conditions are false, it checks the next condition.
 
-Note : Whenever we see/provide condition means, Python will check whether the condition is True or False. If the condition is true, the block of code inside the if statement is executed. If the condition is false, the block of code is skipped.
+  Note : Whenever we see/provide condition means, Python will check whether the condition is True or False. If the condition is true, the block of code inside the if statement is executed. If the condition is false, the block of code is skipped.
 
 # Some Example codes for these conditional statements : 
 =======================================================
@@ -40,7 +40,7 @@ Note : Whenever we see/provide condition means, Python will check whether the co
 
     Example-code-2 :
     ================
-      sa_won = 'won'     # Change this value to test different conditions
+      sa_won = 'won'      # Change this value to test different conditions
       if sa_won:
             print("SA will go to the final")
       else:
@@ -90,6 +90,23 @@ Note : Whenever we see/provide condition means, Python will check whether the co
     
     Example-code-5 :
     ================
+      #  Write a program to ask the user enter a number
+      # find the number is even or odd number
+      # eve number: if you divide with 2 the reminder is zero
+      # odd number
+      # In python modulus opertor gives remainder
+    Code :
+    ======
+     # Ask the user to enter a number
+       number = int(input("Enter a number: "))
+     # Check if the number is even or odd
+       if number % 2 == 0:                                  # The program uses the modulus operator % to check if the number is even or odd and number % 2 calculates the remainder when number is divided by 2.
+       print(f"The number {number} is an even number.")     # If number % 2 == 0, the remainder is 0, meaning the number is even If the remainder is not 0, the number is odd.
+       else:
+       print(f"The number {number} is an odd number.")
+    
+    Example-code-6 :
+    ===============
       # Write a program by using "if" "else" and "elseif" statements for below requirements :
       # If SA won the match, they will go to the final.
       # If the match was a draw, it will be replayed.
@@ -104,5 +121,3 @@ Note : Whenever we see/provide condition means, Python will check whether the co
         print("The match will be replayed")
      else:
         print("India will go to the final")
-
-  
