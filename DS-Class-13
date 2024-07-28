@@ -57,7 +57,9 @@ Note : Whenever we see/provide condition means, Python will check whether the co
          print(a+b)         # if name == python then it'll exceute this piece of code, otherwise(else) it'll move to the else statement.
       else:
         print('no-false')
-      
+
+         Output : 30        # We provide the correct condition in if statement, So the output is 30.
+
       False-Case :
       ============
       name='python'        
@@ -66,7 +68,7 @@ Note : Whenever we see/provide condition means, Python will check whether the co
          b=20
          print(a+b)         # if name == python then it'll exceute this piece of code, otherwise(else) it'll move to the else statement.
       else:
-        print('False')  :   # so it give Output as a False.
+        print('False')  :   # We provide the incorrect condition in if statement, So it give Output as a False.
 
     Example-code-4 :
     ================
