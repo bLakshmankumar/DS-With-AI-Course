@@ -27,6 +27,15 @@
 
   Note : Whenever we see/provide condition means, Python will check whether the condition is True or False. If the condition is true, the block of code inside the if statement is executed. If the condition is false, the block of code is skipped.
 
+*Note : 
+=======
+  Statement-1 :  Where-ever we are using 2 conditions there we will use "if" "else" conditions.
+  Statement-2 :  Where-ever we are using 3 conditions we will use "if", "elseif", and "else" conditions.
+
+Statement-1 :
+-------------
+# Now lets try to create a code by using "if" "else" condition statement.
+
 # Some Example codes for these conditional statements : 
 =======================================================
     Example-code-1 :
@@ -176,13 +185,36 @@
    # Code :
    ========
      user=eval(input("enter a number: "))
-     if (user>0):         # We can provide (user>=1):
+     if (user>0):         # We can provide (user>=1): or (user>=0):
          print("it's a positive number: ".format(user))
      else:
          print("It's a negetive number: ". format(user))
-    Example-code-8 :
+
+
+Statement-2 : [Where-ever we are using 3 conditions we will use "if", "elseif", and "else" conditions]
+-------------
+  # Write a Program ask a user to enter a number
+  # If the number is >=0 Print it's a positive number
+  # Otherwise Print it's a negitive number
+  # If user enter value as 0, Then print it's a Zero instead of negitive number
+  
+      # con-1: >0    ========> It should print the value is positive  <if>
+      # con-2: <0    ========> It should print the value is negative  <elif>
+      # con-3: =0    ========> It should print the value is zero      <else>
+
+  Code :
+  ======
+    number = float(input("Enter a number: "))   # Ask the user to enter a number
+    if number > 0:   # Check the conditions and print the appropriate message
+       print("The number is positive.")
+    elif number < 0:
+       print("The number is negative.")
+    else:
+       print("The number is zero.")
+
+    Example-code-1 :
     ===============
-      # Write a program by using "if" "else" and "elseif" statements for below requirements :
+      # Write a program by using "if" "elseif" and "else" statements for below requirements :
       # If SA won the match, they will go to the final.
       # If the match was a draw, it will be replayed.
       # Else, India will go to the final.
