@@ -161,7 +161,7 @@
       import random
       try:
          num1 = random.randint(10, 200)   # Generate a random number between 10 and 200
-         if (num1>=10 and num1<=99):      # we can define this if condition like if (10<num1<99):  # The "if statement" checks if the generated value is in between 10 and 99 or not.
+         if (num1>=10 and num1<=99):      # We can define this if condition like if (10<num1<99): or if (10<=num1<=99):  # These "if statements" checks if the generated value is in between 10 and 99 or not.
             print("You won, beacuse {} it is between 10 and 99: ".format(num1))
          else:
             print("You lost because {} it is not b/w 10 and 99: ".format(num1))
