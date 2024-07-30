@@ -30,7 +30,7 @@
 *Note : 
 =======
   Statement-1 :  Where-ever we are using 2 conditions there we will use "if" "else" conditions.
-  Statement-2 :  Where-ever we are using 3 conditions we will use "if", "elseif", and "else" conditions.
+  Statement-2 :  Where-ever we are using 3 conditions we will use "if", "elif", and "else" conditions.
 
 Statement-1 :
 -------------
