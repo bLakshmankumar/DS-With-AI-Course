@@ -197,7 +197,6 @@ Statement-2 : [Where-ever we are using 3 conditions we will use "if", "elseif", 
   # If the number is >=0 Print it's a positive number
   # Otherwise Print it's a negitive number
   # If user enter value as 0, Then print it's a Zero instead of negitive number
-  
       # con-1: >0    ========> It should print the value is positive  <if>
       # con-2: <0    ========> It should print the value is negative  <elif>
       # con-3: =0    ========> It should print the value is zero      <else>
@@ -205,14 +204,14 @@ Statement-2 : [Where-ever we are using 3 conditions we will use "if", "elseif", 
   Code :
   ======
     number = float(input("Enter a number: "))   # Ask the user to enter a number
-    if number > 0:   # Check the conditions and print the appropriate message
-       print("The number is positive.")
+    if number > 0:
+       print("The number is positive: ".format(number))
     elif number < 0:
-       print("The number is negative.")
+       print("The number is negative: ".format(number))
     else:
-       print("The number is zero.")
+       print("The number is zero: ".format(number))
 
-    Example-code-1 :
+    Example-code-2 :
     ===============
       # Write a program by using "if" "elseif" and "else" statements for below requirements :
       # If SA won the match, they will go to the final.
