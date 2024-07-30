@@ -149,7 +149,25 @@
          except Exception as e:
             print("An error occurred: {e}")
       "The subsequent if-else block checks whether the number is even or odd and prints the appropriate message."
-      
+
+    Example-code-8 :
+    ================
+      # WAP to get a random number between 1 to 200
+      # Print you won, if number between 10 to 99: num>=10 and <99
+      # Otherwise print you loss.
+
+    Code : 
+    ======
+      import random
+      try:
+         num1 = random.randint(10, 200)    # Generate a random number between 10 and 200
+         if (num1>=10 and num1<=99):       # The "if statement" checks if the generated value is in between 10 and 99 or not.
+            print("You won, beacuse {} it is between 10 and 99: ".format(num1))
+         else:
+            print("You lost because {} it is not b/w 10 and 99: ".format(num1))
+         except Exception as error:
+            print(error)
+     
     Example-code-8 :
     ===============
       # Write a program by using "if" "else" and "elseif" statements for below requirements :
