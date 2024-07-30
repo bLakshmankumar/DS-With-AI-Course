@@ -219,7 +219,7 @@ Statement-2 : [Where-ever we are using 3 conditions we will use "if", "elseif", 
      # If perecentage between 70 to 90 print B      # "elif"
      # If percentage between 50 to 70 print C       # "elif"
      # Otherwise print D                            # "else"
-    Code :
+    Cod-1 :
     ======
      percentage=float(input("Enter your percentage: "))
      if percentage > 90:
@@ -231,7 +231,46 @@ Statement-2 : [Where-ever we are using 3 conditions we will use "if", "elseif", 
      else:
         print ("You got D grade")   # Execute and test.
 
+     Code-2 :
+     ========
+     percentage=float(input("Enter your percentage: "))
+     if percentage > 90:
+        print ("you got A grade")
+     elif percentage > 70:
+        print ("You got B grade")
+     elif percentage > 50:
+        print ("You got C grade")
+     else:
+        print ("You got D grade")
+  
+  Note : Python is a step by step processs, so if user provide the percentage value for 92, it's grater than 90 and 70 and 50 as well right, But python will verify the first condition, if it's satisfied then it won't exeute the other statements.
+    
     Example-code-3 :
+    ===============
+     # wap ask the user enter age
+     # if age > 60 print (SC)             # "if"
+     # if age between 45 to 60 (aged)     # "elif"
+     # if age between 30 to 45 (ΜΑ)       # "elif"
+     # if age between 20 to 30 (young)    # "elif"
+     # if age between 13 to 20 (teenage)  # "elif"
+     # otherwise child                    # "else"
+    Code :
+    ======
+      age = int(input("Enter your age: "))      # Ask the user to enter their age
+      if age > 60:                              # # Check the conditions and print the appropriate category      
+         print("Category: Senior Citizen (SC)")
+      elif 45 <= age <= 60:
+         print("Category: Aged")
+      elif 30 <= age < 45:
+         print("Category: Middle Aged (MA)")
+      elif 20 <= age < 30:
+         print("Category: Young")
+      elif 13 <= age < 20:
+         print("Category: Teenage")
+      else:
+         print("Category: Child")
+   
+    Example-code-4 :
     ===============
       # Write a program by using "if" "elif" and "else" statements for below requirements :
       # If SA won the match, they will go to the final.
