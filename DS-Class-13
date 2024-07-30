@@ -233,7 +233,7 @@ Statement-2 : [Where-ever we are using 3 conditions we will use "if", "elseif", 
 
     Example-code-3 :
     ===============
-      # Write a program by using "if" "elseif" and "else" statements for below requirements :
+      # Write a program by using "if" "elif" and "else" statements for below requirements :
       # If SA won the match, they will go to the final.
       # If the match was a draw, it will be replayed.
       # Else, India will go to the final.
