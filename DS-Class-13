@@ -166,8 +166,20 @@
          else:
             print("You lost because {} it is not b/w 10 and 99: ".format(num1))
          except Exception as error:
-            print(error)
-     
+            print(error)  # Exceute the code
+
+    Example-code-9 :
+    ================
+      # Write a Program ask a user to enter a number
+      # If the number is >=0 Print it's a positive number
+      # Otherwise Print it's a negitive number
+   # Code :
+   ========
+     user=eval(input("enter a number: "))
+     if (user>0):         # We can provide (user>=1):
+         print("it's a positive number: ".format(user))
+     else:
+         print("It's a negetive number: ". format(user))
     Example-code-8 :
     ===============
       # Write a program by using "if" "else" and "elseif" statements for below requirements :
