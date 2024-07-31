@@ -37,8 +37,8 @@ Requirement-2 :
   #               Enter the user tax percentage : 2%
   #               print the amount of tax paid : salary * tax percentage/100
   # Otherwise : Print ("No tax required") 
-  Code :
-  ======
+  Code-1 :
+  ========
    try:
       salary = float(input("Enter your salary in lakhs: "))
       if salary >= 10:
@@ -57,5 +57,23 @@ Requirement-2 :
          print("No tax required.")
    except ValueError:
       print("Please enter a valid number for the salary.")   # Execute the code.
-   
-  
+  Code-2 :
+  ========
+    try:
+       salary = float(input("Enter your salary: "))
+       if salary >= 1000000:
+          tax_per = 10
+          tax_amount = (salary * tax_per) / 100
+          print(f"Amount of tax paid: {tax_amount} Rs.")
+       elif salary >= 700000:
+          tax_per = 5
+          tax_amount = (salary * tax_per) / 100
+          print(f"Amount of tax paid: {tax_amount} Rs.")
+       elif salary >= 300000:
+          tax_per = 2
+          tax_amount = (salary * tax_per) / 100
+          print(f"Amount of tax paid: {tax_amount} Rs.")
+       else:
+          print("No tax is required.")
+    except ValueError:
+       print("Please enter a valid number for the salary.")
