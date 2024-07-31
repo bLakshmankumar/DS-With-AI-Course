@@ -99,8 +99,8 @@ Requirement-3 :
   # else:
   #     print("provide suitable operation")
   # if-----elif----elif-----elif----else
- Code :
- ======
+ Code -1 :
+ =========
    try:
       operation = input("Enter the operation (addition/multiplication/subtraction/division): ").strip().lower()
       num1 = float(input("Enter the first number: "))
@@ -128,4 +128,29 @@ Requirement-3 :
           print("Provide a suitable operation")
    except ValueError:
       print("Please enter valid numbers for the operation.")
-   
+
+Code-2 :
+========
+  try:
+     operation = input("Enter which operation you want to perform (addition/subtraction/mul/div): ").strip().lower()
+     num1 = float(input("Enter a number (num1): "))
+     num2 = float(input("Enter a number (num2): "))
+     if operation == 'addition':
+         print("We are performing addition operation")
+         print("The addition of {} and {} is {}".format(num1, num2, num1 + num2))
+     elif operation == 'subtraction':
+         print("We are performing subtraction operation")
+         print("The subtraction of {} and {} is {}".format(num1, num2, num1 - num2))
+     elif operation == 'mul':
+         print("We are performing multiplication operation")
+         print("The multiplication of {} and {} is {}".format(num1, num2, num1 * num2))
+     elif operation == 'div':
+         if num2 != 0:
+             print("We are performing division operation")
+             print("The division of {} and {} is {}".format(num1, num2, num1 / num2))
+         else:
+            print("Division by zero is not allowed.")
+     else:
+        print("Provide a suitable operation")
+  except ValueError:
+     print("Please enter valid numbers for the operation.")
