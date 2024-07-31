@@ -153,4 +153,35 @@ Code-2 :
      else:
         print("Provide a suitable operation")
   except ValueError:
-     print("Please enter valid numbers for the operation.")
+     print("Please enter valid numbers for the operation.") # save & run the code.
+
+Code-3 :
+========
+  try:
+     print("If you want to perform addition operation, Then Enter + symbol")
+     print("If you want to perform sub operation, Then Enter - symbol")
+     print("If you want to perform multiplication operation, Then Enter * symbol")
+     print("If you want to perform div operation, Then Enter / symbol")
+     operation = input("Enter which operation you want to perform (addition/subtraction/mul/div): ").strip().lower()
+     num1 = float(input("Enter a number (num1): "))
+     num2 = float(input("Enter a number (num2): "))
+     if operation == '+':
+         print("We are performing addition operation")
+         print("The addition of {} and {} is {}".format(num1, num2, num1 + num2))
+     elif operation == '-':
+         print("We are performing subtraction operation")
+         print("The subtraction of {} and {} is {}".format(num1, num2, num1 - num2))
+     elif operation == '*':
+         print("We are performing multiplication operation")
+         print("The multiplication of {} and {} is {}".format(num1, num2, num1 * num2))
+     elif operation == '/':
+         if num2 != 0:
+             print("We are performing division operation")
+             print("The division of {} and {} is {}".format(num1, num2, num1 / num2))
+         else:
+            print("Division by zero is not allowed.")
+     else:
+        print("Provide a suitable operation")
+  except ValueError:
+     print("Please enter valid numbers for the operation.") # save & run the code.
+   
