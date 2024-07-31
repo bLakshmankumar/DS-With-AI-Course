@@ -1,5 +1,7 @@
 Write "if, elif, else" conditional statements with "try" and "exception" blocks :
 =================================================================================
+Requirement-1 :
+===============
   # Write a Program for ask user to enter distance in km
   # If distacne is more than 10km : print chanrge is 100rs
   # If distance is between 7 to 10km : print charge is 70rs
@@ -21,3 +23,39 @@ Write "if, elif, else" conditional statements with "try" and "exception" blocks 
      print(f"The charge is {charge}rs")
    except ValueError:
      print("Please enter a valid number for the distance.")
+
+Requirement-2 :
+===============
+  # Write a program to ask user to enter a salary 
+  # If salary is Greater Than 10 lacks:
+  #               Enter the user tax percentage : 10%
+  #               print then amount of tax paid : salary * tax percentage/100
+  # If salary is between 7 laks to 10 lacks :
+  #               Enter the user tax percentage : 5%
+  #               print the amount of tax paid : salary * tax percentage/100
+  # If salary is between 3 laks to 7 lacks :
+  #               Enter the user tax percentage : 2%
+  #               print the amount of tax paid : salary * tax percentage/100
+  # Otherwise : Print ("No tax required") 
+  Code :
+  ======
+   try:
+      salary = float(input("Enter your salary in lakhs: "))
+      if salary >= 10:
+         tax_percentage = 10
+         tax_amount = salary * tax_percentage / 100
+         print(f"Your tax percentage is {tax_percentage}%. The amount of tax paid is {tax_amount} lakhs.")
+      elif 7 <= salary <= 10:
+         tax_percentage = 5
+         tax_amount = salary * tax_percentage / 100
+         print(f"Your tax percentage is {tax_percentage}%. The amount of tax paid is {tax_amount} lakhs.")
+      elif 3 <= salary < 7:
+         tax_percentage = 2
+         tax_amount = salary * tax_percentage / 100
+         print(f"Your tax percentage is {tax_percentage}%. The amount of tax paid is {tax_amount} lakhs.")
+      else:
+         print("No tax required.")
+   except ValueError:
+      print("Please enter a valid number for the salary.")   # Execute the code.
+   
+  
