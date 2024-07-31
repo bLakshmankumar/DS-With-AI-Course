@@ -77,3 +77,55 @@ Requirement-2 :
           print("No tax is required.")
     except ValueError:
        print("Please enter a valid number for the salary.")
+
+Requirement-3 :
+===============
+  # Wap ask the user enter which operation you need to perform
+  #           operations are addition/ multiplication/subtraction/division 
+  # ask the user enter a number1=eval(input(" "))
+  # ask the user enter a number2=eval(input(" "))
+  # if the operation equal to addition
+  #         print("we are doing addition operation")
+  #         print("the addition of num1 and num2 is ")
+  # if the operation equal to multiplication
+  #         print("we are doing multiplication operation") 
+  #         print("the multiplication of num1 and num2 is ")
+  # if the operation equal to subtraction
+  #         print("we are doing subtraction operation")
+  #         print("the subtraction of numi and num2 is ")
+  # if the operation equal to division
+  #        print("we are doing division operation")
+  #        print("the division of numi and num2 is ")
+  # else:
+  #     print("provide suitable operation")
+  # if-----elif----elif-----elif----else
+ Code :
+ ======
+   try:
+      operation = input("Enter the operation (addition/multiplication/subtraction/division): ").strip().lower()
+      num1 = float(input("Enter the first number: "))
+      num2 = float(input("Enter the second number: "))
+      if operation == "addition":
+         print("We are doing addition operation")
+         result = num1 + num2
+         print(f"The addition of {num1} and {num2} is {result}")
+      elif operation == "multiplication":
+         print("We are doing multiplication operation")
+         result = num1 * num2
+         print(f"The multiplication of {num1} and {num2} is {result}")
+      elif operation == "subtraction":
+         print("We are doing subtraction operation")
+         result = num1 - num2
+         print(f"The subtraction of {num1} and {num2} is {result}")
+      elif operation == "division":
+         if num2 != 0:
+            print("We are doing division operation")
+            result = num1 / num2
+            print(f"The division of {num1} and {num2} is {result}")
+         else:
+            print("Division by zero is not allowed.")
+      else:
+          print("Provide a suitable operation")
+   except ValueError:
+      print("Please enter valid numbers for the operation.")
+   
