@@ -1,1 +1,23 @@
-# 
+Write "if, elif, else" conditional statements with "try" and "exception" blocks :
+=================================================================================
+  # Write a Program for ask user to enter distance in km
+  # If distacne is more than 10km : print chanrge is 100rs
+  # If distance is between 7 to 10km : print charge is 70rs
+  # If distance is between 4 to 7km : print charge is 40rs
+  # Otherwise print charge is 30rs
+  Code :
+  ====== 
+   try:
+     distance = float(input("Enter the distance in km: "))
+     if distance >= 10:
+        charge = 100
+     elif 7 <= distance <= 10:
+        charge = 70
+     elif 4 <= distance < 7:
+        charge = 40
+     else:
+        charge = 30
+        
+     print(f"The charge is {charge}rs")
+   except ValueError:
+     print("Please enter a valid number for the distance.")
