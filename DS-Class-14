@@ -226,6 +226,53 @@ Code-3 :
         else:                                  # Otherwise, it prints that the number is positive.
            print("it is pos number")   
      else:                                     # If the first if is false (the number is not greater than zero), it enters the else block. It checks if the number is exactly zero and prints accordingly.
-        print("it is a negative number"        # Otherwise, it prints that the number is negative. 
-
-
+        print("it is a negative number"        # Otherwise, it prints that the number is negative.
+    Requirement-2 :
+    ===============
+    # WAP to ask the user enter gender either male or female
+    # If gender equal to male
+    #       ask the user enter age if age>60: print(cs)
+    #       if age betwen 30 to 60 print(middile aged man)
+    #       if age between 20 to 30: print(young boy)
+    #       if age between 13 to 20: print(teenage boy)
+    #       otherwise: print('boy')
+    # else: 
+    #       ask the user enter age
+    #       if age>60: print(es)
+    #       if if age betwen 30 to 60 print(middile aged woman)
+    #       if age between 20 to 30: print(young girl)
+    #       if age between 13 to 20: print(teenage girl)
+    # otherwise: print('girl')
+   Code - 2 :
+   -----------
+    gender = input("Enter your gender (male/female): ").lower()   # Prompt the user to enter their gender
+    if gender == "male":                                          # Check if the gender is male
+    age = int(input("Enter your age: "))
+       if age > 60:                                               # Check the age categories for males
+          print("Senior man")
+       elif 30 <= age <= 60:
+          print("Middle-aged man")
+       elif 20 <= age < 30:
+          print("Young man")
+       elif 13 <= age < 20:
+          print("Teenage boy")
+    else:
+        print("Boy")
+  # Check if the gender is female
+elif gender == "female":
+    age = int(input("Enter your age: "))
+    
+    # Check the age categories for females
+    if age > 60:
+        print("Senior woman")
+    elif 30 <= age <= 60:
+        print("Middle-aged woman")
+    elif 20 <= age < 30:
+        print("Young woman")
+    elif 13 <= age < 20:
+        print("Teenage girl")
+    else:
+        print("Girl")
+# Handle invalid gender input
+else:
+    print("Invalid gender entered.")
