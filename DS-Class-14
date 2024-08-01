@@ -1,5 +1,7 @@
 Write "if, elif, else" conditional statements with "try" and "exception" blocks :
 =================================================================================
+"eval means integer float type"
+"input means anything that sting type" 
 Requirement-1 :
 ===============
   # Write a Program for ask user to enter distance in km
