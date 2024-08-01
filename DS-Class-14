@@ -1,4 +1,6 @@
-Write "if, elif, else" conditional statements with "try" and "exception" blocks :
+# Agenda First we pracrice few more conditional statement examples and Discussed "Nested-if-else" statements
+=============================================================================================================
+# Write "if, elif, else" conditional statements with "try" and "exception" blocks :
 =================================================================================
 "eval means integer float type"
 "input means anything that sting type" 
@@ -186,4 +188,44 @@ Code-3 :
         print("Provide a suitable operation")
   except ValueError:
      print("Please enter valid numbers for the operation.") # save & run the code.
-   
+
+# "Nested if-else" :
+====================
+   The purpose of nested if-else statements in Python is to allow for decision-making in situations where multiple conditions need to be evaluated in a hierarchical or dependent manner. 
+   In simple terms, they help you to check multiple conditions in a structured way, where the outcome of one condition determines whether or not subsequent conditions are evaluated.
+ 
+   Example Scenario :
+   ==================
+      Consider a scenario where you want to categorize a number as positive, zero, or negative:
+      1) First, check if the number is positive.
+           If true, you can further check other related conditions if needed.
+           If false, move to the next condition.
+      2) If the number is not positive, check if it is zero.
+           If true, handle the zero case.
+           If false, it must be negative.
+      This hierarchical checking is neatly handled by nested if-else statements.
+
+  # Let's jump into code examples :
+  =================================
+    Requirement-1 :
+    ===============
+    # wap ask the user enter a number
+    # if the number greater than zero:
+    #        if the number==0:
+    #            print('it is a zero number')
+    #        else:
+    #            print("it is pos number")  
+    # else:
+    #    print("it is a negative number")
+   Code-1 : 
+   ------
+     number = float(input("Enter a number: ")) # The user is prompted to enter a number, which is then converted to a float to handle both integers and floating-point numbers.
+     if number>=0:                             # The first if checks if the number is greater than zero
+        if number==0:                          # If true, it further checks if the number is exactly zero, which is redundant here since we've already checked it's greater than zero.
+           print('it is a zero number')
+        else:                                  # Otherwise, it prints that the number is positive.
+           print("it is pos number")   
+     else:                                     # If the first if is false (the number is not greater than zero), it enters the else block. It checks if the number is exactly zero and prints accordingly.
+        print("it is a negative number"        # Otherwise, it prints that the number is negative. 
+
+
