@@ -247,7 +247,7 @@ Code-3 :
    -----------
     gender = input("Enter your gender (male/female): ").lower()   # Prompt the user to enter their gender
     if gender == "male":                                          # Check if the gender is male
-    age = int(input("Enter your age: "))
+       age = int(input("Enter your age: "))
        if age > 60:                                               # Check the age categories for males
           print("Senior man")
        elif 30 <= age <= 60:
@@ -256,23 +256,19 @@ Code-3 :
           print("Young man")
        elif 13 <= age < 20:
           print("Teenage boy")
-    else:
-        print("Boy")
-  # Check if the gender is female
-elif gender == "female":
-    age = int(input("Enter your age: "))
-    
-    # Check the age categories for females
-    if age > 60:
-        print("Senior woman")
-    elif 30 <= age <= 60:
-        print("Middle-aged woman")
-    elif 20 <= age < 30:
-        print("Young woman")
-    elif 13 <= age < 20:
-        print("Teenage girl")
-    else:
-        print("Girl")
-# Handle invalid gender input
-else:
-    print("Invalid gender entered.")
+       else:
+          print("Boy")
+    elif gender == "female":                                        # Check if the gender is female
+       age = int(input("Enter your age: "))
+       if age > 60:                                                 # Check the age categories for females
+          print("Senior woman")
+       elif 30 <= age <= 60:
+          print("Middle-aged woman")
+       elif 20 <= age < 30:
+          print("Young woman")
+       elif 13 <= age < 20:
+          print("Teenage girl")
+       else:
+          print("Girl")
+    else:                                                            # Handle invalid gender input
+       print("Invalid gender entered.")
