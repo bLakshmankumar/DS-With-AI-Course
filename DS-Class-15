@@ -13,12 +13,16 @@ Example :
   
 Dive into code for functions :
 ==============================
+Code-1 without functions :
+--------------------------
 Write a basic code for doing addition
    n1=10
    n2=20
    add=n1+n2
    print("the addition of {} and {} is {}".format(n1,n2,add))
 
+Code-1 with functions :
+-----------------------
 Now we will impliment the "functions on this addition code"
    def addition ():
        n1=10
@@ -26,3 +30,11 @@ Now we will impliment the "functions on this addition code"
        add=n1+n2
        print("the addition of {} and {} is {}".format(n1,n2,add)) # If you execute this function it'll not give any output, The output will not display until unless we call a function.
    addition() # Now execute the code, It'll call that addition function and execute the code inside that addition function and give the output.
+
+Code-2 with functions :
+-----------------------
+ def hello_world():
+     print("Hello good morning")
+hello_world()  # It'll call the function, Then it will execute the code inside the function.
+
+
