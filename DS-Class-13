@@ -19,12 +19,17 @@
       Used to check multiple conditions.
       If the previous conditions are false, it checks the next condition.
 
-  How if - else - elseif statements will works :
+  How if - elif - else statements will works :
   =============================================
      if condition is statisfy "if block code" will execute, 
      if conddition is not satisfy in the "if block" then "else block code" will exceute. 
      But If the previous conditions are false, it checks the next condition.
 
+  Note -1: 
+  ---------
+   if   <condition is required>
+   elif <condition is required>
+   else <no-condition is required>
   Note : Whenever we see/provide condition means, Python will check whether the condition is True or False. If the condition is true, the block of code inside the if statement is executed. If the condition is false, the block of code is skipped.
 
 *Note : 
