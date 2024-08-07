@@ -31,13 +31,13 @@ Now we will implement the "functions on this addition code"
        print("the addition of {} and {} is {}".format(n1,n2,add)) # If you execute this function it'll not give any output, The output will not display until unless we call a function.
    addition() # Now execute the code, It'll call that addition function and execute the code inside that addition function and give the output.
 
-Note : When you call the function then only you will get any output or error in the code.
-
 Code-2 with functions :
 -----------------------
  def hello_world():
      print("Hello good morning")
 hello_world()  # It'll call the function, Then it will execute the code inside the function.
+
+Note : We doesn't know whether the function is correctly defined or wrongly defined until unless we call the function.
 
 Let's deep dive into functions with scenarios :
 =================================================
