@@ -23,7 +23,7 @@ Write a basic code for doing addition
 
 Code-1 with functions :
 -----------------------
-Now we will impliment the "functions on this addition code"
+Now we will implement the "functions on this addition code"
    def addition ():
        n1=10
        n2=20
@@ -31,10 +31,46 @@ Now we will impliment the "functions on this addition code"
        print("the addition of {} and {} is {}".format(n1,n2,add)) # If you execute this function it'll not give any output, The output will not display until unless we call a function.
    addition() # Now execute the code, It'll call that addition function and execute the code inside that addition function and give the output.
 
+Note : When you call the function then only you will get any output or error in the code.
+
 Code-2 with functions :
 -----------------------
  def hello_world():
      print("Hello good morning")
 hello_world()  # It'll call the function, Then it will execute the code inside the function.
+
+Let's deep dive into functions with scenarios :
+=================================================
+  Requirement -1 : [First write a normal code then will implement the functions on the same code]
+  ----------------
+    # Take three numbers and find the average
+    # Wap to ask the user to enter 3 numbers
+    # num1=eval(input())
+    # num2=eval(input())
+    # num3=eval(input())
+    # avg=(num1+num2+num3)/3
+  Code -1 : [without functions]
+  --------
+    # Ask the user to enter three numbers
+    num1 = eval(input("Enter the first number: "))
+    num2 = eval(input("Enter the second number: "))
+    num3 = eval(input("Enter the third number: "))
+    # Calculate the average
+    avg = (num1 + num2 + num3) / 3
+    # Print the average
+    print("The average of the three numbers is:", avg)
+    # Otherway to print the print statement
+    # print ( "The avg of {}, {} and {} is {}". format(num1,num2,num3,avg))
+
+  # Implement this same code using functions :
+  --------------------------------------------
+    def avg():
+        num1 = eval(input("Enter the first number: "))     # Ask the user to enter the number
+        num2 = eval(input("Enter the second number: "))    # Ask the user to enter the number
+        num3 = eval(input("Enter the third number: "))     # Ask the user to enter the number
+        avg = (num1 + num2 + num3) / 3  # Calculate the average
+        print ( "The avg of {}, {} and {} is {}". format(num1,num2,num3,avg))
+    avg()
+
 
 
