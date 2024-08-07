@@ -70,7 +70,21 @@ Let's deep dive into functions with scenarios :
         num3 = eval(input("Enter the third number: "))     # Ask the user to enter the number
         avg = (num1 + num2 + num3) / 3  # Calculate the average
         print ( "The avg of {}, {} and {} is {}". format(num1,num2,num3,avg))
-    avg()
+    avg()     # Now Run the code
+
+   # Now Implement this same code using functions with "try" and "exception" blocks :
+   ----------------------------------------------------------------------------------
+   def avg():        
+       try:
+          num1 = eval(input("Enter the first number: "))
+          num2 = eval(input("Enter the second number: "))
+          num3 = eval(input("Enter the third number: "))
+          avg = (num1 + num2 + num3) / 3  # Calculate the average
+          print ( "The avg of {}, {} and {} is {}". format(num1,num2,num3,avg))
+       except Exception as e:
+          print (e)
+   avg()  # Now Run the code
+    
 
 
 
