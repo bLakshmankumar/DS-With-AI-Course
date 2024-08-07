@@ -84,7 +84,11 @@ Let's deep dive into functions with scenarios :
        except Exception as e:
           print (e)
    avg()  # Now Run the code
-    
 
+  Requirement -2 : [First write a normal code then will implement the functions on the same code]
+  ----------------
+     # Wap ask the user to enter bill amount
+     # Ask the user to enter the tip amount 
+     # Calculate the total bill
 
 
