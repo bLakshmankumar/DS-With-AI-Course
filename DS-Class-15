@@ -122,7 +122,63 @@ Let's deep dive into functions with scenarios :
     # Run the main function
     if __name__ == "__main__":
     main()
-   
+
+# Requirement -3:
+=================
+# WAP ask the user to get a random num between 1 to 100
+# Print it's an even or odd num
+# Implement using function
+Code -1 :
+=========
+   import random     # Packages always at the top
+   def even_odd1(): 
+       print('we are implementing even odd function')
+       print("take one number") 
+       num=random.randint(1,100)
+       if num%2==0:
+          print("the remainder is zero")
+          print("{} is an even number".format(num))
+       else:
+          print("the remainder is not equal to zero") 
+          print("{) is an odd number".format(num))
+   even_odd1()  # Run the code.
+
+Code -2 : [With try and exception blocks]
+=========
+   import random
+   def even_odd1(): 
+       try:
+          print('we are implementing even odd function')
+          print("take one number") 
+          num=random.randint(1,100)
+          if num%2==0:
+             print("the remainder is zero")
+             print("{} is an even number".format(num))
+          else:
+             print("the remainder is not equal to zero") 
+             print("{) is an odd number".format(num))
+       except Exception as e:
+          print(e)
+   even_odd1() # Run the code
+
+ Code -3 :
+ =========
+   import random   # Packages always at the top
+   def get_random_number():   # Function to get a random number between 1 and 100
+       return random.randint(1, 100)
+   def check_even_or_odd(number):  # Function to determine if a number is even or odd
+       if number % 2 == 0:
+          return "even"
+       else:
+          return "odd"
+   # Main function to run the program
+   def main():
+       number = get_random_number()        # Get a random number
+       result = check_even_or_odd(number)  # Determine if it's even or odd
+       print(f"The random number {number} is {result}.")      # Print the result
+   # Run the main function
+   # if __name__ == "__main__":
+   main()
    
 
 
