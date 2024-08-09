@@ -90,5 +90,39 @@ Let's deep dive into functions with scenarios :
      # Wap ask the user to enter bill amount
      # Ask the user to enter the tip amount 
      # Calculate the total bill
+  Code-1:
+  =======
+    def bill():
+        try:
+           Bill_Amount = eval(input("Enter bill amount: "))
+           Tip_Amount = eval(input("Enter tip amount: "))
+           Total_Bill = Bill_Amount+Tip_Amount
+           print("Total bill is {} ".format(Total_Bill))
+        except Exception as e:
+           print(e)
+    bill() # Run the code
+
+  Code-2 :
+  ========
+    def convert_to_inr(amount_usd, conversion_rate=83.00): # Function to convert USD to INR
+        return amount_usd * conversion_rate
+    def calculate_total_bill(bill_usd, tip_usd): # Function to calculate the total bill
+        return bill_usd + tip_usd
+    def main():     # Main function to run the program
+        try:
+            bill_usd = float(input("Enter the bill amount in USD: "))   # Ask the user to enter the bill amount in USD
+            tip_usd = float(input("Enter the tip amount in USD: "))     # Ask the user to enter the tip amount in USD
+            total_usd = calculate_total_bill(bill_usd, tip_usd)         # Calculate the total bill in USD
+            total_inr = convert_to_inr(total_usd)                       # Convert the total bill to INR
+            print(f"The total bill amount in INR is: ₹{total_inr:.2f}") # Print the total amount in INR
+        except ValueError:
+            print("Invalid input. Please enter numeric values for the bill and tip amounts.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+    # Run the main function
+    if __name__ == "__main__":
+    main()
+   
+   
 
 
