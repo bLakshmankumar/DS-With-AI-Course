@@ -145,7 +145,7 @@ Code -1 :
 
 Code -2 : [With try and exception blocks]
 =========
-   import random
+   import random       # Packages always at the top
    def even_odd1(): 
        try:
           print('we are implementing even odd function')
@@ -163,7 +163,7 @@ Code -2 : [With try and exception blocks]
 
  Code -3 :
  =========
-   import random   # Packages always at the top
+   import random              # Packages always at the top
    def get_random_number():   # Function to get a random number between 1 and 100
        return random.randint(1, 100)
    def check_even_or_odd(number):  # Function to determine if a number is even or odd
@@ -179,6 +179,54 @@ Code -2 : [With try and exception blocks]
    # Run the main function
    # if __name__ == "__main__":
    main()
-   
+
+
+Python is working as a step by step process :
+=============================================
+Here is the example :
+=====================
+print ("Addition starts")
+  def addition():
+    n1=20
+    n2=50
+    print("add:" ,n1+n2)
+    print("addition is done")
+
+print ("multplication starts")
+def multiplication():
+    n1=20
+    n2=50
+    print("mul:" ,n1*n2)
+    print("Multipliction is done")
+
+print ("Substraction starts")
+def Substraction():
+    n1=20
+    n2=50
+    print("sub:" ,n1-n2)
+    print("substraction is done")
+
+print("Anything Remains")
+print("no")
+print("Then call the functions")
+
+addition()
+multiplication()
+Substraction()
+
+Out-put :
+==========
+Addition starts 
+multplication starts 
+Substraction starts
+Anything Remains
+no
+Then call the functions
+add: 70
+addition is done
+mul: 1000
+Multipliction is done
+sub: -30
+substraction is done
 
 
