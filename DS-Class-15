@@ -263,6 +263,28 @@ This allows the user to provide the values for n1 and n2 when calling the functi
    # Calling the function with arguments
    addition(10, 20)   # When we call addition(10, 20), the values 10 and 20 are passed to the parameters n1 and n2, respectively. These are the user-provided variables.
 
+Code-2 :
+========
+  # Implement this same code using functions with arguments :
+  def avg():
+    # Ask the user to enter three numbers
+    num1 = eval(input("Enter the first number: "))
+    num2 = eval(input("Enter the second number: "))
+    num3 = eval(input("Enter the third number: "))
+    avg = (num1 + num2 + num3) / 3  # Calculate the average
+    print ( "The avg of {}, {} and {} is {}". format(num1,num2,num3,avg))
+  avg()
+# Implementing with arguments :
+===============================
+   def avg(num1,num2,num3):
+     # Ask the user to enter three numbers
+      print("num1:", num1)
+      print("num2:", num2)
+      print("num3:", num3)
+      avg = (num1 + num2 + num3) / 3  # Calculate the average
+      print ( "The avg of {}, {} and {} is {}". format(num1,num2,num3,avg))
+   avg(10,20,35) # Run the code
+
 Difference between Function without argument and Function with arguments :
 ==========================================================================
    In the original function without arguments, n1 and n2 were defined inside the function, making the function less flexible.
@@ -283,8 +305,3 @@ Difference between Function without argument and Function with arguments :
      add=n1+n2
      print("the addition of {} and {} is {}".format(n1,n2,add))
    addition(40,20)   # If you provide the parameters without define the arguments on these brackets(), we will get this error.
-     
-   
-       
-
-
