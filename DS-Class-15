@@ -285,6 +285,27 @@ Code-2 :
       print ( "The avg of {}, {} and {} is {}". format(num1,num2,num3,avg))
    avg(10,20,35) # Run the code
 
+Code-3 :
+========
+  Requirement :
+  =============
+  # Wap ask the user to enter bill amount
+  # Ask the user to enter the tip amount 
+  # Calculate the total bill by using arguments
+    def bill(Bill_Amoun,Tip_Amount):
+        try:
+           Total_Bill = Bill_Amount+Tip_Amount
+           print("Total bill is {} ".format(Total_Bill))
+        except Exception as e:
+           print(e)
+    bill(100,20) # Run the code
+
+Code-4 :
+========
+  def square(number):
+    print("the sqaure of {} is {}".format(number,number*number))
+  square(25)
+   
 Difference between Function without argument and Function with arguments :
 ==========================================================================
    In the original function without arguments, n1 and n2 were defined inside the function, making the function less flexible.
