@@ -75,4 +75,12 @@ value_random=random.randint(1,20)                         # It will save the ran
 num = int(input("Enter a number between 1 and 20: "))     # It will save the user provided value on num varialabe
 compare(value_random, num) # It's a keyword argument pass # # It'll compare both variable values and print the output.
 
-
+Code-6 : [Create a function with Keyword Argument Pass]
+=======================================================
+import random
+def compare(random_num, num):
+    if random_number == num:
+        print("You won!")
+    else:
+        print("You Lost Because the random num is:", random_number)
+compare(random.randint(1,20), int(input("Enter a number between 1 and 20: "))) # It's a keyword argument pass
