@@ -25,10 +25,47 @@ Code-2 :
       Area,Pi=area_of_circle()
   area_of_circle()
 
-# When you use return area11, pii, the function sends back two values: the calculated area of the circle and the value of π. 
-# This allows you to use these values outside the function, like showing them to the user or using them in other calculations.
-
+Step-by-step :
+==============
 # area_of_circle() will return two values
 # area11, pii
 # area11 will store in a variable: area
 # pii will store in a variable: pii
+
+Note :
+======
+# When you use return area11, pii, the function sends back two values: the calculated area of the circle and the value of π. 
+# This allows you to use these values outside the function, like showing them to the user or using them in other calculations.
+
+Requirement-3 :
+===============
+# ask the user enter 3 numbers
+# find the sum and average
+# Return the avergae value and sum both
+
+Code -1 :
+=========
+def calculate_sum_and_average():
+    try:
+        # Prompt the user to enter three numbers
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
+        num3 = float(input("Enter the third number: "))
+        # Calculate the sum and average
+        total_sum = num1 + num2 + num3
+        average = total_sum / 3
+        # Return both the sum and average
+        return total_sum, average
+    except ValueError:
+        print("Invalid input! Please enter numerical values.")
+        return None, None
+# Call the function and unpack the returned values
+total_sum, avg = calculate_sum_and_average()
+# Print the results if they are valid
+if total_sum is not None and avg is not None:
+    print(f"Sum: {total_sum}")
+    print(f"Average: {avg:.2f}") # Run the code 
+
+
+
+
