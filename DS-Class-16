@@ -211,3 +211,6 @@ def calculate_area_with_default_args(radius=5):
     print(f"The area of the circle with radius {radius} is: {area:.2f}")
 calculate_area_with_default_args()    # Uses default radius
 calculate_area_with_default_args(10)  # Uses provided radius
+
+Note : radius ** 2 is equivalent to radius2(square), which means multiplying the radius by itself.
+Examples : radius ** 2  # This is equivalent to 5 * 5 = 25
