@@ -1,2 +1,31 @@
-#
+# Return concept :
+===================
+# Requirement-1 :
+=================
+# WAP ask the user to find area of circle
+Code-1 :
+-------
+  import math
+  def area_of_circle():
+      pii=math.pi
+      r=eval(input("Enter the radius: "))
+      area11=round(pii*r*r,2)
+      print("The area of circle is: ", area11)
+  area_of_circle()
 
+Code-2 :
+--------
+ import math
+  def area_of_circle():
+      pii=math.pi
+      r=eval(input("Enter the radius: "))
+      area11=round(pii*r*r,2)
+      print("The area of circle is: ", area11)
+      return (area11, pii)
+      Area,Pi=area_of_circle()
+  area_of_circle()
+
+# area_of_circle() will return two values
+# area11, pii
+# area11 will store in a variable: area
+# pii will store in a variable: pii
