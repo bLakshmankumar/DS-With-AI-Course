@@ -25,6 +25,9 @@ Code-2 :
       Area,Pi=area_of_circle()
   area_of_circle()
 
+# When you use return area11, pii, the function sends back two values: the calculated area of the circle and the value of π. 
+# This allows you to use these values outside the function, like showing them to the user or using them in other calculations.
+
 # area_of_circle() will return two values
 # area11, pii
 # area11 will store in a variable: area
