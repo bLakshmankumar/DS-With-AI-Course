@@ -1,1 +1,43 @@
 # Global and Local variables in functions
+# Difference Between Global and Local Variables:
+
+Rules for Global Variables :
+============================
+   Defined outside of all functions.
+   Accessible from any part of the program, including inside functions.
+   If modified inside a function, you must use the global keyword to indicate that you’re working with the global variable.
+
+Rules for Local Variables :
+===========================
+   Defined inside a function.
+   Only accessible within that function.
+   Disappears once the function has finished executing, so it cannot be used outside the function.
+
+Example 1: Local Variable :
+===========================
+def example_function():
+    local_var = 10  # This is a local variable
+    print("Inside the function, local_var:", local_var)
+example_function()
+# Trying to access local_var outside the function will give an error
+# print(local_var)  # This will cause an error because local_var only exists inside the function
+
+Explanation:
+------------
+   local_var is created inside the function and only exists there.
+   If you try to access it outside the function, you’ll get an error because it doesn't exist outside.
+
+Example 2: Global Variable :
+=============================
+global_var = 20          # This is a global variable
+def example_function():
+    print("Inside the function, global_var:", global_var)
+example_function()
+# You can access global_var outside the function as well
+print("Outside the function, global_var:", global_var)
+
+Explanation:
+------------
+   global_var is defined outside the function, making it a global variable.
+   It can be accessed both inside the function and outside.
+
