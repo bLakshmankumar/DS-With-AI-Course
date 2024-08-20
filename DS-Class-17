@@ -37,7 +37,7 @@ Note :
 # When you use return area11, pii, the function sends back two values: the calculated area of the circle and the value of π. 
 # This allows you to use these values outside the function, like showing them to the user or using them in other calculations.
 
-Requirement-3 :
+Requirement-2 :
 ===============
 # ask the user enter 3 numbers
 # find the sum and average
@@ -66,6 +66,78 @@ if total_sum is not None and avg is not None:
     print(f"Sum: {total_sum}")
     print(f"Average: {avg:.2f}") # Run the code 
 
+Code-2 :
+========
+def sum_avg(n1,n2,n3):
+    summ=n1+n2+n3
+    avg=summ/3
+    print('sum:', summ)
+    print('avg:', avg)
+    return(summ,avg)
+addition,average=sum_avg(20,30,40)
+# sum_avg returning 2 values
+# summ and avg
+# summ value we are saving in a variable : addition
+# avg value we are saving in a variable : average
+print('addition is:', addition, 'average is:', average)
 
+Requirement-3 :
+===============
+# Find the biggest num of  numbers
+# Take 3 numbers and find the biggest number and return that number
+Code-1 : [Normal]
+=================
+def find_biggest_number(n1, n2, n3):
+    biggest = max(n1, n2, n3)                    # Find the biggest number using max()
+# print("The biggest number is:", biggest)       # Print the result
+    return biggest                               # Return the biggest number
+#largest = find_biggest_number(20, 30, 40)        # Call the function and save the returned value in a variable
+#print("The biggest number is:", largest)         # Print the biggest number stored in the variable
+find_biggest_number(10,20,30)
+
+Code-2 : [By using if,elif, & else]
+====================================
+def find_biggest_number(n1, n2, n3):
+    if n1 >= n2 and n1 >= n3:                       # Using if-else statements to find the biggest number
+        biggest = n1
+    elif n2 >= n1 and n2 >= n3:
+        biggest = n2
+    else:
+        biggest = n3
+#       print("The biggest number is:", biggest)     # Print the result
+    return biggest                                   # Return the biggest number
+largest = find_biggest_number(20, 30, 40)            # Call the function and save the returned value in a variable
+print("The biggest number is:", largest)             # Print the biggest number stored in the variable
+
+# Writter statements :
+======================
+Meaning : A written statement in programming refers to a clear, concise explanation of what a particular piece of code does. 
+          It describes the purpose, logic, and functionality of the code in plain language, making it easier for others (or even the programmer themselves) to understand
+          what the code is doing without needing to dive deeply into the details.
+
+Sample code :
+--------------
+def add(a,b): return (a+b)
+def sub(a,b): return(a-b)
+def mul(a,b): return(a*b)
+def div(a,b): return(a/b)
+
+val_add=add(20,30)
+val_sub=sub(20,30)
+val_mul=mul(20,30)
+val_div=div(20,30)
+print(val_add, val_sub, val_mul, round(val_div,2))
+
+Explanation :
+=============
+   The code defines four functions: add, sub, mul, and div, which perform basic arithmetic operations (addition, subtraction, multiplication, and division) on two arguments, a and b.
+   The results of each operation are stored in the variables val_add, val_sub, val_mul, and val_div by calling their respective functions with the values 20 and 30.
+   Finally, the results are printed in a single line, with the division result rounded to two decimal places using the round() function. 
+   The output shows the results of addition, subtraction, multiplication, and division respectively.
+
+
+What we learned till now :
+===========================
+As of now We practiced a code by using > Without arguments, With arguments, Default arguments , & Written statements.
 
 
