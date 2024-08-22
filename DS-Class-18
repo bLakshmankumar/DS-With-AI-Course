@@ -3,13 +3,13 @@
 
 Rules for Local Variables :
 ===========================
-   Defined inside a function.
+   Local variable we should Define inside a function only.
    Only accessible within that function.
    Disappears once the function has finished executing, so it cannot be used outside the function.
 
 Rules for Global Variables :
 ============================
-   Defined outside of all functions.
+   Global varaible we can Define outside of all functions.
    Accessible from any part of the program, including inside functions.
    If modified inside a function, you must use the global keyword to indicate that you’re working with the global variable.
 
