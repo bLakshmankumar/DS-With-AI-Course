@@ -1,11 +1,5 @@
-# Global and Local variables in functions
-# Difference Between Global and Local Variables:
-
-Rules for Global Variables :
-============================
-   Defined outside of all functions.
-   Accessible from any part of the program, including inside functions.
-   If modified inside a function, you must use the global keyword to indicate that you’re working with the global variable.
+# Local and Global variables in functions
+# Difference Between Local and Global Variables:
 
 Rules for Local Variables :
 ===========================
@@ -13,8 +7,25 @@ Rules for Local Variables :
    Only accessible within that function.
    Disappears once the function has finished executing, so it cannot be used outside the function.
 
+Rules for Global Variables :
+============================
+   Defined outside of all functions.
+   Accessible from any part of the program, including inside functions.
+   If modified inside a function, you must use the global keyword to indicate that you’re working with the global variable.
+
 Example 1: Local Variable :
 ===========================
+code-1 :
+--------
+# The variable we provided inside a function we can call it as local variables
+def addition():
+    n1=10     # Local variables 
+    n2=20     # Local variables
+    add=n1+n2 
+    print("The addition of {} and {}".format (n1,n2,add))
+addition()
+code-2 :
+-------
 def example_function():
     local_var = 10  # This is a local variable
     print("Inside the function, local_var:", local_var)
@@ -26,11 +37,35 @@ Explanation:
 ------------
    local_var is created inside the function and only exists there.
    If you try to access it outside the function, you’ll get an error because it doesn't exist outside.
+Code-3:
+-------
+# Local variables we can't print outside the functions until unless we return the value
+def avg():
+    num11=10     # Local variables 
+    num22=20     # Local variables
+    num33=30     # Local variables
+    avg=num11+num22+num33/3
+    print("The avg of {},{} and {}".format (num11,num22,num33))
+    return(num11) # it'll return/store the values of num11
+val1=avg
+addition()
 
 Example 2: Global Variable :
 =============================
+Code-1 :
+--------
+# The variables which we provided outside a function we can call it as a global variables
+n1=10
+n2=20
+def addition(): # No need to provide values on inside the fucntion, The function will automatically take the values from global varaibles which we mentioned on above.
+    add=n1+n2
+    print("The addition of {} and {}".format (n1,n2,add))
+addition()
+
+Code-2 :
+--------
 global_var = 20          # This is a global variable
-def example_function():
+def example_function(): 
     print("Inside the function, global_var:", global_var)
 example_function()
 # You can access global_var outside the function as well
@@ -40,4 +75,6 @@ Explanation:
 ------------
    global_var is defined outside the function, making it a global variable.
    It can be accessed both inside the function and outside.
+
+
 
