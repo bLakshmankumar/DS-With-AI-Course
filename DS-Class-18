@@ -136,7 +136,63 @@ Out-put :
 The addition of 500 and 300 is 800
 10
 
-29 min,3rd nov
+# Requirement -1 : [Important for interview qn]
+================================================
+  # What is the rule of Local variable we learned ?
+  --------------------------------------------------
+     We can't use local variable values outside the function until unless we use return statements.
+  # But now my requirement is ?
+  =============================
+     I want to use local variables outside the function, Without using return statement ? How we can achive this with out using return statement ?
+     Ans : This we can achive by useing global keyword
+
+Code-1 : [Write a normal code by using local variables and try to call them from outside the function let's see the output]
+============================================================================================================================
+def avg():
+    #global m11,m22
+    m1=40
+    m2=30
+    m3=50
+    avg_value = (m1 + m2 + m3) / 3  # Using global variables
+    print("The avg of {}, {}, and {} is {}".format(m1, m2, m3, avg_value))
+avg()     # calling the fucntion
+print(m1) # Calling m1 value from outside the function & Now run the code
+
+Output : [It give the function result but Got an Error when i call the local varaible value from outside the function]
+========
+The avg of 40, 30, and 50 is 40.0
+Error :
+--------
+NameError                                 Traceback (most recent call last)
+Cell In[41], line 9
+      7     print("The avg of {}, {}, and {} is {}".format(m1, m2, m3, avg_value))
+      8 avg()
+----> 9 print(m1)
+
+NameError: name 'm1' is not defined
+
+Code-2 : [ Now we will try with global keyword to call the local variable outside the fucntion and let's see ]
+==============================================================================================================
+def avg():
+    global m11,m22,m33
+    m11=40
+    m22=30
+    m33=50
+    avg_value = (m11 + m22 + m33) / 3  # Using global variables
+    print("The avg of {}, {}, and {} is {}".format(m11, m22, m33, avg_value))
+avg()      # calling the fucntion
+print(m11)
+print(m22)
+print(m33) # Calling local values from outside the function & Now run the code
+
+Output : [It able to print the local values outside the function]
+========
+The avg of 40, 30, and 50 is 40.0
+40
+30
+50
+
+
 
 
 
