@@ -171,8 +171,8 @@ Cell In[41], line 9
 
 NameError: name 'm1' is not defined
 
-Code-2 : [ Now we will try with global keyword to call the local variable outside the fucntion and let's see ]
-==============================================================================================================
+Code-2 : [ Now we will try with global keyword to call the local variable outside the fucntion without return statement and let's see ]
+=======================================================================================================================================
 def avg():
     global m11,m22,m33
     m11=40
