@@ -148,6 +148,8 @@ The addition of 500 and 300 is 800
 
 Code-1 : [Write a normal code by using local variables and try to call them from outside the function let's see the output]
 ============================================================================================================================
+# Local variable :
+==================
 def avg():
     #global m11,m22
     m1=40
@@ -173,6 +175,7 @@ NameError: name 'm1' is not defined
 
 Code-2 : [ Now we will try with global keyword to call the local variable outside the fucntion without return statement and let's see ]
 =======================================================================================================================================
+# Convert local variable to global variable
 def avg():
     global m11,m22,m33
     m11=40
@@ -192,7 +195,6 @@ The avg of 40, 30, and 50 is 40.0 # Output of a function
 30   # Value of a local value outside the funtion
 50   # Value of a local value outside the funtion
 
-
-
+50 min : 3rd nov
 
 
