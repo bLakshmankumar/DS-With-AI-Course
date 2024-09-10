@@ -11,19 +11,35 @@ Code-1 :
       r=eval(input("Enter the radius: "))
       area11=round(pii*r*r,2)
       print("The area of circle is: ", area11)
-  area_of_circle()
+  area_of_circle() # Without arguments
 
 Code-2 :
+-------
+  import math
+  def area_of_circle(r):
+      pii=math.pi
+      area11=round(pii*r*r,2)
+      print("The area of circle is: ", area11)
+  r=eval(input("Enter the radius: "))
+  area_of_circle(20) # Direct pass
+
+Code-3 :
 --------
  import math
-  def area_of_circle():
+  def area_of_circle(r):
       pii=math.pi
-      r=eval(input("Enter the radius: "))
       area11=round(pii*r*r,2)
       print("The area of circle is: ", area11)
       return (area11, pii)
       Area,Pi=area_of_circle()
-  area_of_circle()
+  area_of_circle()  # Keyword pass
+# step-1 : Import the package 
+# step-2 : Define function
+# step-3 : Getting r value
+# step-4 : Call the function
+# step-5 : Print the pii valule
+# step-6 : Find the areal1 value
+# step-7 : Inside the function print the value
 
 Step-by-step :
 ==============
