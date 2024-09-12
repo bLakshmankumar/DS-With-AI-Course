@@ -233,3 +233,63 @@ Explanation :
   S-2 : The name() function is defined. It first prints "python". Then calls the greet() function from inside itself.
   S-3 : Finally When name() is called from outside the function, It first prints "python".Then it calls the greet() function, which prints "Hello".
   s-4 : Final Output The string "python" is printed first. The string "Hello" is printed next, due to the call to greet() within name().
+  
+  Code-3 :
+  --------
+    def greet():
+        print ("Hello")
+        name()
+    def name():
+        print ("python")
+    greet()
+  Output :
+  --------
+    Hello
+    python
+Explanation :
+-------------
+  S-1: When greet() is called, it prints "Hello" and immediately calls name().
+  S-2: The name() function runs next, printing "python".
+  S-3: The output will be in the sequence of "Hello" followed by "python" because of the function calls.
+
+  Code-4 :
+  --------
+    print(3)
+    def fun1():
+        print('Hello')
+        print('Python')
+    print('10+10')
+    def fun2():
+        print('3+5')
+        print(3+5)
+        fun1()
+        print('good')
+    print(10+10)
+    def fun3():
+        fun1()
+        fun2()
+    fun3()
+  Output :
+  --------
+    3
+    10+10
+    20
+    Hello
+    Python 
+    3+5 
+    8
+    Hello
+    Python
+    good
+ Explanation :
+ -------------
+  S-1: The print() statements outside of functions run first.
+  S-2: The fun1() and fun2() functions are called when fun3() is executed.
+  S-3: The result is a sequence of print statements executed based on the function calls inside fun3().
+
+
+
+
+
+
+
