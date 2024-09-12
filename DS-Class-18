@@ -287,9 +287,104 @@ Explanation :
   S-2: The fun1() and fun2() functions are called when fun3() is executed.
   S-3: The result is a sequence of print statements executed based on the function calls inside fun3().
 
+  Code-5 : 
+  --------
+  Requirement :
+  --------------
+   # Create four functions
+   #def add(a+b):
+        #print(a+b)
+   #sub
+   #mul
+   #div
+   # def main():
+      #you need to provide some print statements
+      #if you want enter 1 addition operation willcome 
+      #if you want enter 2: sub
+      #if you enter 3: mul
+      #if you enter 4: div
+      #operaion=input("enter a number")
+      #eval (input()) 
+      #eval(inpu())
+      #if operation=='1':
+         add(a,b)
+      #if operation=='2':
+         sub(a,b)
+      #if operation=='3':
+         mul(a,b)
+      #if operation=='4':
+         div(a,b)
+    Solution : 
+    ----------
+    Implementing the four arithmetic functions (add, subtract, multiply, and divide) using a function-in-function concept
+      # Define the four basic arithmetic functions
+          def add(a, b):
+              print("Addition:", a + b)
+          def sub(a, b):
+              print("Subtraction:", a - b)
+          def mul(a, b):
+              print("Multiplication:", a * b)
+          def div(a, b):
+              if b != 0:
+                 print("Division:", a / b)
+               else:
+                 print("Division by zero is not allowed!")
 
-
-
-
-
-
+      # Define the main function
+          def main(): # This nested function will call the appropriate arithmetic function
+              def calculator(operation, a, b):
+                  if operation == '1':
+                     add(a, b)
+                  elif operation == '2':
+                     sub(a, b)
+                  elif operation == '3':
+                     mul(a, b)
+                  elif operation == '4':
+                     div(a, b)
+                  else:
+                     print("Invalid operation selected.")
+          # Provide options to the user
+              print("Select operation:")
+              print("1: Addition")
+              print("2: Subtraction")
+              print("3: Multiplication")
+              print("4: Division")
+    
+          # Take input from the user
+              operation = input("Enter the number corresponding to the operation: ")
+              a = float(input("Enter the first number: "))
+              b = float(input("Enter the second number: "))
+           # Call the calculator function with user inputs
+              calculator(operation, a, b)
+          main() # Call the main function to start the program
+        Output :
+        ---------
+          Select operation:
+          1: Addition
+          2: Subtraction
+          3: Multiplication
+          4: Division
+         Interaction -1 :
+         ----------------
+          If i choose 1, Then it'll do the addition to the provided inputs.
+             Enter the number corresponding to the operation: 1
+             Enter the first number: 10
+             Enter the second number: 5
+             Addition: 15.0
+          Explanation of this interaction :
+          ---------------------------------
+             The user selects "Addition" (by entering 1).
+             The program asks for two numbers (10 and 5).
+             It then calls the add() function to print the result: 15.0.
+         Interaction -2 :
+         ----------------
+           If i choose 4, Then it'll do the division to the provided inputs.
+             Enter the number corresponding to the operation:  4
+             Enter the first number:  2
+             Enter the second number:  3
+             Division: 0.6666666666666666
+          Explanation of this interaction :
+          ---------------------------------
+             The user selects "Division" (by entering 4).
+             The program asks for two numbers (2 and 3).
+             It then calls the div() function to print the result: 0.6666666666666666.
