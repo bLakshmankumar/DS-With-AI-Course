@@ -195,6 +195,41 @@ The avg of 40, 30, and 50 is 40.0 # Output of a function
 30   # Value of a local value outside the funtion
 50   # Value of a local value outside the funtion
 
-50 min : 3rd nov
+# Function in Function :
+========================
+   In Python, functions can be nested, meaning you can define a function inside another function. This is known as a function within a function or nested functions.
+# Let's learn : 
+=============
+  Code -1 : [Write a sample code with 2 different functions and call them individually]
+  ---------
+    def greet():
+        print ("Hello")
+    def name():
+        print ("python")
+    greet() # Calls the greet function and prints "Hello"
+    name()  # Calls the greet function and prints "name"
+  Output:
+  -------
+    Hello
+    python
 
+# In the code we written, We're defining two simple functions: greet() and name(), and then calling them.
 
+  Code-2 : [Now let's write a code by calling function inside another fucntion]
+  ---------
+    def greet():
+        print ("Hello")
+    def name():
+        print ("python")
+        greet()    # We are calling greet function inside name function
+    name() 
+  Output :
+  --------
+    python
+    Hello
+Explanation :
+-------------
+  S-1 : The greet() function is defined, which will print "Hello" when called.
+  S-2 : The name() function is defined. It first prints "python". Then calls the greet() function from inside itself.
+  S-3 : Finally When name() is called from outside the function, It first prints "python".Then it calls the greet() function, which prints "Hello".
+  s-4 : Final Output The string "python" is printed first. The string "Hello" is printed next, due to the call to greet() within name().
