@@ -180,5 +180,31 @@ Output:
 
 Summary:
 ----------
-    In this specific case, you cannot count from -1 to -10 using a positive step value. You would need to use a negative step value (like -1) to count downwards:
+    In this specific case, you cannot count from -1 to -10 using a positive step value. You would need to use a negative step value (like -1) to count downwards
+
+Code-4 :
+========
+ for i in range(8, 20, -2):
+    print(i, end=" ")
+ # start = 8
+ # direction = - (we provided the set value as negative)
+ # end=stop+1=20+1=21.
+Why it doesn't print anything:
+-----------------------------
+Graphical Representation: 
+-------------------------
+  Number Line:
+     7   8   9  10  11  12  13  14  15  16  17  18  19  20
+     ↑
+     Start (8)
+     - The loop starts at **8**.
+     - It tries to count down by **2**, but the stop value **20** is greater than the start value.
+     - Since the start (8) is less than the stop (20), the loop **does not run**.
+Summary :
+=========
+  For a positive step, the start value must be less than the stop value.
+  For a negative step, the start value must be greater than the stop value.
+
+
+
 
