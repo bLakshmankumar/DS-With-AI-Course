@@ -33,9 +33,94 @@ Let's discuss the for loop :
   ------------------
   - Initialization
   - Increment / Decrement [Whether you are going forward into the loop or backward into the loop]
-  - Condition to stop the code [Condition to stop the loop when you want to stop]
+  - Condition to stop the code [Condition to stop the loop when you want to stop it]
+Examples :
+==========
+ Pattern-1 :
+  for i in range(stop(example-5)):  
+        - Whenever you see any single value in the bracket it's ntg but a stop value  
+        - The default start value is "0"
+        - Because Python index always start with "0" only.
+        - If direction is not mentioned : we should take increment (+) sign.
+ Pattern-2 :
+    for i in range(Start value, stop value(1, 6):  # Counting upwards from 1 to 5
+        - If direction is positive side then end=(stop value-1) # The loop will go from the start (default 0) to one less than the stop value. So, if you provide a stop value of 5, it will loop through 0 to 4 (not including 5)
+        - Nothing mentioned(1, 6) means what ? It's a positive direction. 
+ Pattern-3 :
+    for i in range(start,stop,step(5, 9, 3)) # "step" means how much gap you want to take
+        - start : strat of the loop
+        - Direction : What is the sign of step value, That is the direction, Here direction will not decided by start/stop, The direction will decided by step value here.
+        - If step size is positive direction,
+               end value=stop-1
+        - If step size is negative direction 
+               end value=stop+1
 
- Example-code for (for loop):
+Example-code for (for loop):
  ----------------------------
-   # I want to print first 10 numbers
-   
+   # I want to print first 5 numbers
+   # Initial point : 0 [Which we want to start the loop]
+   # Incremental   : From 0-10 means it's an incremental right
+   # Condition     : What is the condition here, Whenever the code reached to 5 the code should stop.
+  for i in range(5):  # Whenever you see any single value in the bracket it's ntg but a stop value  
+  i=0   # The default start value is "0"
+  i=1
+  i=2
+  i=3
+  i=4
+here "i" is a variable
+Let's write a code with "for loop" for above requirement :
+==========================================================
+# Pattern-1 :
+=============
+  for i in range(5):  # Whenever you see any single value in the bracket it's ntg but a stop value  
+      print (i)
+ # start value will = "0"
+ # direction        = +
+ # end = stop-1 = 5-1 = 4
+Output : 
+========
+0
+1
+2
+3
+4
+
+How to print the output as a horizantal way :
+=============================================
+  for i in range(5): 
+      print (i, end= " ")
+Output :
+========
+  0 1 2 3 4 
+
+# Pattern-2 :
+=============
+  for i in range(5, 10): # Whenever you see any two values in the bracket it's ntg but a start and stop values
+      print(i, end=" ")
+Output : 
+========
+  5 6 7 8 9 
+
+# Pattern-3 :
+=============
+  for i in range(2, 20, 2): # Whenever you see any three values in the bracket it's ntg but a start and stop and step values
+      print(i, end=" ") 
+  # start value = 2
+  # Direction   = + (step size we difine here is 2)  # Here we didn't provide any negetive(-) values, So it wiil sign to positive direction.
+  # end value   = Stop-1= 20-1=19
+Calculation steps:
+==================
+  Start at 2.
+  Add the step value (2) each time:
+  2 → 4 → 6 → 8 → 10 → 12 → 14 → 16 → 18
+  It stops at 18 because the next value, 20, equals the stop value and the loop does not include the stop value itself.
+Output :
+=========
+  2, 4, 6, 8, 10, 12, 14, 16, 18.
+Note :
+======
+The reason it's not printing like 2 3 4 5 6 7 8 ... 20 is because of the step value you provided in the range() function
+Why the difference?
+--------------------
+   In the first case(start and stop), you're letting Python use the default step of 1, so it counts every number.
+   In the second case(start,stop,set), you explicitly set the step to 2, so it skips every other number, producing only the numbers with an interval of 2.
