@@ -187,7 +187,7 @@ Code-4 :
  for i in range(8, 20, -2):
     print(i, end=" ")
  # start = 8
- # direction = - (we provided the set value as negative)
+ # direction = -2 (we provided the set value as negative)
  # end=stop+1=20+1=21.
 Why it doesn't print anything:
 -----------------------------
