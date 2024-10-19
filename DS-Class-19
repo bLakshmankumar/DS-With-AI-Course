@@ -1,2 +1,40 @@
 For Loop :
 ==========
+
+What we completed so far :
+==========================
+ - Basic syntax
+ - Conditional statements
+ - try - exception
+ - Functions
+
+Today we will start discussing about loop concept .
+===================================================
+Definition of Loop concept :
+============================
+   A loop in Python is a programming concept that allows you to repeat a block of code multiple times. The main idea is to perform the same set of actions multiple times without having to write the code again and again.
+
+Meaning:
+========
+A loop runs a block of code repeatedly either for a fixed number of times or until a certain condition is met.
+
+Purpose:
+========
+The purpose of loops is to automate repetitive tasks, making the code shorter, easier to manage, and more efficient.
+
+Types of loops in Python:
+==========================
+   > for loop   – Repeats actions for each item in a sequence (e.g., a list, range, or string).
+   > while loop – Keeps running a block of code as long as a specified condition is true.
+ Example-code for (for loop):
+ ----------------------------
+   # Print numbers from 1 to 5
+     for i in range(1, 6):
+         print(i)
+ Out-put :
+ ---------
+   1
+   2
+   3 
+   4
+   5
