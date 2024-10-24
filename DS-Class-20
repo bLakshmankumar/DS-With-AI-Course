@@ -1,3 +1,5 @@
+Requirement -1
+===============
 # Wap to print hello 3 times/iterations using Loop
 # don't do
 # print ('hello')
@@ -25,6 +27,8 @@ hello
 
 Let's do another code :
 ========================
+Code-3 :
+========
 print ('Hai')
 for i in range(3):
     print("Hello")
@@ -38,6 +42,62 @@ Hello
 Hello
 Hello
 How do you do 
+
+# Requirement-2 :
+# -------------
+# I want to print the output in this order
+# A
+# A
+# A
+# B
+# B
+# C
+# C
+# C
+
+Code-4 :
+========
+ for i in range(3):
+    print("A")
+for i in range(2):
+    print("B")
+for i in range(3):
+    print("C")
+
+Output :
+========
+# A
+# A
+# A
+# B
+# B
+# C
+# C
+# C
+ (OR)
+Code-5
+======
+# Outer loop for letters
+for letter, count in [('A', 3), ('B', 2), ('C', 3)]:
+    # Inner loop to print each letter the specified number of times
+    for _ in range(count):
+        print(letter)
+# The outer loop iterates through a list of tuples. Each tuple contains a letter and the number of times it should be printed.
+# The inner loop prints the letter as many times as specified in the tuple.
+Output :
+========
+A
+A
+A
+B
+B
+C
+C
+C
+
+Requirement-3 :
+===============
+
 
 
 
