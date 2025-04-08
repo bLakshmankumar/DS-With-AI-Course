@@ -215,8 +215,6 @@ end_number = 15
 # Call the function using variables
 square_with_range(start_number, end_number)
 
-Code-2 :
-========
 
 
 
