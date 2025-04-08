@@ -244,6 +244,12 @@ Code-2 :
 for i in range(5):
     num = eval(input(f"Enter number : "))
     print("The square of {} is {}".format(num, num*num))
+What it does:
+============
+  Loops 5 times.
+  Each time, asks the user to enter a number.
+  Prints the square of that number.
+Purpose  
 
 
 
