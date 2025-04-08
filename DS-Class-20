@@ -161,7 +161,7 @@ for number in range(start, end):
 
 Requirement-6 :
 ===============
-I want to use the same code with functions using without arguments.
+I want to use the same code with functions using "without arguments".
 code :
 ======
 # define a function 
@@ -182,6 +182,43 @@ Enter the starting number:  10
 Enter the ending number:  12
 Square of 10 is 100
 Square of 11 is 121
+
+Requirement-7:
+==============
+I want to use the same code with functions using "with arguments".
+Code-1 :
+========
+# Define a function with arguments
+def square_with_range(start, end):
+    # Use a loop to print squares from start to end (inclusive)
+    for number in range(start, end + 1):
+        square = number * number
+        print(f"Square of {number} is {square}")
+
+# Call the function with arguments
+square_with_range(10, 15)
+
+
+Code-2 :
+=======
+# Using variables with a function that has arguments.
+
+def square_with_range(start, end):
+    # Use a loop to print squares from start to end (inclusive)
+    for number in range(start, end + 1):
+        square = number * number
+        print(f"Square of {number} is {square}")
+# Define variables
+start_number = 10
+end_number = 15
+
+# Call the function using variables
+square_with_range(start_number, end_number)
+
+Code-2 :
+========
+
+
 
 
 
