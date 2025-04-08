@@ -215,8 +215,35 @@ end_number = 15
 # Call the function using variables
 square_with_range(start_number, end_number)
 
+# Requirement-6 :
+=================
+#Wap ask the user to print square of the five numbers
+#and these five numbers you need to ask user everytime
 
+Code-1 :
+# Loop 5 times to get 5 numbers from the user
+for i in range(5):
+    number = eval(input(f"Enter number {i + 1}: "))
+    square = number * number
+    print(f"Square of {number} is {square}")
+Output :
+========
+Enter number 1:  1
+Square of 1 is 1
+Enter number 2:  5
+Square of 5 is 25
+Enter number 3:  6
+Square of 6 is 36
+Enter number 4:  4
+Square of 4 is 16
+Enter number 5:  5
+Square of 5 is 25
 
+Code-2 :
+========
+for i in range(5):
+    num = eval(input(f"Enter number : "))
+    print("The square of {} is {}".format(num, num*num))
 
 
 
