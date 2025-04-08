@@ -119,6 +119,33 @@ Square of 13 is 169
 Square of 14 is 196
 Square of 15 is 225
 
+# Requirement-2 : 
+=================
+Use the same above requirement but this time take the inputs from the user.
+And do the calculation part.
+Code : 1
+========
+# Ask the user for the starting and ending numbers
+start = eval(input("Enter the starting number: "))
+end = eval(input("Enter the ending number: "))
+
+# Loop through the given range and print squares
+for number in range(start, end + 1):
+    square = number * number
+    print(f"Square of {number} is {square}")
+
+Output:
+=======
+Enter the starting number:  10
+Enter the ending number:  15
+Square of 10 is 100
+Square of 11 is 121
+Square of 12 is 144
+Square of 13 is 169
+Square of 14 is 196
+Square of 15 is 225
+
+21:32
 
 
 
