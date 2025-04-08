@@ -130,7 +130,7 @@ start = eval(input("Enter the starting number: "))
 end = eval(input("Enter the ending number: "))
 
 # Loop through the given range and print squares
-for number in range(start, end + 1):
+for number in range(start, end):
     square = number * number
     print(f"Square of {number} is {square}")
 
