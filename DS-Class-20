@@ -103,8 +103,8 @@ Requirement-3 :
 # Square of 11 is 121
 # Square of 12 is 144
 
-Code-1 : 
-========
+Code 
+======
 # Python program to print the square of numbers between 10 and 15 using a loop.
 # First should get the numbers from 10 to 15
 for number in range(10, 16):
@@ -119,12 +119,12 @@ Square of 13 is 169
 Square of 14 is 196
 Square of 15 is 225
 
-# Requirement-2 : 
+# Requirement-4 : 
 =================
 Use the same above requirement but this time take the inputs from the user.
 And do the calculation part.
-Code : 1
-========
+Code :
+======
 # Ask the user for the starting and ending numbers
 start = eval(input("Enter the starting number: "))
 end = eval(input("Enter the ending number: "))
@@ -145,7 +145,19 @@ Square of 13 is 169
 Square of 14 is 196
 Square of 15 is 225
 
-21:32
+Requirement-5 :
+===============
+I want to use the same above code but i want to save the values in a variables and call the variables.
+Code : 
+======
+# Set the variables
+start = 10
+end = 15
+
+# Loop through the given range and print squares
+for number in range(start, end):
+    square = number * number
+    print(f"Square of {number} is {square}")
 
 
 
