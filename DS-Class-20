@@ -159,6 +159,30 @@ for number in range(start, end):
     square = number * number
     print(f"Square of {number} is {square}")
 
+Requirement-6 :
+===============
+I want to use the same code with functions using without arguments.
+code :
+======
+# define a function 
+def square1():
+# Ask the user for the starting and ending numbers
+  start = int(input("Enter the starting number: "))
+  end = int(input("Enter the ending number: "))
+
+# Write a for Loop through the given range and print squares
+  for number in range(start, end):
+      square = number * number
+      print(f"Square of {number} is {square}")
+square1() # call the function
+
+Output :
+=======
+Enter the starting number:  10
+Enter the ending number:  12
+Square of 10 is 100
+Square of 11 is 121
+
 
 
 
