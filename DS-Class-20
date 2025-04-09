@@ -221,11 +221,26 @@ square_with_range(start_number, end_number)
 #and these five numbers you need to ask user everytime
 
 Code-1 :
+========
 # Loop 5 times to get 5 numbers from the user
 for i in range(5):
     number = eval(input(f"Enter number {i + 1}: "))
     square = number * number
     print(f"Square of {number} is {square}")
+
+OR 
+for i in range(5):
+    num = eval(input(f"Enter number : "))
+    print("The square of {} is {}".format(num, num*num))
+What it does:
+============
+  Loops 5 times.
+  Each time, asks the user to enter a number.
+  Prints the square of that number.
+Purpose :
+=========
+  Perfect for asking the user 5 different numbers and printing each square — most practical for your original request.
+
 Output :
 ========
 Enter number 1:  1
@@ -239,17 +254,56 @@ Square of 4 is 16
 Enter number 5:  5
 Square of 5 is 25
 
+
 Code-2 :
 ========
+num = eval(input(f"Enter number : "))
 for i in range(5):
-    num = eval(input(f"Enter number : "))
     print("The square of {} is {}".format(num, num*num))
-What it does:
-============
-  Loops 5 times.
-  Each time, asks the user to enter a number.
-  Prints the square of that number.
-Purpose  
+Meaning :
+=========
+Takes one number from the user (num).
+Loops 5 times, but prints the same square each time.
+If user inputs 3:
+Output : 
+========
+Enter number :  3
+The square of 3 is 9
+The square of 3 is 9
+The square of 3 is 9
+The square of 3 is 9
+The square of 3 is 9
+
+Purpose :
+=========
+Takes one number and repeats its square 5 times — probably not useful practically.
+
+Code-3 :
+========
+for i in range(5):
+    print("The square of {} is {}".format(i, i*i))
+OR
+for i in range(5):
+    print("The square of {} is {}".format(num, num*num))
+
+Meaning :
+========
+Loops 5 times and Each time, it uses the loop variable i (0 to 4).
+Prints the square of i.
+purpose :
+=========
+Auto-generates squares from 0 to 4 — no user input needed.
+Output :
+========
+The square of 0 is 0  
+The square of 1 is 1  
+The square of 2 is 4  
+The square of 3 is 9  
+The square of 4 is 16  
+
+
+
+
 
 
 
