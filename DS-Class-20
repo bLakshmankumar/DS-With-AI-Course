@@ -327,6 +327,64 @@ Random number 3 is 11, and its square is 121
 Random number 4 is 8, and its square is 64
 Random number 5 is 2, and its square is 4
 
+Requirement-8 :
+===============
+# Wap ask the user print the given num is even or odd
+# We need to take the numbers between 10 to 30
+# Iterate the loop between 10 to 30
+# Every time apply If the i%2==0: Print the corresponding number is even number.
+#                  Else print odd num
+Code-1 :
+========
+num=eval(input("Enter number"))
+if num%2==0:
+   print ( "The given {} is even".format(num))
+else:
+   print ( "The given {} is odd".format(num))
+What it does:
+=============
+Asks the user to enter one number
+Checks if it's even or odd
+Prints the result for just that one number
+
+🧠 Purpose:
+============
+Used when you want to check a specific number, entered by the user.
+
+Output :
+========
+Enter number 6
+The given 6 is even
+
+
+Code-2 :
+========
+[instead of asking user to manually enter the number and check the condition create a Loops from 10 to 30.]
+# Loop from 10 to 15 (inclusive)
+for i in range(10, 15):
+    if i % 2 == 0:
+        print(f"{i} is an even number.")
+    else:
+        print(f"{i} is an odd number.")
+What it does:
+==============
+Doesn't ask the user for input
+Automatically goes through all numbers from 10 to 15
+Prints whether each number is even or odd
+
+🧠 Purpose:
+============
+ Used when you want to process a range of numbers automatically.
+
+Output :
+========
+10 is an even number.
+11 is an odd number.
+12 is an even number.
+13 is an odd number.
+14 is an even number
+
+
 
 
 
