@@ -301,6 +301,22 @@ The square of 2 is 4
 The square of 3 is 9  
 The square of 4 is 16  
 
+Requirement-7:
+==============
+#Wap ask the user to print five times of square number
+#This time you need to take everytime a random number between 1 to 20
+Code-1 :
+import random
+for i in range(5):
+    num=random.randint(1, 20)
+    print(f"Random number {i+1} is {num}, and its square is {num * num}")
+Output :
+========
+Random number 1 is 10, and its square is 100
+Random number 2 is 6, and its square is 36
+Random number 3 is 11, and its square is 121
+Random number 4 is 8, and its square is 64
+Random number 5 is 2, and its square is 4
 
 
 
