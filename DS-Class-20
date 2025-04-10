@@ -483,8 +483,8 @@ The given number 17 is odd.
 The given number 10 is even.
 The given number 11 is odd.
 
-Requirement-7 :
-===============
+Requirement-7 (program code):
+=============================
 # Write a new code it should be atleast in 5 lines
 # ====== From this step onwards you need to repeat 3 times ==========
 # Take a random num from random package between 1 to 10
