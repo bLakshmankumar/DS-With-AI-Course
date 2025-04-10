@@ -483,7 +483,36 @@ The given number 17 is odd.
 The given number 10 is even.
 The given number 11 is odd.
 
-01:01:01
+Requirement-7 :
+===============
+# Write a new code it should be atleast in 5 lines
+# ====== From this step onwards you need to repeat 3 times ==========
+# Take a random num from random package between 1 to 10
+# Ask the user to enter a number between 1 to 10
+# If the num == random number:
+#         print ("You won")
+# else:
+# print ("You lost")
+
+Code-1 :
+========
+import random
+
+# Repeat the game 3 times
+for i in range(3):
+    rand_num = random.randint(1, 10)
+    user_num = int(input("Enter a number between 1 to 10: "))
+    
+    if user_num == rand_num:
+        print("You won!")
+    else:
+        print("You lost. The correct number was", rand_num)
+What it does:
+=============
+Picks a random number between 1 to 10
+Asks the user to guess a number
+Checks if the guess is correct
+Repeats this whole process 3 times
 
 
 
