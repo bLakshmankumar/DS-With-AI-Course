@@ -523,6 +523,7 @@ Code-2 :
 ========
 import random
 rand_num = random.randint(1, 10)
+print('rand_num') # It will print the randum num before you guess the number
 for i in range(3):
     user_num = int(input("Enter a number between 1 to 10: "))
 # Condition    
