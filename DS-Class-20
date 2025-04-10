@@ -384,7 +384,79 @@ Output :
 13 is an odd number.
 14 is an even number
 
-53:22
+# Same above question but this time 
+# WAP ask the user to print the given number is even or odd
+# You need to take the number randomly between 10 to 30.
+# This process you need to do for 5 times.
+
+# Create a for loop to run 5 times 
+# Everytime get the random num
+# Finally apply if-else condition to get print the given number is even or odd
+
+Code-1 :
+========
+import random
+# Loop 5 times
+for i in range(5):
+    num=random.randint(1, 20)
+# Create if-else statement
+    if num%2==0:
+       print ("The given num {} is even". format(num))
+    else:
+       print ("The given num {} is odd". format(num))
+What It Does:
+-------------
+Imports the random module
+Runs a loop 5 times
+Each time:
+Picks a random number between 1 and 20
+Checks if it's even or odd
+Prints the result
+Output :
+========
+The given num 17 is odd
+The given num 10 is even
+The given num 16 is even
+The given num 19 is odd
+The given num 5 is odd
+
+
+# The same code with functions
+import random
+# Define the function
+def check_even_odd_random(): # Provide any name for function
+    for i in range(5):
+        num = random.randint(10, 30)
+        if num % 2 == 0:
+            print("The given number {} is even.".format(num))
+        else:
+            print("The given number {} is odd.".format(num))
+# Call the function
+check_even_odd_random()
+
+# What is does :
+----------------
+Imports the random module
+So we can use random.randint() to generate random numbers.
+Defines a function called check_even_odd_random()
+Functions are reusable blocks of code — you can call this one anytime.
+Inside the function:
+  It runs a for loop 5 times
+In each loop:
+  Generates a random number between 10 and 30
+Uses an if-else condition:
+  If num % 2 == 0, the number is even Otherwise, it’s odd
+  Prints whether the number is even or odd
+Calls the function with check_even_odd_random()
+  So the code actually runs and shows output.
+
+Output :
+--------
+The given number 22 is even.
+The given number 27 is odd.
+The given number 17 is odd.
+The given number 10 is even.
+The given number 11 is odd.
 
 
 
