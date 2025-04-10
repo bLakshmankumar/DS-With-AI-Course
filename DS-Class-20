@@ -523,7 +523,7 @@ Code-2 :
 ========
 import random
 rand_num = random.randint(1, 10)
-print('rand_num') # It will print the randum num before you guess the number
+# print("The random number is:", rand_num)  # Optional: This for testing only because  It will print the random num
 for i in range(3):
     user_num = int(input("Enter a number between 1 to 10: "))
 # Condition    
@@ -558,6 +558,30 @@ Picks a random number between 1 to 10
 Asks the user to guess a number
 Checks if the guess is correct
 Repeats this whole process 3 times
+
+#  Let's improve your game by telling the user how many chances are left after each incorrect guess.
+Code :
+=====
+import random
+rand_num = random.randint(1, 10)
+# print("The random number is:", rand_num)  # Optional: This for testing only because  It will print the random num
+for i in range(3):
+    user_num = int(input("Enter a number between 1 to 10: "))    
+    if user_num == rand_num:
+        print("You won!")
+        break
+    else:
+        chances_left = 2 - i  # because i starts from 0
+        if chances_left > 0:
+            print(f"You lost. Try again! You have {chances_left} chances left.")
+        else:
+            print(f"You lost. No chances left. The correct number was {rand_num}.")
+Output :
+========
+The random number is: 1
+Enter a number between 1 to 10:  1
+You won!
+
 
 
 
