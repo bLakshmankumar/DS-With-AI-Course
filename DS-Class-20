@@ -422,6 +422,31 @@ The given num 5 is odd
 
 
 # The same code with functions
+Code-1 :
+========
+# Define the function
+def check_even_odd_random(num):
+        if num % 2 == 0:
+            print("The given number {} is even.".format(num))
+        else:
+            print("The given number {} is odd.".format(num))
+import random
+for i in range(5):
+    num = random.randint(10, 30)
+# Call the function
+    check_even_odd_random(num)
+What it does :
+--------------
+Defines a function that takes one argument (num)
+Uses that argument to check if it's even or odd
+Outside the function:
+   A loop runs 5 times
+   Each time, it generates a random number between 10 and 30
+Passes that number into the function to check even/odd
+
+
+Code-2 : (google)
+=================
 import random
 # Define the function
 def check_even_odd_random(): # Provide any name for function
@@ -457,6 +482,8 @@ The given number 27 is odd.
 The given number 17 is odd.
 The given number 10 is even.
 The given number 11 is odd.
+
+01:01:01
 
 
 
