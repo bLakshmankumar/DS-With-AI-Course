@@ -497,6 +497,49 @@ Requirement-7 :
 Code-1 :
 ========
 import random
+rand_num = random.randint(1, 10)
+for i in range(3):
+    user_num = int(input("Enter a number between 1 to 10: "))
+# Condition    
+    if user_num == rand_num:
+        print("You won!")
+    else:
+        print("You lost. The correct number was", rand_num)
+
+Output:
+======
+  Enter a number between 1 to 10:  5
+  You lost. The correct number was 6
+  Enter a number between 1 to 10:  6
+  You won!  
+  Enter a number between 1 to 10:  4
+  You lost. The correct number was 6
+
+Note : If you noticed here, code currently keeps looping even if the user guesses the correct number. 
+That’s because there’s no instruction to stop the loop when the guess is right.
+Fix: Use break to exit the loop when the user wins.
+
+Code-2 :
+========
+import random
+rand_num = random.randint(1, 10)
+for i in range(3):
+    user_num = int(input("Enter a number between 1 to 10: "))
+# Condition    
+    if user_num == rand_num:
+        print("You won!")
+        break
+    else:
+        print("You lost. The correct number was", rand_num)
+
+# We added break after "You won!" so the loop stops when the guess is correct.
+Output :
+======
+If guess is correct it will stop the loop.
+
+Code-3 :
+========
+import random
 
 # Repeat the game 3 times
 for i in range(3):
@@ -505,6 +548,7 @@ for i in range(3):
     
     if user_num == rand_num:
         print("You won!")
+        break
     else:
         print("You lost. The correct number was", rand_num)
 What it does:
