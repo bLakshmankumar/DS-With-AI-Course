@@ -1,10 +1,15 @@
-Program-1 : 
-=========
- # Client requirement: User Login Attempts with 3-Hour Lockout
+Real-Life Analogy :
+====================
+# Imagine trying to open your phone with the wrong PIN 3 times — it locks you out and says:
+# “Try again after 3 hours.”
+# That’s exactly what this program does, just using a password instead of a PIN.
+
+# Client requirement: User Login Attempts with 3-Hour Lockout using loops:
+==========================================================================
  # This program simulates a login system where the user has a maximum of 3 attempts to enter the correct password. 
  # If the user fails all 3 attempts, they are locked out for 3 hours. The program stores the lockout time and restricts further login attempts during the lockout period.
 # Steps we should follow here :
- # ----------------------------
+-------------------------------
  # Create a login system where:
  # The user is allowed a maximum of 3 attempts to log in.
  # If the password is incorrect 3 times, the user should wait 3 hours before trying again.
@@ -94,8 +99,149 @@ Output :
    Enter your password:  54
    You have been locked out. Try again after 3 hours.
 
-Program-2 : [ Login Attempt Program using if-elif-else, Loops, and Functions]
-==============================================================================
+Client requirement: [Login Attempt Program using if-elif-else, While loops, and Functions]
+===========================================================================================
+Requirment :
+============
+# Allow a user to enter a password.
+# If correct → ✅ “Login successful!”
+# If incorrect → ❌ Give the user up to 3 attempts.
+# If the user fails all 3 attempts → 🔒 Lock them out for 3 hours.
+# If the user runs the script during the lockout time → ⏳ Show how much time is left.
+
+Code-2 :
+========
+import time
+# Constants
+CORRECT_PASSWORD = "admin123"
+MAX_ATTEMPTS = 3
+LOCKOUT_DURATION = 3 * 60 * 60  # 3 hours in seconds
+LOCKOUT_FILE = "lockout_time.txt"
+
+# Function to get lockout time from file
+  # This tries to read the saved lockout time from a file.
+  #If there's no file yet (you haven't been locked before), it returns nothing (None).
+def get_lockout_time():
+    try:
+        with open(LOCKOUT_FILE, "r") as f:
+            return float(f.read().strip())
+    except FileNotFoundError:
+        return None
+
+# Function to check if user is currently locked out
+  # If you’ve been locked out before and 3 hours haven’t passed yet:
+  # It will calculate how much time is left and print it.
+  # Then it stops the program from going further.
+def is_user_locked():
+    lockout_time = get_lockout_time()
+    if lockout_time:
+        current_time = time.time()
+        if current_time < lockout_time:
+            remaining = int(lockout_time - current_time)
+            hrs, rem = divmod(remaining, 3600)
+            mins, _ = divmod(rem, 60)
+            print(f"You are locked out. Try again after {hrs}h {mins}m.")
+            return True
+    return False
+
+# Function to lock the user for 3 hours
+  # This sets a timer for 3 hours from now.
+  # It saves that time into the file so the next time you run the program, it knows you're still locked.
+  # Then it prints a lockout message.
+def lock_user():
+    lockout_until = time.time() + LOCKOUT_DURATION
+    with open(LOCKOUT_FILE, "w") as f:
+        f.write(str(lockout_until))
+    print("You have been locked out. Try again after 3 hours.")
+
+# Function to handle login attempts [Login Attempt Logic]
+  # First, it checks if you're locked out (using the is_user_locked() function).
+  # If not locked, it lets you enter your password in a loop — up to 3 times
+def login():
+    if is_user_locked():
+        return  
+    attempts = 0
+    while attempts < MAX_ATTEMPTS:
+        password = input("Enter your password: ")
+  # If-Else for Password Check
+    # If you get the password right → you're in! 🎉
+    # If wrong → it tells you how many tries are left.
+    # After 3 wrong tries → you’re locked out and the time is saved.
+        if password == CORRECT_PASSWORD:
+            print("Login successful!")
+            break
+        elif password != CORRECT_PASSWORD:
+            attempts += 1
+            remaining = MAX_ATTEMPTS - attempts
+            if remaining > 0:
+                print(f"Incorrect password. You have {remaining} attempt(s) left.")
+            else:
+                print("Incorrect password. No attempts left.")
+                lock_user()
+        else:
+            print("Invalid input.")
+
+# Run the program
+# This simply starts the login process.
+login()
+
+Program-2 : [Same Login System with for Loop along with if, elif, else and functions]
+=====================================================================================
+import time
+
+CORRECT_PASSWORD = "admin123"
+MAX_ATTEMPTS = 3
+LOCKOUT_DURATION = 3 * 60 * 60  # 3 hours
+LOCKOUT_FILE = "lockout_time.txt"
+
+def get_lockout_time():
+    try:
+        with open(LOCKOUT_FILE, "r") as f:
+            return float(f.read().strip())
+    except FileNotFoundError:
+        return None
+
+def is_user_locked():
+    lockout_time = get_lockout_time()
+    if lockout_time:
+        current_time = time.time()
+        if current_time < lockout_time:
+            remaining = int(lockout_time - current_time)
+            hrs, rem = divmod(remaining, 3600)
+            mins, _ = divmod(rem, 60)
+            print(f"You are locked out. Try again after {hrs}h {mins}m.")
+            return True
+    return False
+
+def lock_user():
+    lockout_until = time.time() + LOCKOUT_DURATION
+    with open(LOCKOUT_FILE, "w") as f:
+        f.write(str(lockout_until))
+    print("You have been locked out. Try again after 3 hours.")
+
+def login():
+    if is_user_locked():
+        return
+   # Start attempt at 1
+   # Keep going up to (and including) 3
+   # So the loop runs 3 times total
+    for attempt in range(1, MAX_ATTEMPTS + 1):
+        password = input("Enter your password: ")
+        
+        if password == CORRECT_PASSWORD:
+            print("Login successful!")
+            return
+        
+        elif attempt < MAX_ATTEMPTS:
+            print(f"Incorrect password. You have {MAX_ATTEMPTS - attempt} attempt(s) left.")
+        else:
+            print("Incorrect password. No attempts left.")
+            lock_user()
+
+login()
+
+
+
 
 
 
