@@ -559,6 +559,8 @@ Asks the user to guess a number
 Checks if the guess is correct
 Repeats this whole process 3 times
 
+Requirement-8:
+==============
 #  Let's improve your game by telling the user how many chances are left after each incorrect guess.
 Code :
 =====
@@ -578,14 +580,51 @@ for i in range(3):
             print(f"You lost. No chances left. The correct number was {rand_num}.")
 Output :
 ========
-The random number is: 1
-Enter a number between 1 to 10:  1
+The random number is: 10
+Enter a number between 1 to 10:  9
+You lost. Try again! You have 2 chances left.
+Enter a number between 1 to 10:  5
+You lost. Try again! You have 1 chances left.
+Enter a number between 1 to 10:  10
 You won!
 
-01:20:00
+Requirement-9 : [Simple Number Guessing Game with Limited Chances and Cooldown Message]
+===============
+# This game challenges the user to guess a randomly generated number between 1 and 10. The user has 3 chances to guess the number. 
+# If they guess it correctly, they win! If not, the program tells them how many chances are left. 
+# Once all chances are used, the program prints a cooldown message suggesting the user try again after 2 hours.
 
+Code :
+=======
+import random
 
+rand_num = random.randint(1, 10)
+print("The random number is:", rand_num)
+# print(f"Random number (for testing): {rand_num}")  # Uncomment for testing purposes
 
+for i in range(3):
+    user_num = int(input("Enter a number between 1 to 10: "))
+    if user_num == rand_num:
+        print("You won!")
+        break
+    else:
+        chances_left = 2 - i
+        if chances_left > 0:
+            print(f"You lost. Try again! You have {chances_left} chances left.")
+        else:
+            print(f"You lost. No chances left. The correct number was {rand_num}.")
+            print("Your chances are over. Try again after 2 hours.")
+
+Output :
+========
+The random number is: 6 
+Enter a number between 1 to 10:  5
+You lost. Try again! You have 2 chances left.
+Enter a number between 1 to 10:  4
+You lost. Try again! You have 1 chances left.
+Enter a number between 1 to 10:  1
+You lost. No chances left. The correct number was 6.
+Your chances are over. Try again after 2 hours.
 
 
 
