@@ -626,6 +626,105 @@ Enter a number between 1 to 10:  1
 You lost. No chances left. The correct number was 6.
 Your chances are over. Try again after 2 hours.
 
+Program :
+=========
+# Program: User Login Attempts with 3-Hour Lockout
+# This program simulates a login system where the user has a maximum of 3 attempts to enter the correct password. 
+# If the user fails all 3 attempts, they are locked out for 3 hours. 
+# The program stores the lockout time and restricts further login attempts during the lockout period.
+
+✅ Requirements :
+-----------------
+ # Create a login system where:
+ #   The user is allowed a maximum of 3 attempts to log in.
+ #   If the password is incorrect 3 times, the user should wait 3 hours before trying again.
+ #   The program must display a message like:
+ #   "You have been locked out. Try again after 3 hours."
+ #   Track and store the lockout time using system time.
+
+Code :
+=======
+# Import Required Modules
+import time
+from datetime import datetime, timedelta
+  #time is used to track the current timestamp and lockout expiration.
+  # datetime and timedelta can be useful if you want human-readable time (though time.time() is used here).
+
+# Set Up Password and Lockout File
+correct_password = "admin123"
+lockout_file = "lockout_time.txt"
+# Uses a file to store the lockout expiration time, simulating persistent memory (like saving to a database or session in real-world systems).
+
+# Check Lockout Status
+def is_locked_out():
+   # Tries to read the lockout timestamp from the file.
+   # Converts the stored string to a float (UNIX time format).
+    try:
+        with open(lockout_file, "r") as f:
+            lockout_timestamp = float(f.read().strip())
+   # Compares the current time to the stored lockout time.
+   # If it's still in the lockout window, calculates remaining time and shows it.
+            if time.time() < lockout_timestamp:
+                remaining = int(lockout_timestamp - time.time())
+   # Converts seconds to a human-readable hours and minutes format.
+   # Returns True to indicate the user is still locked out.
+                mins, secs = divmod(remaining, 60)
+                hrs, mins = divmod(mins, 60)
+                print(f"You are locked out. Please try again after {hrs}h {mins}m.")
+                return True
+   # If there's no lockout file yet, it means the user is not locked out.
+    except FileNotFoundError:
+        pass
+    return False
+
+# Function to Lock the User for 3 Hours
+def lock_user_for_3_hours():
+    lockout_until = time.time() + 3 * 60 * 60  # 3 hours in seconds
+   # Calculates the lockout expiry time, which is current time + 3 hours (in seconds).
+   # Stores the lockout timestamp in a file for future reference.
+    with open(lockout_file, "w") as f:
+        f.write(str(lockout_until))
+   # Shows a message to the user.
+    print("You have been locked out. Try again after 3 hours.")
+
+# Main Login Logic :
+# ==================
+# Check if user is currently locked out
+if not is_locked_out():
+  # If not locked out, gives the user 3 chances to enter the correct password.
+    for attempt in range(3):
+        user_input = input("Enter your password: ")
+        if user_input == correct_password:
+            print("Login successful!")
+            break
+  # If the password is correct, login is successful, and the loop exits.
+  # If wrong, show how many attempts are left.
+        else:
+            remaining_attempts = 2 - attempt
+            if remaining_attempts > 0:
+                print(f"Incorrect password. You have {remaining_attempts} attempts left.")
+# If it’s the third wrong attempt, trigger the lockout by calling the lock function.
+            else:
+                lock_user_for_3_hours()
+
+Output :
+========
+  Successful login attempt :
+  ==========================
+   Enter your password:  admin
+   Incorrect password. You have 2 attempts left. 
+   Enter your password:  admin123
+   Login successful!
+  Failed login attempt :
+  ======================
+   Enter your password:  564
+   Incorrect password. You have 2 attempts left.
+   Enter your password:  14
+   Incorrect password. You have 1 attempts left.
+   Enter your password:  54
+   You have been locked out. Try again after 3 hours.
+
+
 
 
 
