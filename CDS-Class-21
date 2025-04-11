@@ -240,6 +240,90 @@ def login():
 
 login()
 
+Program-3 : [Same Login System with for Loop and while loops along with if, elif, else and functions using in same code]
+========================================================================================================================
+import time
+
+CORRECT_PASSWORD = "admin123"
+MAX_ATTEMPTS = 3
+LOCKOUT_DURATION = 3 * 60 * 60  # 3 hours
+LOCKOUT_FILE = "lockout_time.txt"
+
+# --------------------- Functions -----------------------
+
+def get_lockout_time():
+    """Reads the lockout time from file if present."""
+    try:
+        with open(LOCKOUT_FILE, "r") as f:
+            return float(f.read().strip())
+    except FileNotFoundError:
+        return None
+
+def is_user_locked():
+    """Checks if the user is currently locked out."""
+    lockout_time = get_lockout_time()
+    if lockout_time:
+        current_time = time.time()
+        if current_time < lockout_time:
+            remaining = int(lockout_time - current_time)
+            hrs, rem = divmod(remaining, 3600)
+            mins, _ = divmod(rem, 60)
+            print(f"\n🚫 You are locked out. Try again after {hrs}h {mins}m.\n")
+            return True
+    return False
+
+def lock_user():
+    """Locks the user by saving future lockout time to file."""
+    lockout_until = time.time() + LOCKOUT_DURATION
+    with open(LOCKOUT_FILE, "w") as f:
+        f.write(str(lockout_until))
+    print("\n🔒 You have been locked out for 3 hours.\n")
+
+def attempt_login():
+    """Handles the login attempts using for loop."""
+    for attempt in range(1, MAX_ATTEMPTS + 1):
+        password = input("Enter your password: ")
+
+        if password == CORRECT_PASSWORD:
+            print("\n✅ Login successful!\n")
+            return True
+
+        elif password != CORRECT_PASSWORD:
+            remaining = MAX_ATTEMPTS - attempt
+            if remaining > 0:
+                print(f"❌ Incorrect password. You have {remaining} attempt(s) left.\n")
+            else:
+                print("❌ Incorrect password. No attempts left.\n")
+    return False
+
+# --------------------- Main Login Control -----------------------
+
+def login():
+    while True:
+        if is_user_locked():
+            break  # Don't proceed if locked
+
+        success = attempt_login()
+
+        if success:
+            break  # Exit the loop if login successful
+        else:
+            lock_user()
+            break  # Exit after locking the user
+
+# --------------------- Run the Program -----------------------
+
+login()
+
+# Explanation :
+===============
+   Concept Used	               Where in Code        	                What it Does
+✅ Function :	             login(), attempt_login() etc.   	     Keeps code organized
+🔁 while loop	:                while True:	                      Keeps checking if login should proceed or not
+🔁 for loop	:              for attempt in range...	              Limits user to 3 tries
+📊 if / elif / else :     	Inside attempt_login()	               Decides success, wrong password, or lockout
+⏱️ Lockout logic :        	lock_user() & is_user_locked()	       Prevents spamming login attempts
+
 
 
 
