@@ -353,4 +353,28 @@ Sum of value is 9
 Difference of value is 3
 Product of value is 18
 
+Task-5 :
+========
+# The provided code stub reads two integers,  and , from STDIN.
+# Add logic to print two lines. The first line should contain the result of integer division, a//b. 
+# The second line should contain the result of float division, a/b. 
+# No rounding or formatting is necessary.
+Code :
+======
+# Read input values
+a = int(input("Enter a value"))
+b = int(input("Enter b value"))
+# Integer division
+print("The integer devision is", a // b)
+# Float division
+print("The float division is", a / b)
+
+Output :
+========
+Enter a value 88
+Enter b value 65
+The integer value is 1
+The float division value is 1.353846153846154
+
+
 
