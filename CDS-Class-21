@@ -1,5 +1,7 @@
 Real-Life Analogy :
 ====================
+Task-1 :
+========
 # Imagine trying to open your phone with the wrong PIN 3 times — it locks you out and says:
 # “Try again after 3 hours.”
 # That’s exactly what this program does, just using a password instead of a PIN.
@@ -185,7 +187,7 @@ def login():
 # This simply starts the login process.
 login()
 
-Program-2 : [Same Login System with for Loop along with if, elif, else and functions]
+Task-2 : [Same Login System with for Loop along with if, elif, else and functions]
 =====================================================================================
 import time
 
@@ -240,7 +242,7 @@ def login():
 
 login()
 
-Program-3 : [Same Login System with for Loop and while loops along with if, elif, else and functions using in same code]
+Task-3 : [Same Login System with for Loop and while loops along with if, elif, else and functions using in same code]
 ========================================================================================================================
 import time
 
@@ -325,7 +327,30 @@ login()
 ⏱️ Lockout logic :        	lock_user() & is_user_locked()	       Prevents spamming login attempts
 
 
+Task-4 :
+=========
+The provided code stub reads two integers from STDIN, a and b. Add code to print three lines where:
+1.The first line contains the sum of the two numbers.
+2.The second line contains the difference of the two numbers (first - second).
+3.The third line contains the product of the two numbers.
 
+Code :
+======
+# Read input values
+a = int(input("Enter a value" ))
+b = int(input("Enter b value" ))
 
+# Print the results with descriptions
+print("Sum of value is", a + b)
+print("Difference of value is", a - b)
+print("Product of value is", a * b)
+
+Output :
+========
+Enter a value 6
+Enter b value 3
+Sum of value is 9
+Difference of value is 3
+Product of value is 18
 
 
